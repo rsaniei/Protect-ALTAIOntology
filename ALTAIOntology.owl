@@ -228,7 +228,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#isCompliantWithStandard">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataGovernanceStandard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Standard"/>
     </owl:ObjectProperty>
     
 
@@ -1220,15 +1220,6 @@ and negative impact)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataGovernance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#PrivacyAndDataGovernance"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataGovernanceStandard -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataGovernanceStandard">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Standard"/>
-        <rdfs:comment xml:lang="en">Standards are norms designed by industry and/or Governments that set product or services’ specifications. Standards are released by international organizations, such as ISO (International Organisation for Standardisation), IEEE (The Institute of Electrical and Electronics Engineers) Standard Association, and NIST (National Institute of Standards and Technology).</rdfs:comment>
     </owl:Class>
     
 
@@ -2965,7 +2956,9 @@ and negative impact)</rdfs:comment>
 
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Standard -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Standard"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Standard">
+        <rdfs:comment>Standards are norms designed by industry and/or Governments that set product or services’ specifications. Standards are released by international organizations, such as ISO (International Organisation for Standardisation), IEEE (The Institute of Electrical and Electronics Engineers) Standard Association, and NIST (National Institute of Standards and Technology).</rdfs:comment>
+    </owl:Class>
     
 
 
