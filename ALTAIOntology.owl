@@ -79,11 +79,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemHasCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemHasCapability">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemCapability"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemHasCharacteristic -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemHasCharacteristic">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemCharacteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemHasError -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemHasError">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Error"/>
     </owl:ObjectProperty>
     
 
@@ -136,9 +154,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemIsVulnerableToAttack -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemIsVulnerableToAttack">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Attack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemRequiresSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemRequiresSkill">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessesDataQuality -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessesDataQuality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#biasIsCauseBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#biasIsCauseBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Bias"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#CauseOfBias"/>
+    </owl:ObjectProperty>
     
 
 
@@ -152,9 +197,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#datasetHAsDataType -->
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#datasetHasDataType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#datasetHAsDataType">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#datasetHasDataType">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#TrainingDataset"/>
     </owl:ObjectProperty>
     
@@ -271,12 +316,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#metricMeasuresAISystemQuality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#metricMeasuresAISystemQuality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemQualityMetric"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemQualityAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#metricMeasuresRisk -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#metricMeasuresRisk">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskIsMeasuredByMeasure"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Metric"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskIsMeasuredByRiskMetric"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskMetric"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Risk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#personHasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#personHasSkill">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Skill"/>
     </owl:ObjectProperty>
     
 
@@ -290,9 +353,30 @@
     
 
 
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskIsMeasuredByMeasure -->
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskHasConsequence -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskIsMeasuredByMeasure"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskHasConsequence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Consequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskHasRiskLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskHasRiskLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskIsMeasuredByRiskMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskIsMeasuredByRiskMetric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskMetric"/>
+    </owl:ObjectProperty>
     
 
 
@@ -302,47 +386,29 @@
     
 
 
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#systemHasCapability -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#systemHasCapability">
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemCapability"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#systemHasError -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#systemHasError">
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Error"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#systemIsVulnerableToAttack -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#systemIsVulnerableToAttack">
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Attack"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#systemRequiresSkill -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#systemRequiresSkill">
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov-o#AISystem"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Skill"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#thirdPartyReports -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#thirdPartyReports">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#ThirdParty"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#ThirdPartyReport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#threatHasConsequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#threatHasConsequence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Thread"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Consequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#toolIsUsedfor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#toolIsUsedfor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#TechnicalTool"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#PurposeOfTool"/>
     </owl:ObjectProperty>
     
 
@@ -463,7 +529,7 @@
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AIDesigner -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AIDesigner">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder"/>
     </owl:Class>
     
 
@@ -471,7 +537,7 @@
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AIDeveloper -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AIDeveloper">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder"/>
     </owl:Class>
     
 
@@ -564,6 +630,14 @@ made by the AI system.</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemQualityAttribute -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemQualityAttribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemQualityMetric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemQualityMetric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Metric"/>
+    </owl:Class>
     
 
 
@@ -900,6 +974,14 @@ made by the AI system.</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AccuracyQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AccuracyQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemQualityAttribute"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AccuracyRequirement -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AccuracyRequirement">
@@ -925,10 +1007,27 @@ made by the AI system.</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Advice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Advice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemOutcome"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AligningAISystemWithStandards -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AligningAISystemWithStandards">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingPossibilityOfAffectingGroups -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingPossibilityOfAffectingGroups">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">assess whether there could be groups who might be disproportionately affected by the outcomes of the AI system</rdfs:comment>
     </owl:Class>
     
 
@@ -949,6 +1048,14 @@ made by the AI system.</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingTeamInvolvementWithUsers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingTeamInvolvementWithUsers">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingTheSocietalImpactOfAISystemOnSociety -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingTheSocietalImpactOfAISystemOnSociety">
@@ -962,6 +1069,15 @@ made by the AI system.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingThreads">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingUsability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingUsability">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">assess whether the AI system&apos;s user interface is usable by those with special needs or disabilities or those at risk of exclusion</rdfs:comment>
     </owl:Class>
     
 
@@ -1024,6 +1140,14 @@ and negative impact)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AvoidanceOfUnfairBias">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DiversityNonDiscriminationFairness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Bias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Bias">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov-o#ImpactOnHuman"/>
     </owl:Class>
     
 
@@ -1139,7 +1263,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Completeness -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Completeness">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataQualityAttribute"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DatasetQualityAttribute"/>
     </owl:Class>
     
 
@@ -1178,9 +1302,31 @@ and negative impact)</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Consequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Consequence"/>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#ConsultingWithImpactedCommunitiesAboutDefinitionOfFairness -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#ConsultingWithImpactedCommunitiesAboutDefinitionOfFairness">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#CousltingWithUserOfAssistiveTechnologies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#CousltingWithUserOfAssistiveTechnologies">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     </owl:Class>
     
@@ -1368,12 +1514,6 @@ and negative impact)</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataQualityAttribute -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataQualityAttribute"/>
-    
-
-
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataQualityMeasure -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataQualityMeasure">
@@ -1397,10 +1537,24 @@ and negative impact)</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DatasetQualityAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DatasetQualityAttribute"/>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DecideOnBehalfOfHuman -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DecideOnBehalfOfHuman">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Decision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Decision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemOutcome"/>
     </owl:Class>
     
 
@@ -1440,7 +1594,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DirectlyAffectedStakeholder -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DirectlyAffectedStakeholder">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#IndirectlyAffectedStakeholder"/>
     </owl:Class>
     
@@ -1449,7 +1603,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Diversity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Diversity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataQualityAttribute"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DatasetQualityAttribute"/>
     </owl:Class>
     
 
@@ -1510,7 +1664,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EndUser -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EndUser">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder"/>
     </owl:Class>
     
 
@@ -1548,46 +1702,6 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#ErrorOrigin -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#ErrorOrigin"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMeasuresToEnsureUnderstandingOfImpactOnHumanWork -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMeasuresToEnsureUnderstandingOfImpactOnHumanWork">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMeasuresToMinimizeImpactOnDemocracy -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMeasuresToMinimizeImpactOnDemocracy">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMeasuresToMitigateRiskOfDeSkilling -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMeasuresToMitigateRiskOfDeSkilling">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMeasuresToReduceEnvironmentalImpact -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMeasuresToReduceEnvironmentalImpact">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMechanismsToEvaluateEnviromentalImpact -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishMechanismsToEvaluateEnviromentalImpact">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    </owl:Class>
     
 
 
@@ -1639,9 +1753,33 @@ and negative impact)</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToEnsureUnderstandingOfImpactOnHumanWork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToEnsureUnderstandingOfImpactOnHumanWork">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToMinimizeImpactOnDemocracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToMinimizeImpactOnDemocracy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToMitigateRiskOfAddiction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToMitigateRiskOfAddiction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToMitigateRiskOfDeSkilling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToMitigateRiskOfDeSkilling">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     </owl:Class>
     
@@ -1663,9 +1801,57 @@ and negative impact)</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToReduceEnvironmentalImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMeasuresToReduceEnvironmentalImpact">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismToIncludeParticpationOfStakeholders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismToIncludeParticpationOfStakeholders">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToEnsureFairness -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToEnsureFairness">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToEvaluateEnviromentalImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToEvaluateEnviromentalImpact">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToFlagBais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToFlagBais">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToFlagPoorPerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToFlagPoorPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToRespondToAdverseEffects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#EstablishingMechanismsToRespondToAdverseEffects">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     </owl:Class>
     
@@ -1751,6 +1937,14 @@ and negative impact)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Fairness">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AISystemQualityAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#FollowingUniversalDesignPrinciples -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#FollowingUniversalDesignPrinciples">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     </owl:Class>
     
 
@@ -2388,7 +2582,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#IndirectlyAffectedStakeholder -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#IndirectlyAffectedStakeholder">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder"/>
     </owl:Class>
     
 
@@ -2644,6 +2838,30 @@ and negative impact)</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#MechanismToFlagPoorPerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#MechanismToFlagPoorPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Mechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#MechanismToIncludeParticpationOfStakeholders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#MechanismToIncludeParticpationOfStakeholders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Mechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#MechanismToRespondToAdverseEffects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#MechanismToRespondToAdverseEffects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Mechanism"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#MechanismsToEnsureFairness -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#MechanismsToEnsureFairness">
@@ -2875,6 +3093,12 @@ and negative impact)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment xml:lang="en">Provide the humans (human-in-the-loop, human-on-the-loop, human-in-command) training on how to exercise oversight.</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#PurposeOfTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#PurposeOfTool"/>
     
 
 
@@ -3184,7 +3408,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Representativeness -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Representativeness">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataQualityAttribute"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DatasetQualityAttribute"/>
     </owl:Class>
     
 
@@ -3241,10 +3465,32 @@ and negative impact)</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskLevel"/>
+    
+
+
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskManagement -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskManagement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Accountability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskMetric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskMetric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Metric"/>
     </owl:Class>
     
 
@@ -3434,9 +3680,10 @@ and negative impact)</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde -->
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde">
+    <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:comment xml:lang="en">stakeholder</rdfs:comment>
     </owl:Class>
     
@@ -3717,7 +3964,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#UpToDate -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#UpToDate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DataQualityAttribute"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#DatasetQualityAttribute"/>
     </owl:Class>
     
 
@@ -3749,7 +3996,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#UserOfAssistiveTechnologies -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#UserOfAssistiveTechnologies">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder"/>
     </owl:Class>
     
 
@@ -3783,7 +4030,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Worker -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Worker">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder"/>
     </owl:Class>
     
 
@@ -3810,7 +4057,7 @@ and negative impact)</rdfs:comment>
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Worker&apos;sRepresentative -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Worker&apos;sRepresentative">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholde"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Stakeholder"/>
     </owl:Class>
     
 
