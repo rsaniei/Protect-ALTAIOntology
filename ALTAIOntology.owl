@@ -1,14 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#"
      xml:base="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50">
-        <rdfs:label xml:lang="en">Ontology for Trustworthy AI Assessment</rdfs:label>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delaram Golpayegani</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rana Saniei</terms:creator>
+        <terms:description xml:lang="en">The ontolgy represents concepts and relations in ALTAI document.</terms:description>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTAIA</terms:title>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology for Trustworthy AI Assessment</rdfs:label>
     </owl:Ontology>
     
 
@@ -21,6 +28,71 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <terms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <terms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a &apos;/&apos; (slash) character.  Either the start or end date may be missing.</terms:description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
+        <terms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</terms:description>
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
     
 
 
@@ -87,6 +159,23 @@
     <!-- http://www.w3.org/ns/prov#sharesDefinitionWith -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#sharesDefinitionWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -4920,6 +5009,56 @@ and negative impact)</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#3">
         <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#ALTAIQuestion"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/">
+        <terms:title xml:lang="en">Dublin Core Metadata Element Set, Version 1.1</terms:title>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <terms:description xml:lang="en">The guidelines for using names of persons or organizations as creators also apply to contributors.  Typically, the name of a Contributor should be used to indicate the entity.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/coverage">
+        <terms:description xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [[TGN](https://www.getty.edu/research/tools/vocabulary/tgn/index.html)]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
+        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
+        <terms:description xml:lang="en">Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)] language tag.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
+        <terms:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/relation">
+        <terms:description xml:lang="en">Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+        <terms:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/source">
+        <terms:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/subject">
+        <terms:description xml:lang="en">Typically, the subject will be represented using keywords, key phrases, or classification codes.  Recommended best practice is to use a controlled vocabulary.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/type">
+        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</terms:description>
+    </rdf:Description>
 </rdf:RDF>
 
 
