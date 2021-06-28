@@ -458,7 +458,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#riskIsMitigatedByMeasure">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Risk"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Measure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#RiskMitigationMeasure"/>
     </owl:ObjectProperty>
     
 
