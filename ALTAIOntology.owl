@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA">
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delaram Golpayegani</terms:creator>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rana Saniei</terms:creator>
         <terms:description xml:lang="en">The ontolgy represents concepts and relations in ALTAI document.</terms:description>
