@@ -1,0 +1,3078 @@
+@prefix :      <http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+<https://astrea.linkeddata.es/shapes#2c55471ce9bda34994de8619e6955788>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#f5c15abebc603c140b3215a23293d635> , <https://astrea.linkeddata.es/shapes#80c6fdb569ee79efb0e684b3b752426c> ;
+sh:targetClass  :DataSubject .
+
+<https://astrea.linkeddata.es/shapes#4de5a3dedc90830145adb972118c03d9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#3e1b8594d001153597adaa8a9a585f8d> ;
+sh:targetClass  :Bias .
+
+<https://astrea.linkeddata.es/shapes#fdaa8c6ec863698bc5d2dfdd9bc5decb>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasInvalidatedBy" ;
+sh:class          prov:Activity ;
+sh:name           "wasInvalidatedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasInvalidatedBy .
+
+<https://astrea.linkeddata.es/shapes#7e9bc7ce74668740de1e179e1493efd2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfAttack .
+
+<https://astrea.linkeddata.es/shapes#a6f668ea6e548104ba6fd2a5325a2d39>
+a               sh:NodeShape ;
+sh:description  "Did you ensure that Universal Design principles are taken into account during every step of the planning and development process, if applicable?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUDQ3 .
+
+<https://astrea.linkeddata.es/shapes#d8ceec1b91c27cd95125572e29c5ec01>
+a               sh:NodeShape ;
+sh:description  "Risk Management"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RM .
+
+<https://astrea.linkeddata.es/shapes#706881cf96adc043823f0cb5e4f36fc3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Completeness .
+
+<https://astrea.linkeddata.es/shapes#73fd173c755864bfc401306216c96952>
+a               sh:NodeShape ;
+sh:description  "test for specific target groups or problematic use cases"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TestingReresentativenessForSpecificTargetGroups .
+
+<https://astrea.linkeddata.es/shapes#bd9ad3db0ff9e6aaa258d4de1280fe68>
+a               sh:NodeShape ;
+sh:description  "Did you plan fault tolerance via, e.g. a duplicated system or another parallel system (AI-based or ‘conventional’)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ4 .
+
+<https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "hadRole" , "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en , "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ;
+sh:class          prov:Role ;
+sh:description    "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." , "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en ;
+sh:name           "hadRole" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:hadRole .
+
+<https://astrea.linkeddata.es/shapes#3e19b852e78ab3e39003f8ed6b5852ec>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Explainability .
+
+<https://astrea.linkeddata.es/shapes#f116f08040fb40d743a4ba437c40c2d4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnDemocracy .
+
+<https://astrea.linkeddata.es/shapes#1ed46ecaea26e0ce51b89aefd2389cd9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#PhysicalMentalImpact> .
+
+<https://astrea.linkeddata.es/shapes#4aec17c2127a2d7ca539c6e5284c7f50>
+a               sh:NodeShape ;
+sh:description  "Oversight mechanisms for data processing (including limiting access to qualified personnel, mechanisms for logging data access and making modifications)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ2.3 .
+
+<https://astrea.linkeddata.es/shapes#729aa33264d9b325d66ad2f624ffb4ab>
+a               sh:NodeShape ;
+sh:description  "Measures to achieve privacy-by-design and default (e.g. encryption, pseudonymisation, aggregation, anonymisation)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ2.4 .
+
+<https://astrea.linkeddata.es/shapes#a5b9f105ab3011901a48534aa363e533>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AdoptingDataMinimisationMechanism> .
+
+<https://astrea.linkeddata.es/shapes#524974ab35bbb43000ceaeb3d2c07daa>
+a               sh:NodeShape ;
+sh:description  "Did you provide training opportunities and materials for re- and up-skilling?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IWSQ5.1 .
+
+<https://astrea.linkeddata.es/shapes#0dc1709c43bc1fb0979a8bb80bd9a9de>
+a               sh:NodeShape ;
+sh:description  "Avoidance of Unfair Bias"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUB .
+
+<https://astrea.linkeddata.es/shapes#880bd27facd6ed453d3ba0a7b69536cd>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasAssociatedWith" , "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."@en ;
+sh:class          prov:Agent ;
+sh:description    "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."@en ;
+sh:name           "wasAssociatedWith" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasAssociatedWith .
+
+<https://astrea.linkeddata.es/shapes#3ac995195e6e39e2468d7747dda3be55>
+a               sh:NodeShape ;
+sh:description  "refers to the capability to oversee the overall activity of the AI system  and the ability to decide when and how to use the system in any particular situation."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HumanInCommand .
+
+<https://astrea.linkeddata.es/shapes#b8eb23ad24658d73d51171e39f1825e5>
+a               sh:NodeShape ;
+sh:description  "Did you develop a mechanism to evaluate when the AI system has been changed to merit a new review of its technical robustness and safety?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ5 .
+
+<https://astrea.linkeddata.es/shapes#507def21f43543f1cb380ad2681b7e74>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :OversightMechanism .
+
+<https://astrea.linkeddata.es/shapes#dfcd5fc30011d551739f9877c244fb84>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Entity" ;
+sh:name           "Entity" ;
+sh:nodeKind       sh:IRI ;
+sh:not            <https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e> ;
+sh:property       <https://astrea.linkeddata.es/shapes#cbdd83028fff6b8bbd067d6abd095476> , <https://astrea.linkeddata.es/shapes#91bdb733f5c5f8b68ed72a7c77d5360b> , <https://astrea.linkeddata.es/shapes#23d0fc727546dee2eb47f5cc8205f898> , <https://astrea.linkeddata.es/shapes#fdaa8c6ec863698bc5d2dfdd9bc5decb> , <https://astrea.linkeddata.es/shapes#d8b72a4eaaa24d6edb810ff2a4a3379a> , <https://astrea.linkeddata.es/shapes#eafdf3594e784d85493b04c0a5ed43c9> ;
+sh:targetClass    prov:Entity .
+
+<https://astrea.linkeddata.es/shapes#40d60db9c5a3424a3048aec2af9fad57>
+a               sh:NodeShape ;
+sh:description  "Did you consider the impact of the AI system on the right to privacy, the right to physical, mental and/or moral integrity and the right to data protection?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :PrQ1 .
+
+<https://astrea.linkeddata.es/shapes#0361ece0c2168e57c60fd319f44f74d5>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Traceability .
+
+<https://astrea.linkeddata.es/shapes#944d271aa538320e84809c93307e7b1d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AdoptingDataProcessingOversightMechanism> .
+
+<https://astrea.linkeddata.es/shapes#651d61fbfe1b92dbbde4fda24bf33576>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TakingActionToMinimizeImpactOnSociety .
+
+<https://astrea.linkeddata.es/shapes#634aee843857f931de523f226a76f5b2>
+a               sh:NodeShape ;
+sh:description  "Human Agency and Oversight"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAQ .
+
+<https://astrea.linkeddata.es/shapes#e5d39bc4499a33d095fae9d53037c0d7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MechanismToEvaluateEnvironmentalImpact .
+
+<https://astrea.linkeddata.es/shapes#21673a6e0c5b1a898ff775630fbc5ec7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TestingForPotentialBiases .
+
+<https://astrea.linkeddata.es/shapes#5c6094a40d65de93305aa5fd5d91543a>
+a               sh:NodeShape ;
+sh:description  "Could the AI system affect human autonomy by generating over-reliance by end-users?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ3 .
+
+<https://astrea.linkeddata.es/shapes#7168019e95b5ffb6491de4447cbc597c>
+a               sh:NodeShape ;
+sh:description  "Could the AI system affect human autonomy by interfering with the end-user’s decision-making process in any other unintended and undesirable way?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ4 .
+
+<https://astrea.linkeddata.es/shapes#cc62e0ef8cddc7fb6165c040cfd504d8>
+a               sh:NodeShape ;
+sh:description  "measures to ensure that the impacts of the AI system on human work are well understood."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToEnsureUnderstandingOfImpactOnHumanWork .
+
+<https://astrea.linkeddata.es/shapes#7aea9d319a69134eb66783045b1327dd>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemLifecyclePhase .
+
+<https://astrea.linkeddata.es/shapes#0c7bfca8e09d6f5f092617fac7e757c3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMechanismsToRespondToAdverseEffects .
+
+<https://astrea.linkeddata.es/shapes#c0a0c508eb9e0c82d0b60b2175280c8e>
+a               sh:NodeShape ;
+sh:description  "Did you assess whether the AI system's user interface is usable by those with special needs or disabilities or those at risk of exclusion?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUDQ2 .
+
+<https://astrea.linkeddata.es/shapes#5afcfe471959c3217c9e12c88f777ef2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Transparency .
+
+<https://astrea.linkeddata.es/shapes#03ced3871aa22f995c69212efb9719e3>
+a               sh:NodeShape ;
+sh:description  "Did you consider different types of vulnerabilities and potential entry points for attacks such as: Data poisoning (i.e. manipulation of training data); Model evasion (i.e. classifying the data according to the attacker's will); Model inversion (i.e. infer the model parameters)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RASQ3.2 .
+
+<https://astrea.linkeddata.es/shapes#6c99ba62285b2e28d4512faf2b312cd6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :SimulateAddictiveBehaviour .
+
+<https://astrea.linkeddata.es/shapes#624439816b46bb9f943bbb5c77d8db62>
+a            sh:PropertyShape ;
+sh:class     :Attack ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemIsVulnerableToAttack .
+
+<https://astrea.linkeddata.es/shapes#018ff5826fb7ce9ce6d6d577adddf061>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      :UsingContinualLearning ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#0a6b79f2d1ab86ecbac7cb4db69a92cf>
+a            sh:PropertyShape ;
+sh:class     :MechanismForThirdPartyReports ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :hasReportMechanism .
+
+<https://astrea.linkeddata.es/shapes#e3a9a0d99e2afd100b0024eb05e6b9ac>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfMisuse .
+
+<https://astrea.linkeddata.es/shapes#e64e1459ce53990afead798738998f70>
+a               sh:NodeShape ;
+sh:description  "A use case is a specific situation in which a product or service could potentially be used. For example, self-driving cars or care robots are use cases for AI."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :UseCase .
+
+<https://astrea.linkeddata.es/shapes#cfdb42c49f050192787aeaecd344831c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TraceabilityMeasure .
+
+<https://astrea.linkeddata.es/shapes#b15e9c4be0bf18ed0e4b72ae5b94f8c8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AligningAISystemWithStandards .
+
+<https://astrea.linkeddata.es/shapes#c485b34f82c4e1ab2fdb1c2de2f0dc4e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :UpToDate .
+
+<https://astrea.linkeddata.es/shapes#87e94b44098568af6e2846f1b308d652>
+a               sh:NodeShape ;
+sh:description  "Are end-users or other subjects adequately made aware that a decision, content, advice or outcome is the result of an algorithmic decision?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ1.2 .
+
+<https://astrea.linkeddata.es/shapes#84074f976bd346c9cbbea5ee78718ffd>
+a               sh:NodeShape ;
+sh:description  "Data Governance"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DG .
+
+<https://astrea.linkeddata.es/shapes#46a143a889fe2d8dda2393806db47a18>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :WorkCouncil .
+
+<https://astrea.linkeddata.es/shapes#cacf34abe4033bded650a3134e40b70b>
+a            sh:PropertyShape ;
+sh:class     :DataSubjectRight ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :associatesWithDataSubjectRight .
+
+<https://astrea.linkeddata.es/shapes#0c7a6782b7789e420087704ad89674ef>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Agent" ;
+sh:name           "Agent" ;
+sh:nodeKind       sh:IRI ;
+sh:not            <https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e> ;
+sh:property       <https://astrea.linkeddata.es/shapes#080c994f008182ae0438f0e8c4ef7c26> ;
+sh:targetClass    prov:Agent .
+
+<https://astrea.linkeddata.es/shapes#ad13309da032908f13a6f05df095f3e2>
+a            sh:PropertyShape ;
+sh:class     :AISystemLifeCycle ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemHasLifeCycle .
+
+<https://astrea.linkeddata.es/shapes#a12132f2424a6b1be18b2f1e6e49d458>
+a               sh:NodeShape ;
+sh:description  "Did you assess the risk of possible malicious use, misuse or inappropriate use of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ2.1 .
+
+<https://astrea.linkeddata.es/shapes#ecd26171ff279bc4d318f15f67de2c85>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#Worker'sRepresentative> .
+
+<https://astrea.linkeddata.es/shapes#5a085a4b7b830096055a9f76167d624d>
+a               sh:NodeShape ;
+sh:description  "Could the AI system cause critical, adversarial, or damaging consequences (e.g. pertaining to human safety) in case of low reliability and/or reproducibility?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPRQ1 .
+
+<https://astrea.linkeddata.es/shapes#021e0c174269d88aed284190702996c6>
+a               sh:NodeShape ;
+sh:description  "Can you trace back which AI model or rules led to the decision(s) or recommendation(s) of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TrcQ1.3 .
+
+<https://astrea.linkeddata.es/shapes#e585c9dc0929617d4366127a99fa7098>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#9363567b9c1254d4d622e83672028674> ;
+sh:targetClass  :AISystemLifeCycle .
+
+<https://astrea.linkeddata.es/shapes#b069f8f44d9c9bccf41891be4d471c62>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Defect .
+
+<https://astrea.linkeddata.es/shapes#83b7f4dec2af670a2e4509ae2f6aa415>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Robustness .
+
+<https://astrea.linkeddata.es/shapes#23253d8ca88adc0759556bfdd316087e>
+a               sh:NodeShape ;
+sh:description  "Did you inform end-users of the duration of security coverage and updates?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RASQ6 .
+
+<https://astrea.linkeddata.es/shapes#d3ca334753f70199ae916bcb82466661>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :CauseOfBias .
+
+<https://astrea.linkeddata.es/shapes#c95da5c17d4f768d058a224e0fa5d45e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RedTeaming .
+
+<https://astrea.linkeddata.es/shapes#3e1b8594d001153597adaa8a9a585f8d>
+a            sh:PropertyShape ;
+sh:class     :CauseOfBias ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :biasIsCauseBy .
+
+<https://astrea.linkeddata.es/shapes#6c812cc405db0991689ce30187ba5a93>
+a               sh:NodeShape ;
+sh:description  "Did you put in place procedures to avoid that end-users over-rely on the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ3.1 .
+
+<https://astrea.linkeddata.es/shapes#2ca0638b71e6586686ac36134aea5636>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AIDeveloper .
+
+<https://astrea.linkeddata.es/shapes#3460f0cff98b0562532f4e4a49ca3d28>
+a               sh:NodeShape ;
+sh:description  "Does the AI system risk creating human attachment, stimulating addictive behaviour, or manipulating user behaviour?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ6 .
+
+<https://astrea.linkeddata.es/shapes#f6889863559aca496f2cd9bb8874f90e>
+a            sh:PropertyShape ;
+sh:class     :AISystemOutcome ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :causesOutcome .
+
+<https://astrea.linkeddata.es/shapes#575fba19c3d01370075e04647f571640>
+a         sh:PropertyShape ;
+sh:class  prov:Entity .
+
+<https://astrea.linkeddata.es/shapes#ff7b1de7b99f4a27d689fb697e26528a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfCyberAttack .
+
+<https://astrea.linkeddata.es/shapes#77e7736d36868d88494baadecb77430e>
+a               sh:NodeShape ;
+sh:description  "Did you take measures to counteract de-skilling risks?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IWS4.1 .
+
+<https://astrea.linkeddata.es/shapes#a318ae543a919912eea61903d245d275>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HumanAgencyAndAutonomy .
+
+<https://astrea.linkeddata.es/shapes#dc470a1c88e26008e80c45702b61a474>
+a               sh:NodeShape ;
+sh:description  "Did you define tested failsafe fallback plans to address AI system errors of whatever origin and put governance procedures in place to trigger them?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPRQ3 .
+
+<https://astrea.linkeddata.es/shapes#7983d4d9e5d8bdc642472f2ffa0e720e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MonitoringForPotentialBaises .
+
+<https://astrea.linkeddata.es/shapes#adcf52a14b54c78582ae37409b9dda18>
+a               sh:NodeShape ;
+sh:description  "Environmental Well-being"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EW .
+
+<https://astrea.linkeddata.es/shapes#1eed017e229e170e7768d65b9df0336b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Confusion .
+
+<https://astrea.linkeddata.es/shapes#42b9947765e5b92e4053633ca876fa11>
+a               sh:NodeShape ;
+sh:description  "Did you align the AI system with relevant standards (e.g. ISO, IEEE) or widely adopted protocols for (daily) data management and governance?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ4 .
+
+<https://astrea.linkeddata.es/shapes#535289fd7f23b83526d639c0ac3d9ff5>
+a            sh:PropertyShape ;
+sh:class     :ErrorOrigin ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :errorHasOrigin .
+
+<https://astrea.linkeddata.es/shapes#ecc904c999c591098324cd4c6927b30b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DataGovernance .
+
+<https://astrea.linkeddata.es/shapes#8ac182502cf1c19b2d4ffb798e5c2f54>
+a               sh:NodeShape ;
+sh:description  "Did you ensure a quantitative analysis or metrics to measure and test the applied definition of fairness?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ5.3 .
+
+<https://astrea.linkeddata.es/shapes#7841d37e696bd19c593b50278f982129>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ManipulateUserBehaviour .
+
+<https://astrea.linkeddata.es/shapes#370da3b58e1732559c44cc3506a2c1f6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ConductingDPIA> .
+
+<https://astrea.linkeddata.es/shapes#92f8b3920ae8fbb8f0034433333eb991>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToEnsureSecurity .
+
+<https://astrea.linkeddata.es/shapes#1050f6ed40b985d04bc8b72359e4c56d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#DiscoveringPrivacyIssues> .
+
+<https://astrea.linkeddata.es/shapes#f206e4770d1f2c81693014255738db43>
+a               sh:NodeShape ;
+sh:description  "Mechanism to ensure privacy by design and default"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :PbDDMechanism .
+
+<https://astrea.linkeddata.es/shapes#c479f3cf3848e2c316b04ed1f30c6c56>
+a            sh:PropertyShape ;
+sh:class     :Skill ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :personHasSkill .
+
+<https://astrea.linkeddata.es/shapes#6f97bd5d74b5203386d99f730039fdef>
+a               sh:NodeShape ;
+sh:description  "Did you put in place measures to ensure that the data (including training data) used to develop the AI system is up-to-date, of high quality, complete and representative of the environment the system will be deployed in?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AcQ2 .
+
+<https://astrea.linkeddata.es/shapes#55fd95edcf113278c6cc1d345b338d27>
+a               sh:NodeShape ;
+sh:description  "Did you take measures to minimise the risk of addiction?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ6.2 .
+
+<https://astrea.linkeddata.es/shapes#3e360bef1ec0f48aeb0e31786ebf68ce>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToMitigateRiskOfHumanAttachment .
+
+<https://astrea.linkeddata.es/shapes#ab482926e48909f4d7066b29f206f677>
+a               sh:NodeShape ;
+sh:description  "Did you communicate the benefits of the AI system to users?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ComQ2.1 .
+
+<https://astrea.linkeddata.es/shapes#26ffe24b6a1408fbcb3c81bbdc671894>
+a               sh:NodeShape ;
+sh:description  "Did you establish a strategy or a set of procedures to avoid creating or reinforcing unfair bias in the AI system, both regarding the use of input data as well as for the algorithm design?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ1 .
+
+<https://astrea.linkeddata.es/shapes#ffe2f00406a64a68d3bcdaf09fb059f3>
+a               sh:NodeShape ;
+sh:description  "Informing end-users or other subjects that a decision, content, advice or outcome is the result of an algorithmic decision."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :InformingUsersOfGettingAlgorithmicResult .
+
+<https://astrea.linkeddata.es/shapes#caa2c705b1a0d6ee0e09ae57ce8586e0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnHumanPerception .
+
+<https://astrea.linkeddata.es/shapes#6b71af696faa60fe5c54bb7dd6143b84>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Planning .
+
+<https://astrea.linkeddata.es/shapes#f81a2cc30138e6caf127d9b2339e331c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ModelEvasion .
+
+<https://astrea.linkeddata.es/shapes#4abfa15cdaf41b659e5c56c0fa9c65a0>
+a               sh:NodeShape ;
+sh:description  "Did you put in place any of the following measures some of which are mandatory under the General Data Protection Regulation (GDPR), or a non-European equivalent?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ2 .
+
+<https://astrea.linkeddata.es/shapes#70a26af0db4f0cc3652904b61d30398c>
+a               sh:NodeShape ;
+sh:description  "Did you establish clear steps and ways of communicating on how and to whom such issues can be raised?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ4.1 .
+
+<https://astrea.linkeddata.es/shapes#cb2bbc10b486c28d42b2cfe59504a287>
+a               sh:NodeShape ;
+sh:description  "Could the AI system have a negative impact on society at large or democracy?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ISDQ1 .
+
+<https://astrea.linkeddata.es/shapes#0a696027b5e2f9e6f1da7d6152655359>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToEnsureRobustness .
+
+<https://astrea.linkeddata.es/shapes#54c83c814f1076442142bace79c6dd6d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :PrivacyAndDataGovernance .
+
+<https://astrea.linkeddata.es/shapes#83e3531109c53134eafe9ac92064473a>
+a               sh:NodeShape ;
+sh:description  "Did you put in place educational and awareness initiatives to help AI designers and AI developers be more aware of the possible bias they can inject in designing and developing the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ3 .
+
+<https://astrea.linkeddata.es/shapes#d24b0b3797403ceddb91e8ac82248b18>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingAuditibilityMechanisms .
+
+<https://astrea.linkeddata.es/shapes#e4f6d15e70ad5c0124087a30afa30be7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToReduceEnvironmentalImpact .
+
+<https://astrea.linkeddata.es/shapes#402f9d16531a1ba8afe6a65af0dd2528>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EnsuringUsersAwarenessOfAISystem .
+
+<https://astrea.linkeddata.es/shapes#41b8940cc356ee951e9af1daa10334ce>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#6a2d2f80399df64eaf397fb12325fe0b> , <https://astrea.linkeddata.es/shapes#c19a8277c1285b0c6532467be83bdecf> ;
+sh:targetClass  :TechnicalTool .
+
+<https://astrea.linkeddata.es/shapes#8b00d9411683ef79eba2a89603789219>
+a               sh:NodeShape ;
+sh:description  "Did you test for specific target groups or problematic use cases?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ2.1 .
+
+<https://astrea.linkeddata.es/shapes#351a85cc7bf3a227a1d43f5dbdd8c2b1>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "influenced" ;
+sh:name           "influenced" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:influenced .
+
+<https://astrea.linkeddata.es/shapes#dd8fb1c0512c7c8417f82eba3bdada28>
+a               sh:NodeShape ;
+sh:description  "Is the AI system certified for cybersecurity (e.g. the certification scheme created by the Cybersecurity Act in Europe) or is it compliant with specific security standards?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RASQ2 .
+
+<https://astrea.linkeddata.es/shapes#c19a8277c1285b0c6532467be83bdecf>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      :IsPubliclyAvailable ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#eb0ba4744111027768b6721f9e1053d2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Communication .
+
+<https://astrea.linkeddata.es/shapes#d1aefb0361fd1541623c27fa907177a7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemErrorRate .
+
+<https://astrea.linkeddata.es/shapes#7eb785169828c96f0fdc927f9dc4eae3>
+a               sh:NodeShape ;
+sh:description  "A process to discuss and continuously monitor and assess the AI system's adherence to this Assessment List for Trustworthy AI (ALTAI)."@en , "Trustworthiness Assessment"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TrustworthinessAssessment .
+
+<https://astrea.linkeddata.es/shapes#a6bfd60f3eb2ba5d5f0147b78df380fd>
+a               sh:NodeShape ;
+sh:description  "Did you establish mechanisms that facilitate the AI system’s auditability (e.g. traceability of the development process, the sourcing of training data and the logging of the AI system’s processes, outcomes, positive and negative impact)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AudQ1 .
+
+<https://astrea.linkeddata.es/shapes#d9c871f746d3e0e3ac21879690b69dad>
+a               sh:NodeShape ;
+sh:description  "Informing end-users or subjects that they are interacting with an AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :InformingUsersOfInteractingWithaSystem .
+
+<https://astrea.linkeddata.es/shapes#67dfb772ff6931d40e4cbb528fbc623e>
+a               sh:NodeShape ;
+sh:description  "Did you take measures to deal with possible negative consequences for end-users or subjects in case they develop a disproportionate attachment to the AI System?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ6.1 .
+
+<https://astrea.linkeddata.es/shapes#00f474e89ea4bdf3a061d6e69a747ee8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MechanismToRespondToAdverseEffects .
+
+<https://astrea.linkeddata.es/shapes#a34c18d14d7fbae73f27957a4c013daa>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#ac20a83e734b058c5d8df9ff2e4d7b4f> ;
+sh:targetClass  :RiskMetric .
+
+<https://astrea.linkeddata.es/shapes#2d89b1f71015546a2add1e939cab65c3>
+a               sh:NodeShape ;
+sh:description  "Communication"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Com .
+
+<https://astrea.linkeddata.es/shapes#03721a676ab3a6a972a71d67a664313c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToEnsureDataQuality .
+
+<https://astrea.linkeddata.es/shapes#fe046c7725e6cec8d50201ebd8bf1be1>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasEndedBy" , "End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity."@en ;
+sh:class          prov:Entity ;
+sh:description    "End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity."@en ;
+sh:name           "wasEndedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasEndedBy .
+
+<https://astrea.linkeddata.es/shapes#d86fd3729831c14980a3d62547556abb>
+a               sh:NodeShape ;
+sh:description  "refers to the confusion on whether a decision, content, advice or outcome is the result of an algorithmic decision."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ConfusionOverAISystemOutcome .
+
+<https://astrea.linkeddata.es/shapes#56531057c266dad84fc4eea3665be93f>
+a               sh:NodeShape ;
+sh:description  "Privacy"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Pr .
+
+<https://astrea.linkeddata.es/shapes#190496f7239b49842c055492859259da>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Pentesting .
+
+<https://astrea.linkeddata.es/shapes#9b6da766517022b77426b441167aaf03>
+a            sh:PropertyShape ;
+sh:class     :DatasetQualityAttribute ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :hasQualityAttribute .
+
+<https://astrea.linkeddata.es/shapes#8d004bc101024edaebef02e86096456f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingAIEthicsBoard .
+
+<https://astrea.linkeddata.es/shapes#57d820fd0e080be0b311111a564195e4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DecideOnBehalfOfHuman .
+
+<https://astrea.linkeddata.es/shapes#85428480047d130f427a1338572e66bb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnSocietalSafety .
+
+<https://astrea.linkeddata.es/shapes#182d1155bb052bd154d76a9fad9aa9c4>
+a               sh:NodeShape ;
+sh:description  "Did you assess the risk of the possible unfairness of the system onto the end-user's or subject's communities?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUDQ4.3 .
+
+<https://astrea.linkeddata.es/shapes#a91948151a4ba6555784fefef52ca3ff>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      :isInterActive ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#f8900edcb7c06af07b893151d050aded>
+a               sh:NodeShape ;
+sh:description  "Did you ensure that workers understand how the AI system operates, which capabilities it has and which it does not have?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IWSQ3.1 .
+
+<https://astrea.linkeddata.es/shapes#fc7f230a666905814a3e897f7cb98352>
+a               sh:NodeShape ;
+sh:description  "An explanation of the decisions made by the AI System to the users." ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Explanation .
+
+<https://astrea.linkeddata.es/shapes#29788d241a3dc0343a44f545b5660c73>
+a               sh:NodeShape ;
+sh:description  "Does this process include identification and documentation of conflicts between the 6 aforementioned requirements or between different ethical principles and explanation of the 'trade-off' decisions made?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ4.1 .
+
+<https://astrea.linkeddata.es/shapes#3a2c5686e5e7cfcf24f1abe64844ccd0>
+a               sh:NodeShape ;
+sh:description  "Provide the humans (human-in-the-loop, human-on-the-loop, human-in-command) training on how to exercise oversight."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ProvideTrainingOnExcercisingOversight .
+
+<https://astrea.linkeddata.es/shapes#8cc7f48f1e519cc26cba4fe226730b77>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MechanismToIncludeParticpationOfStakeholders .
+
+<https://astrea.linkeddata.es/shapes#523e6b48b16743f3b1da8c267c623e96>
+a               sh:NodeShape ;
+sh:description  "Did you put processes in place to ensure that the level of accuracy of the AI system to be expected by end-users and/or subjects is properly communicated?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AcQ5 .
+
+<https://astrea.linkeddata.es/shapes#2fb56d88814f1d5e24234eebffd65a7a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Measure .
+
+<https://astrea.linkeddata.es/shapes#5454ec16934a5335aaf92db0ac165122>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AddressingAISystemTraceability .
+
+<https://astrea.linkeddata.es/shapes#756652bcb5411e3d20eaf7b093becb56>
+a            sh:PropertyShape ;
+sh:class     :AISystemBenefit ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemHasBenefit .
+
+<https://astrea.linkeddata.es/shapes#37dc10ddfaaeacb047851eb660aabf30>
+a            sh:PropertyShape ;
+sh:class     :TrainingDataset ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemHasTrainingDataset .
+
+<https://astrea.linkeddata.es/shapes#2757c1197ac9dbd30d8eef8c66cb7dfe>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Content .
+
+<https://astrea.linkeddata.es/shapes#c3a570c78b03bfd2f5484a73a55b2df1>
+a               sh:NodeShape ;
+sh:description  "Did you consider establishing an AI ethics review board or a similar mechanism to discuss the overall accountability and ethics practices, including potential unclear grey areas?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ3 .
+
+<https://astrea.linkeddata.es/shapes#2466d91df622f6604547708b51aba836>
+a            sh:PropertyShape ;
+sh:class     :Skill ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemRequiresSkill .
+
+<https://astrea.linkeddata.es/shapes#f0a55904368d14f52d7c4182e4823455>
+a            sh:PropertyShape ;
+sh:class     :Consequence ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :riskHasConsequence .
+
+<https://astrea.linkeddata.es/shapes#e2c5427c4a1e2bc6ae7cc1f96e7e0973>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToEnsureRobustness .
+
+<https://astrea.linkeddata.es/shapes#66c250596f6448369b6e6d0ef11db387>
+a               sh:NodeShape ;
+sh:description  "Did you identify the subjects that could potentially be (in)directly affected by the AI system, in addition to the (end-)users and/or subjects?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ4.2 .
+
+<https://astrea.linkeddata.es/shapes#30f8cf00c50164acab621d53c105494e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Deployment .
+
+<https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e>
+a         sh:PropertyShape ;
+sh:class  prov:InstantaneousEvent .
+
+<https://astrea.linkeddata.es/shapes#6144de9ef013cacf3acb315022eeed0b>
+a               sh:NodeShape ;
+sh:description  "Did you implement the right to withdraw consent, the right to object and the right to be forgotten into the development of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ2.6 .
+
+<https://astrea.linkeddata.es/shapes#2f7883856ee0ccd4253336b84d2fb3be>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Consequence .
+
+<https://astrea.linkeddata.es/shapes#ddd9f4a1b8ff63d398feec114fd72650>
+a               sh:NodeShape ;
+sh:description  "refers to the confusion on whether they are interacting with a human or AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ConfusionOverInteractingWithaSystem .
+
+<https://astrea.linkeddata.es/shapes#991c14915ef6f5b68baae081597482d9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToMitigateRiskOfDeSkilling .
+
+<https://astrea.linkeddata.es/shapes#8039c5b998ce5507fef3f197592cfe07>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> ;
+sh:targetClass  prov:Association .
+
+<https://astrea.linkeddata.es/shapes#730a3a1523a4df42a704b60911bb6b70>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasuringRisks .
+
+<https://astrea.linkeddata.es/shapes#ed2b7748720ac8139bd16a41fbf0165b>
+a               sh:NodeShape ;
+sh:description  "Did you put in place a series of steps to monitor, and document the AI system’s accuracy?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AcQ3 .
+
+<https://astrea.linkeddata.es/shapes#011b2ac6bfe1aa13357f3ab4af36408a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#d3fc58a4f80d19ffba9ea88e5fe7fa1d> ;
+sh:targetClass  :InputDataQualityAssessment .
+
+<https://astrea.linkeddata.es/shapes#7182631c315b670fc97fd9cb43eebaac>
+a               sh:NodeShape ;
+sh:description  "Did you establish mechanisms to ensure fairness in your AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ5.4 .
+
+<https://astrea.linkeddata.es/shapes#7f7d7e54fe3ef2364234f4d053375274>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Fairness .
+
+<https://astrea.linkeddata.es/shapes#d8b72a4eaaa24d6edb810ff2a4a3379a>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "hadPrimarySource" ;
+sh:class          prov:Entity ;
+sh:name           "hadPrimarySource" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:hadPrimarySource .
+
+<https://astrea.linkeddata.es/shapes#7f171bf0825b5c6c17c3f70f504e9d83>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToMitigateRiskOfUserManipulation .
+
+<https://astrea.linkeddata.es/shapes#10287dbb2acc1b37ef96247868bcd999>
+a               sh:NodeShape ;
+rdfs:label      "Stakeholder Training"@en ;
+sh:description  "Providing appropriate training to those involved in the assessment of trustworthiness of the AI System."@en ;
+sh:name         "Stakeholder Training"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :StakeholderTraining .
+
+<https://astrea.linkeddata.es/shapes#828ef25c346a5431a6293ebdd8ab38de>
+a               sh:NodeShape ;
+sh:description  "Did you put in place measures that address the traceability of the AI system during its entire lifecycle?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TrcQ1 .
+
+<https://astrea.linkeddata.es/shapes#b3de319bfc3d4b2a93da02199c544c5e>
+a               sh:NodeShape ;
+sh:description  "assess the dependency of a critical AI system’s decisions on its stable and reliable behaviour."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.semanticweb.org/ranasaniei/ontologies/2021/5/untitled-ontology-50#AssessingDependencyOfAISystem'sDecisionsOnSystemBehaviour> .
+
+<https://astrea.linkeddata.es/shapes#6b43c2151e26487b406ca3f6896a68d9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :CommunicatingAISystemLimitations .
+
+<https://astrea.linkeddata.es/shapes#b3219f59ef2acd932ae18a81cae721e5>
+a               sh:NodeShape ;
+sh:description  "Did you provide appropriate training material and disclaimers to users on how to adequately use the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ComQ2.3 .
+
+<https://astrea.linkeddata.es/shapes#f340cbbbf0ce43bb23d8d31e764e4405>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :SimulateSocialInteraction .
+
+<https://astrea.linkeddata.es/shapes#303b48b60c77dbcda0a2b54e7634b691>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#5e2db57a23531609ce5b53f00c8f0e86>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :FollowingUniversalDesignPrinciples .
+
+<https://astrea.linkeddata.es/shapes#53929aa573e9eb4488b67cd3ef9b1fc5>
+a               sh:NodeShape ;
+sh:description  "A model or rule in the AI system" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#f6889863559aca496f2cd9bb8874f90e> ;
+sh:targetClass  :AIModelRule .
+
+<https://astrea.linkeddata.es/shapes#4bc7ab6b9fd263e87c745cd86144535a>
+a               sh:NodeShape ;
+sh:description  "Please determine whether the AI system:"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HOQ1 .
+
+<https://astrea.linkeddata.es/shapes#8b4cd9923e60bd386049469b792ca99e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnTheEnvironment .
+
+<https://astrea.linkeddata.es/shapes#a25d2c40a2b65a3d3bbfa446af913b52>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Role" ;
+rdfs:seeAlso      prov:hadRole ;
+sh:name           "Role" ;
+sh:nodeKind       sh:IRI ;
+sh:targetClass    prov:Role .
+
+<https://astrea.linkeddata.es/shapes#4613c81ce0cc675e356d1f275ab9f45a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfInappropriateUse .
+
+<https://astrea.linkeddata.es/shapes#3469636e8c5d217cc162db7db62b446f>
+a               sh:NodeShape ;
+sh:description  "Did you assess and put in place processes to test and monitor for potential biases during the entire lifecycle of the AI system (e.g. biases due to possible limitations stemming from the composition of the used data sets (lack of diversity, non-representativeness)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ2.3 .
+
+<https://astrea.linkeddata.es/shapes#b520e24b9e140d23bf81fcfdeee0412b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#DataProtectionOfficer> .
+
+<https://astrea.linkeddata.es/shapes#99610b5ae5a799f64e54c3b8b3711d4a>
+a               sh:NodeShape ;
+sh:description  "Inform and consult with impacted workers and their representatives (trade unions, (European) work councils) in advance to introducing the system in the organisation."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :InformingAndConsultingWithImpactedWorkers .
+
+<https://astrea.linkeddata.es/shapes#1b5ba0c9b02ce33547aed797062e80f0>
+a               sh:NodeShape ;
+sh:description  "Did you consider diversity and representativeness of end-users and/or subjects in the data?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ2 .
+
+<https://astrea.linkeddata.es/shapes#a7a4ee24940b0e4df9ba9cc43273fd83>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Use .
+
+<https://astrea.linkeddata.es/shapes#3744c5279be97424de63be9e9df3775e>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      :IsAutonomous ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#aecdbd6750c0a67c38d74d2e95924234>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingProceduresToAvoidImpactsOnHumanAutonomy .
+
+<https://astrea.linkeddata.es/shapes#85295c9875c1e34b9bbeb4a87def6fbb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImplementingLoggingMechanism .
+
+<https://astrea.linkeddata.es/shapes#0738d2b822aab220c84bb65058d519f9>
+a               sh:NodeShape ;
+sh:description  "In cases of interactive AI systems (e.g., chatbots, robo-lawyers), do you communicate to users that they are interacting with an AI system instead of a human?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ComQ1 .
+
+<https://astrea.linkeddata.es/shapes#59ba61004d392d6cb6877f066046d033>
+a               sh:NodeShape ;
+sh:description  "Did you define safety criticality levels (e.g. related to human integrity) of the possible consequences of faults or misuse of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ2.2 .
+
+<https://astrea.linkeddata.es/shapes#f62905e3e58deee3cf533996dc62cd87>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DataQualityAssessment .
+
+<https://astrea.linkeddata.es/shapes#c92495ddf79aa36d7d0f95bf0113e153>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AligningAISystemWithStandards> .
+
+<https://astrea.linkeddata.es/shapes#e0b02dc1f7b3a04ae31ebe4b2bed230c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnWorkAndSkills .
+
+<https://astrea.linkeddata.es/shapes#27707f7bef040eab3fe801880acfae52>
+a               sh:NodeShape ;
+sh:description  "assess whether there could be groups who might be disproportionately affected by the outcomes of the AI system"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AssessingPossibilityOfAffectingGroups .
+
+<https://astrea.linkeddata.es/shapes#64f3b3c2cfb30fef82a66463f0901e14>
+a         sh:PropertyShape ;
+sh:class  :IndirectlyAffectedStakeholder .
+
+<https://astrea.linkeddata.es/shapes#dfadf926de1efc1b0b7ea4af10405bad>
+a               sh:NodeShape ;
+sh:description  "Did you foresee any kind of external guidance or third-party auditing processes to oversee ethical concerns and accountability measures?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ1 .
+
+<https://astrea.linkeddata.es/shapes#279254a347c131077c74007a1d0050e8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GiveRecommendation .
+
+<https://astrea.linkeddata.es/shapes#c6c64d1ee26e85c72de979425977cbf0>
+a            sh:PropertyShape ;
+sh:class     :TAIPrinciple ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :hasConflictWithPrinciple .
+
+<https://astrea.linkeddata.es/shapes#5d0e27a10f755e8b845321ffc3e82361>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasStartedBy" , "Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity."@en ;
+sh:class          prov:Entity ;
+sh:description    "Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity."@en ;
+sh:name           "wasStartedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasStartedBy .
+
+<https://astrea.linkeddata.es/shapes#11f6a811840f943d0de0aec14226e357>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Security .
+
+<https://astrea.linkeddata.es/shapes#3434d73e2b098bc5023bc045202f2232>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#6e83ffdb414cefcea2873a2d8f6a661d>
+a               sh:NodeShape ;
+sh:description  "Data Protection Officer (DPO) and include them at an early state in the development, procurement or use phase of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ2.2 .
+
+<https://astrea.linkeddata.es/shapes#bb2d80424a51cdb695f1ae5c3c20199d>
+a               sh:NodeShape ;
+sh:description  "refers to the capability for human intervention during the design cycle of the system and monitoring the system’s operation."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HumanOnTheLoop .
+
+<https://astrea.linkeddata.es/shapes#2b5bedb5a488f03efc383d718f6c3b9b>
+a               sh:NodeShape ;
+sh:description  "Did you establish a process to discuss and continuously monitor and assess the AI system's adherence to this Assessment List for Trustworthy AI (ALTAI)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ4 .
+
+<https://astrea.linkeddata.es/shapes#a6d6dba55ddce3542552ca452502629a>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Organization" ;
+sh:name           "Organization" ;
+sh:nodeKind       sh:IRI ;
+sh:targetClass    prov:Organization .
+
+<https://astrea.linkeddata.es/shapes#041cb10c10b35ee59f0da2ceae49ac9b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#77935736813b47ca4752f9ee932d45c9> , <https://astrea.linkeddata.es/shapes#d8196f5ffb1bdaa2319a84c460592565> ;
+sh:targetClass  :MonitoringConflicts .
+
+<https://astrea.linkeddata.es/shapes#dec581b36608a2210a9342e2818c94c2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DataSubjectRight .
+
+<https://astrea.linkeddata.es/shapes#7c3b07102f9472a66bb2e0808141df2c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AISystemImpact> .
+
+<https://astrea.linkeddata.es/shapes#f113f3473b0101b765eee361beca5587>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImplementingRightToWithdrawConsent> .
+
+<https://astrea.linkeddata.es/shapes#25e491de904a9275f7f8ec78108c3398>
+a               sh:NodeShape ;
+sh:description  "Societal and Environmental Well-being"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :SEW .
+
+<https://astrea.linkeddata.es/shapes#a647b4722e3c6c89402d4c7c5afc118c>
+a            sh:PropertyShape ;
+sh:class     :UseCase ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :isUsedInUseCase .
+
+<https://astrea.linkeddata.es/shapes#48da083b5ac1a7cf746487e34fd7161d>
+a               sh:NodeShape ;
+sh:description  "Please determine whether the AI system is overseen by a Human-in-Command."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HOQ1.4 .
+
+<https://astrea.linkeddata.es/shapes#2743274785e1409bc2aabab78de1773b>
+a               sh:NodeShape ;
+sh:description  "Training users on how to use the AI System" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#567f2d172760ef4b5657998b328085fa> ;
+sh:targetClass  :UsersTraining .
+
+<https://astrea.linkeddata.es/shapes#f9275da69bbea83dad2e66b14569aa3f>
+a               sh:NodeShape ;
+sh:description  "Mechanisms that facilitate the AI system’s auditability  (e.g. traceability of the development process, the sourcing of training  data and the logging of the AI system’s processes, outcomes, positive  and negative impact)"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AuditibilityMechanism .
+
+<https://astrea.linkeddata.es/shapes#dfcd70e6f039142ad784080272348230>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#da2012d31b1a8ecdb2924fc6e1175702> , <https://astrea.linkeddata.es/shapes#624439816b46bb9f943bbb5c77d8db62> , <https://astrea.linkeddata.es/shapes#6204ce101c7ecccd8db7ad9bc27fbd35> , <https://astrea.linkeddata.es/shapes#37dc10ddfaaeacb047851eb660aabf30> , <https://astrea.linkeddata.es/shapes#594498501505c6dbb0f52ad72a5dcecd> , <https://astrea.linkeddata.es/shapes#3744c5279be97424de63be9e9df3775e> , <https://astrea.linkeddata.es/shapes#5634d0ef510398926533dd7bf64bc3a5> , <https://astrea.linkeddata.es/shapes#a647b4722e3c6c89402d4c7c5afc118c> , <https://astrea.linkeddata.es/shapes#756652bcb5411e3d20eaf7b093becb56> , <https://astrea.linkeddata.es/shapes#2466d91df622f6604547708b51aba836> , <https://astrea.linkeddata.es/shapes#a91948151a4ba6555784fefef52ca3ff> , <https://astrea.linkeddata.es/shapes#c30fe404139c9667ec643816e02c190a> , <https://astrea.linkeddata.es/shapes#018ff5826fb7ce9ce6d6d577adddf061> , <https://astrea.linkeddata.es/shapes#897c073c8bf5d1321366e77dda2d63ac> , <https://astrea.linkeddata.es/shapes#5f3694b3187d7da47d2a604f356a74fc> , <https://astrea.linkeddata.es/shapes#ad13309da032908f13a6f05df095f3e2> , <https://astrea.linkeddata.es/shapes#ceec34d0ec53fae55249297aa9167848> ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AISystem> .
+
+<https://astrea.linkeddata.es/shapes#9bd83ecb5cbc9a25ffeb021bd38ebc22>
+a               sh:NodeShape ;
+sh:description  "Does the system promote or require new (digital) skills?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IWS5 .
+
+<https://astrea.linkeddata.es/shapes#a7ce5710da6ad831cb51949894f63bc7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#f7696af947fd4e63e73813160e34c62b> , <https://astrea.linkeddata.es/shapes#f0a55904368d14f52d7c4182e4823455> , <https://astrea.linkeddata.es/shapes#f8ce7890f9932a6c89fcd66501753203> , <https://astrea.linkeddata.es/shapes#ccb0d7dd0b8ce1a7f30ce513cfe2a7a8> , <https://astrea.linkeddata.es/shapes#b712ff32b22dd706097bccbb04b9450c> ;
+sh:targetClass  :Risk .
+
+<https://astrea.linkeddata.es/shapes#a75900cf8b8c30060fdeb84657993278>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Privacy .
+
+<https://astrea.linkeddata.es/shapes#850af44e14a3aaada6d3e3fbf76ac856>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EnvironmentalWellBeing .
+
+<https://astrea.linkeddata.es/shapes#567f2d172760ef4b5657998b328085fa>
+a            sh:PropertyShape ;
+sh:class     :TrainingMaterial ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :trainingHasMaterial .
+
+<https://astrea.linkeddata.es/shapes#436295c2e8e94f40c587ff2378fd93a5>
+a               sh:NodeShape ;
+sh:description  "Did you assess potential forms of attacks to which the AI system could be vulnerable?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RASQ3.1 .
+
+<https://astrea.linkeddata.es/shapes#12859bd8523c020fd9878d0f6f2ae288>
+a               sh:NodeShape ;
+sh:description  "Did you consider whether the AI system's operation can invalidate the data or assumptions it was trained on, and how this might lead to adversarial effects?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AcQ4 .
+
+<https://astrea.linkeddata.es/shapes#6a361140d97fe4b28c6565f62064699f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DataMinimisationMechanism .
+
+<https://astrea.linkeddata.es/shapes#91788f4d63c3b1e589f9bf059f8790e1>
+a               sh:NodeShape ;
+sh:description  "Did you communicate the technical limitations and potential risks of the AI system to users, such as its level of accuracy and/ or error rates?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ComQ2.2 .
+
+<https://astrea.linkeddata.es/shapes#7d4dd57e48f352271eeafa12d50c96ca>
+a               sh:NodeShape ;
+sh:description  "Do you continuously survey the users if they understand the decision(s) of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ExpQ2 .
+
+<https://astrea.linkeddata.es/shapes#13cbb3f28a3d8acf79b37e8a1d71e1e3>
+a               sh:NodeShape ;
+sh:description  "Did you align the reliability/testing requirements to the appropriate levels of stability and reliability?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ3.1 .
+
+<https://astrea.linkeddata.es/shapes#eb8ec7f0fd9990a760d23b22fad01269>
+a               sh:NodeShape ;
+sh:description  "Data Protection Impact Assessment (DPIA)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ2.1 .
+
+<https://astrea.linkeddata.es/shapes#09a26a4ca171d484368afabb03e8aebb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :CousltingWithUserOfAssistiveTechnologies .
+
+<https://astrea.linkeddata.es/shapes#639e2ce818d038e60b7894bceff3e746>
+a               sh:NodeShape ;
+sh:description  "Does the AI system simulate social interaction with or between end-users or subjects?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ5 .
+
+<https://astrea.linkeddata.es/shapes#9e7ceddc6ef9465a1c2f80295d068b1b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnDataProtection .
+
+<https://astrea.linkeddata.es/shapes#5c69a1533b4f0068dd3fb388195a6649>
+a               sh:NodeShape ;
+sh:description  "Did you ensure that the AI system corresponds to the variety of preferences and abilities in society?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUDQ1 .
+
+<https://astrea.linkeddata.es/shapes#e19a16d1c0b26ad48604c0987879fd5a>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "invalidated" ;
+sh:class          prov:Entity ;
+sh:name           "invalidated" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:invalidated .
+
+<https://astrea.linkeddata.es/shapes#f8f8bd7a4f42b9f0513acde197f0f8b0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :SurveyingUsersUnderstanding .
+
+<https://astrea.linkeddata.es/shapes#b27e202d664158864ef69f462887716e>
+a               sh:NodeShape ;
+sh:description  "Did you establish a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ5 .
+
+<https://astrea.linkeddata.es/shapes#b431e8650cde82c89c860253a263d065>
+a               sh:NodeShape ;
+sh:description  "Accountability"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Acnt .
+
+<https://astrea.linkeddata.es/shapes#fe7de394a9cd5a79ee0c86c9111adeac>
+a               sh:NodeShape ;
+sh:description  "Impact on Society at large or Democracy"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ISD .
+
+<https://astrea.linkeddata.es/shapes#da1e507c63eb3499c1fb215bc866af8f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DatasetQualityAttribute .
+
+<https://astrea.linkeddata.es/shapes#4a3bccdde1138425bf96f714b0403d6c>
+a            sh:PropertyShape ;
+sh:class     <http://www.w3.org/ns/prov-o#AISystem> ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :legalFrameworkAppliesToAISystem .
+
+<https://astrea.linkeddata.es/shapes#564c4f38e42665fd1f1febce682c48f7>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "used" , "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."@en ;
+sh:class          prov:Entity ;
+sh:description    "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."@en ;
+sh:name           "used" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:used .
+
+<https://astrea.linkeddata.es/shapes#9646113648f837ac461f1cd5155f1cb3>
+a               sh:NodeShape ;
+sh:description  "Did you ensure a ‘stop button’ or procedure to safely abort an operation when needed?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HOQ4 .
+
+<https://astrea.linkeddata.es/shapes#66ca798bc897058bde52d0579db23ade>
+a               sh:NodeShape ;
+sh:description  "Accuracy"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Ac .
+
+<https://astrea.linkeddata.es/shapes#200c95dba2f6ff59bac2bec75570300d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AccuracyQuality .
+
+<https://astrea.linkeddata.es/shapes#d9faaf56986c00a494d4b1c414908b29>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "hadMember" ;
+sh:class          prov:Entity ;
+sh:name           "hadMember" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:hadMember .
+
+<https://astrea.linkeddata.es/shapes#7215159ffa62729cbc6c57e4f36a7d0c>
+a               sh:NodeShape ;
+sh:description  "Where relevant, did you consider diversity and representativeness of end-users and or subjects in the data?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ2.4 .
+
+<https://astrea.linkeddata.es/shapes#29864c29721b86c963e02d0acb977995>
+a               sh:NodeShape ;
+sh:description  "Did you consider potential negative consequences from the AI system learning novel or unusual methods to score well on its objective function?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPRQ5.1 .
+
+<https://astrea.linkeddata.es/shapes#5dfb29576969ac5014a48c72ad43be37>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :InteractionWithHuman .
+
+<https://astrea.linkeddata.es/shapes#26d021da31312e4e4325dbfb4b79dadf>
+a               sh:NodeShape ;
+sh:description  "stakeholder"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Stakeholder .
+
+<https://astrea.linkeddata.es/shapes#01901444b4ac58d231d31fbb4b743c17>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMechanismsToEvaluateEnviromentalImpact .
+
+<https://astrea.linkeddata.es/shapes#688d5dbab397525bdb77a5a383c243c4>
+a               sh:NodeShape ;
+sh:description  "Is your AI system using (online) continual learning?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPRQ5 .
+
+<https://astrea.linkeddata.es/shapes#897c073c8bf5d1321366e77dda2d63ac>
+a            sh:PropertyShape ;
+sh:class     :AISystemCapability ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemHasCapability .
+
+<https://astrea.linkeddata.es/shapes#c58e2e1f98ad39c2070cbf49609f9949>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TAISubPrinciple .
+
+<https://astrea.linkeddata.es/shapes#a7f10ef5dcbadc8b0463ea5125373617>
+a               sh:NodeShape ;
+sh:description  "Could the AI system create the risk of de-skilling of the workforce?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IWS4 .
+
+<https://astrea.linkeddata.es/shapes#a8b07cac7e12e51f1ef5ef02e6a3bcaf>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ModelInversion .
+
+<https://astrea.linkeddata.es/shapes#22baaf3b60d9704f4131aea40cdbd858>
+a               sh:NodeShape ;
+rdfs:label      "Aud"@en ;
+sh:description  "Auditability"@en ;
+sh:name         "Aud"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Aud .
+
+<https://astrea.linkeddata.es/shapes#41cb53f0e52ac386fce3c1d16ed5edb5>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#cacf34abe4033bded650a3134e40b70b> ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#SupportingDataSubjectRights> .
+
+<https://astrea.linkeddata.es/shapes#ee0a201218cdb10ce7439d4276e29877>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemBenefit .
+
+<https://astrea.linkeddata.es/shapes#4151814324c68c36b41d9992cff7f87b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :PlanningFaultTolerance .
+
+<https://astrea.linkeddata.es/shapes#080c994f008182ae0438f0e8c4ef7c26>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "actedOnBehalfOf" , "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "@en ;
+sh:class          prov:Agent ;
+sh:description    "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "@en ;
+sh:name           "actedOnBehalfOf" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:actedOnBehalfOf .
+
+<https://astrea.linkeddata.es/shapes#5634d0ef510398926533dd7bf64bc3a5>
+a            sh:PropertyShape ;
+sh:class     :Error ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemHasError .
+
+<https://astrea.linkeddata.es/shapes#58b9b137c9ff6f5ea2fbf57ea0898a5f>
+a               sh:NodeShape ;
+sh:description  "A data item in a datastem" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#f6889863559aca496f2cd9bb8874f90e> ;
+sh:targetClass  :Data .
+
+<https://astrea.linkeddata.es/shapes#caba1d6abfcdf5b1e3085188f4db2a98>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Activity" ;
+sh:name           "Activity" ;
+sh:nodeKind       sh:IRI ;
+sh:not            <https://astrea.linkeddata.es/shapes#575fba19c3d01370075e04647f571640> ;
+sh:property       <https://astrea.linkeddata.es/shapes#e19a16d1c0b26ad48604c0987879fd5a> , <https://astrea.linkeddata.es/shapes#5d0e27a10f755e8b845321ffc3e82361> , <https://astrea.linkeddata.es/shapes#5a9206803db160bd9e016cc72e257fbc> , <https://astrea.linkeddata.es/shapes#fe046c7725e6cec8d50201ebd8bf1be1> , <https://astrea.linkeddata.es/shapes#564c4f38e42665fd1f1febce682c48f7> , <https://astrea.linkeddata.es/shapes#d18a97a852a607a0308fb5f8582bafcd> , <https://astrea.linkeddata.es/shapes#880bd27facd6ed453d3ba0a7b69536cd> ;
+sh:targetClass    prov:Activity .
+
+<https://astrea.linkeddata.es/shapes#fcc4233d0181562cf6691e1620c48856>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :SecurityStandard .
+
+<https://astrea.linkeddata.es/shapes#f1569d82a24734f2d5df36acdacf01bc>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> ;
+sh:targetClass  prov:InstantaneousEvent .
+
+<https://astrea.linkeddata.es/shapes#b7f144e193ec23290173aea2d8b96561>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskAssessment .
+
+<https://astrea.linkeddata.es/shapes#3ccd80e569f367c26f2dcabc51ecb1d1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToReduceEnvironmentalImpact .
+
+<https://astrea.linkeddata.es/shapes#b518ca36ae4800054bab12f49209f10a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :CommunicatingAISystemRisk .
+
+<https://astrea.linkeddata.es/shapes#8de8f2a682a712675176af93898c599f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#d3fc58a4f80d19ffba9ea88e5fe7fa1d> ;
+sh:targetClass  :OutputDataQualityAssessment .
+
+<https://astrea.linkeddata.es/shapes#e8b43648ad53a7b205a6d38ec06e3782>
+a               sh:NodeShape ;
+sh:description  "Did you put measures in place to ensure the integrity, robustness and overall security of the AI system against potential attacks over its lifecycle?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RASQ4 .
+
+<https://astrea.linkeddata.es/shapes#673ff3f119b93c0e30402a734acb732c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:not          <https://astrea.linkeddata.es/shapes#64f3b3c2cfb30fef82a66463f0901e14> ;
+sh:targetClass  :DirectlyAffectedStakeholder .
+
+<https://astrea.linkeddata.es/shapes#f28ab6b42d8efeea0937c3e79d0696ad>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MechanismsToEnsureFairness .
+
+<https://astrea.linkeddata.es/shapes#87580accaf03f3eac7a646d84979842e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :CommunicatingAISystemBenefits .
+
+<https://astrea.linkeddata.es/shapes#d978f9a24a8449ae74343bf2e410339f>
+a               sh:NodeShape ;
+sh:description  "Did you put in place a process to continuously measure and assess risks?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ1.1 .
+
+<https://astrea.linkeddata.es/shapes#395ca096e75bb81745589e24321afab9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EnsuringWorkersAwarenessOfSystemCapabilities .
+
+<https://astrea.linkeddata.es/shapes#068a9c725c84817333a82eea752b0544>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AssessingRisks .
+
+<https://astrea.linkeddata.es/shapes#cdeaa5482fc12826f6fadaa38e578ac3>
+a               sh:NodeShape ;
+sh:description  "Did you consult with the impacted communities about the correct definition of fairness, i.e. representatives of elderly persons or persons with disabilities?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ5.2 .
+
+<https://astrea.linkeddata.es/shapes#d86d39fe22d383728eb67f8caebf5274>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasRevisionOf" , "A revision is a derivation that revises an entity into a revised version."@en ;
+sh:description    "A revision is a derivation that revises an entity into a revised version."@en ;
+sh:name           "wasRevisionOf" ;
+sh:nodeKind       sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#07a32432ca3c096b7864c8819ced51f7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Representativeness .
+
+<https://astrea.linkeddata.es/shapes#8200432ee4bc53810d8a26ab9f9cd265>
+a               sh:NodeShape ;
+sh:description  "Is your definition of fairness commonly used and implemented in any phase of the process of setting up the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ5 .
+
+<https://astrea.linkeddata.es/shapes#c984d5001423af702254cf5c40e1587f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToEnsureSecurity .
+
+<https://astrea.linkeddata.es/shapes#d684d14a63135bbc65c4ee14acbba0e2>
+a               sh:NodeShape ;
+sh:description  "General Safety"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRS .
+
+<https://astrea.linkeddata.es/shapes#b7c1ae5f2aa3968f5821f64c87421c7a>
+a            sh:PropertyShape ;
+sh:class     :AIEthicsReviewBoard ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :hasAIEthicsBoard .
+
+<https://astrea.linkeddata.es/shapes#efa12476805bc0648193261115d62655>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToEnsureIntegrity .
+
+<https://astrea.linkeddata.es/shapes#a7d93cb6fe1f44ff888145521cbe1e67>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HumanAgencyAndOversight .
+
+<https://astrea.linkeddata.es/shapes#77b11d0b8a1032842b26d617ec5d0a81>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :PromotingAIDesignersDevelopesAwarenessofBias .
+
+<https://astrea.linkeddata.es/shapes#fd822ea5b6913df903d2bd1b37b7c75e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfBias .
+
+<https://astrea.linkeddata.es/shapes#fea2c88db25ec7fae776a3efd5015a3d>
+a               sh:NodeShape ;
+sh:description  "Did you red-team/pentest the system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RASQ5 .
+
+<https://astrea.linkeddata.es/shapes#32994ab42775fb42cf74521b0cb07eea>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IdentifyingThreads .
+
+<https://astrea.linkeddata.es/shapes#3f7aafab524ada5b40e0b9d4027061f0>
+a               sh:NodeShape ;
+sh:description  "Privacy and Data Governance"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :PDG .
+
+<https://astrea.linkeddata.es/shapes#491ed2a1bf7cc952de28e115d0123e28>
+a               sh:NodeShape ;
+sh:description  "Does the AI system impact human work and work arrangements?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IWSQ1 .
+
+<https://astrea.linkeddata.es/shapes#c869532d0dd03ced15e3ee5799b62a91>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfPossibleUnfairness .
+
+<https://astrea.linkeddata.es/shapes#c0f25f243c0a137c9e2af2f0942ecb1f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfAddiction .
+
+<http://astrea.linkeddata.es/report>
+a       <https://w3id.org/def/astrea#ShapeReport> ;
+<https://w3id.org/def/astrea#contains>
+<https://astrea.linkeddata.es/shapes#1b859c49292bdbcb89289d5037a568b8> , <https://astrea.linkeddata.es/shapes#f5c15abebc603c140b3215a23293d635> , <https://astrea.linkeddata.es/shapes#6581b2763c3914a455d95fe600c79b9c> , <https://astrea.linkeddata.es/shapes#5f3694b3187d7da47d2a604f356a74fc> , <https://astrea.linkeddata.es/shapes#8d0995ee671377cd80a53f4b6be193a5> , <https://astrea.linkeddata.es/shapes#5dfb29576969ac5014a48c72ad43be37> , <https://astrea.linkeddata.es/shapes#b75f296dfcbba66af799486b782e07b2> , <https://astrea.linkeddata.es/shapes#599d6e42be55c6bad7cf3821def76ae0> , <https://astrea.linkeddata.es/shapes#87580accaf03f3eac7a646d84979842e> , <https://astrea.linkeddata.es/shapes#d797577eeedbbe38c6d0bc2da064e813> , <https://astrea.linkeddata.es/shapes#cfdb42c49f050192787aeaecd344831c> , <https://astrea.linkeddata.es/shapes#3e1b8594d001153597adaa8a9a585f8d> , <https://astrea.linkeddata.es/shapes#d684d14a63135bbc65c4ee14acbba0e2> , <https://astrea.linkeddata.es/shapes#9d288da615e393c05063c6af5edb8e85> , <https://astrea.linkeddata.es/shapes#d768c50d5cd23805dc09edea6472cefc> , <https://astrea.linkeddata.es/shapes#56531057c266dad84fc4eea3665be93f> , <https://astrea.linkeddata.es/shapes#cb2bbc10b486c28d42b2cfe59504a287> , <https://astrea.linkeddata.es/shapes#a7ce5710da6ad831cb51949894f63bc7> , <https://astrea.linkeddata.es/shapes#8caba0d9a70b27f1d9ba14820a65293b> , <https://astrea.linkeddata.es/shapes#00f474e89ea4bdf3a061d6e69a747ee8> , <https://astrea.linkeddata.es/shapes#a75900cf8b8c30060fdeb84657993278> , <https://astrea.linkeddata.es/shapes#6b1079e088f225c02008fc3647961680> , <https://astrea.linkeddata.es/shapes#6a361140d97fe4b28c6565f62064699f> , <https://astrea.linkeddata.es/shapes#7168019e95b5ffb6491de4447cbc597c> , <https://astrea.linkeddata.es/shapes#c95da5c17d4f768d058a224e0fa5d45e> , <https://astrea.linkeddata.es/shapes#c19a8277c1285b0c6532467be83bdecf> , <https://astrea.linkeddata.es/shapes#a6f668ea6e548104ba6fd2a5325a2d39> , <https://astrea.linkeddata.es/shapes#535289fd7f23b83526d639c0ac3d9ff5> , <https://astrea.linkeddata.es/shapes#ab482926e48909f4d7066b29f206f677> , <https://astrea.linkeddata.es/shapes#4de5a3dedc90830145adb972118c03d9> , <https://astrea.linkeddata.es/shapes#cbdd83028fff6b8bbd067d6abd095476> , <https://astrea.linkeddata.es/shapes#6f97bd5d74b5203386d99f730039fdef> , <https://astrea.linkeddata.es/shapes#fe046c7725e6cec8d50201ebd8bf1be1> , <https://astrea.linkeddata.es/shapes#2e7ffa1e8bce24b160c5ca7488e450a4> , <https://astrea.linkeddata.es/shapes#70a26af0db4f0cc3652904b61d30398c> , <https://astrea.linkeddata.es/shapes#33e27df8ad2ed86ad516239ad11a55a4> , <https://astrea.linkeddata.es/shapes#9b6da766517022b77426b441167aaf03> , <https://astrea.linkeddata.es/shapes#23253d8ca88adc0759556bfdd316087e> , <https://astrea.linkeddata.es/shapes#caa2c705b1a0d6ee0e09ae57ce8586e0> , <https://astrea.linkeddata.es/shapes#dc470a1c88e26008e80c45702b61a474> , <https://astrea.linkeddata.es/shapes#102c3a1288aca6a52aa00c460f4112d8> , <https://astrea.linkeddata.es/shapes#0738d2b822aab220c84bb65058d519f9> , <https://astrea.linkeddata.es/shapes#a3f5ec7cd969a22bf0f9f501696916dd> , <https://astrea.linkeddata.es/shapes#c6c64d1ee26e85c72de979425977cbf0> , <https://astrea.linkeddata.es/shapes#fe7de394a9cd5a79ee0c86c9111adeac> , <https://astrea.linkeddata.es/shapes#e6873a224125507add27929317c62b50> , <https://astrea.linkeddata.es/shapes#3469636e8c5d217cc162db7db62b446f> , <https://astrea.linkeddata.es/shapes#35c4917a9a062e7e947cb297f578dc66> , <https://astrea.linkeddata.es/shapes#57d820fd0e080be0b311111a564195e4> , <https://astrea.linkeddata.es/shapes#ffe2f00406a64a68d3bcdaf09fb059f3> , <https://astrea.linkeddata.es/shapes#f1569d82a24734f2d5df36acdacf01bc> , <https://astrea.linkeddata.es/shapes#33249e9fa0900e8aca3455cd974a99ed> , <https://astrea.linkeddata.es/shapes#2fb56d88814f1d5e24234eebffd65a7a> , <https://astrea.linkeddata.es/shapes#c6e1cd22c1c2e89372a5d3a8995944ff> , <https://astrea.linkeddata.es/shapes#370da3b58e1732559c44cc3506a2c1f6> , <https://astrea.linkeddata.es/shapes#0c7a6782b7789e420087704ad89674ef> , <https://astrea.linkeddata.es/shapes#421a86df5ada55d7b654fd1b53aa0333> , <https://astrea.linkeddata.es/shapes#4a3bccdde1138425bf96f714b0403d6c> , <https://astrea.linkeddata.es/shapes#1617a2480e903b0a8ce33cf0ac0ebe68> , <https://astrea.linkeddata.es/shapes#0db6f9b422edd3e2df980ff155ca9935> , <https://astrea.linkeddata.es/shapes#a8b07cac7e12e51f1ef5ef02e6a3bcaf> , <https://astrea.linkeddata.es/shapes#4bc7ab6b9fd263e87c745cd86144535a> , <https://astrea.linkeddata.es/shapes#d8ceec1b91c27cd95125572e29c5ec01> , <https://astrea.linkeddata.es/shapes#018ff5826fb7ce9ce6d6d577adddf061> , <https://astrea.linkeddata.es/shapes#f02dc3ab1636cdadbac5a0c81d9767f6> , <https://astrea.linkeddata.es/shapes#0c7bfca8e09d6f5f092617fac7e757c3> , <https://astrea.linkeddata.es/shapes#4abfa15cdaf41b659e5c56c0fa9c65a0> , <https://astrea.linkeddata.es/shapes#b600d881d5f1e3daa472bb037c7123d5> , <https://astrea.linkeddata.es/shapes#91bdb733f5c5f8b68ed72a7c77d5360b> , <https://astrea.linkeddata.es/shapes#e4f6d15e70ad5c0124087a30afa30be7> , <https://astrea.linkeddata.es/shapes#e0b02dc1f7b3a04ae31ebe4b2bed230c> , <https://astrea.linkeddata.es/shapes#eb4d25b57fcbc71b20657723a9c362ad> , <https://astrea.linkeddata.es/shapes#a34c18d14d7fbae73f27957a4c013daa> , <https://astrea.linkeddata.es/shapes#58b9b137c9ff6f5ea2fbf57ea0898a5f> , <https://astrea.linkeddata.es/shapes#ba062b35c9dd3ea25b70912510804612> , <https://astrea.linkeddata.es/shapes#21673a6e0c5b1a898ff775630fbc5ec7> , <https://astrea.linkeddata.es/shapes#59ba61004d392d6cb6877f066046d033> , <https://astrea.linkeddata.es/shapes#d18a97a852a607a0308fb5f8582bafcd> , <https://astrea.linkeddata.es/shapes#124bb9d46322f57e10fd87eab69f6db5> , <https://astrea.linkeddata.es/shapes#021e0c174269d88aed284190702996c6> , <https://astrea.linkeddata.es/shapes#624439816b46bb9f943bbb5c77d8db62> , <https://astrea.linkeddata.es/shapes#182d1155bb052bd154d76a9fad9aa9c4> , <https://astrea.linkeddata.es/shapes#10961341bf39e9bf05c20d990ae85094> , <https://astrea.linkeddata.es/shapes#4fbe8d41a48458a9a326c1ad6a49cfe9> , <https://astrea.linkeddata.es/shapes#a6cbd24c5b09274ca341fad956e5471b> , <https://astrea.linkeddata.es/shapes#9dab34ed430c7c5a6f03fadb7a59aae4> , <https://astrea.linkeddata.es/shapes#ecc904c999c591098324cd4c6927b30b> , <https://astrea.linkeddata.es/shapes#1d68d39b174c5f1d0a4450112581a8e8> , <https://astrea.linkeddata.es/shapes#8fdd69090c6bab64959bfa8a104dcf09> , <https://astrea.linkeddata.es/shapes#3afb09d4aa26cfa0f09dc1b4e68ac3a3> , <https://astrea.linkeddata.es/shapes#f116f08040fb40d743a4ba437c40c2d4> , <https://astrea.linkeddata.es/shapes#b620e216b7f9076c72dd16db6cb557a8> , <https://astrea.linkeddata.es/shapes#b27e202d664158864ef69f462887716e> , <https://astrea.linkeddata.es/shapes#54597eb4a2d2cc88fcd5d3b6d7e0c550> , <https://astrea.linkeddata.es/shapes#138b07a518703b7d759bdd1e709b6d17> , <https://astrea.linkeddata.es/shapes#4340238ebade27aaefe9a60d767fc115> , <https://astrea.linkeddata.es/shapes#c76710dd3ba0eb4f1eca2d87f7ba4555> , <https://astrea.linkeddata.es/shapes#92f8b3920ae8fbb8f0034433333eb991> , <https://astrea.linkeddata.es/shapes#463469b4bfd2f305dc8e596fde11c03c> , <https://astrea.linkeddata.es/shapes#b7f144e193ec23290173aea2d8b96561> , <https://astrea.linkeddata.es/shapes#b3d347d5f4d264fe2065e58a871c1ed7> , <https://astrea.linkeddata.es/shapes#0dc1709c43bc1fb0979a8bb80bd9a9de> , <https://astrea.linkeddata.es/shapes#ff95cae48951c90a8e6e22cd8c162be3> , <https://astrea.linkeddata.es/shapes#21ea03694ad98783d76a7adefc4abec9> , <https://astrea.linkeddata.es/shapes#2b5bedb5a488f03efc383d718f6c3b9b> , <https://astrea.linkeddata.es/shapes#a5b9f105ab3011901a48534aa363e533> , <https://astrea.linkeddata.es/shapes#1ed46ecaea26e0ce51b89aefd2389cd9> , <https://astrea.linkeddata.es/shapes#2d89b1f71015546a2add1e939cab65c3> , <https://astrea.linkeddata.es/shapes#b712ff32b22dd706097bccbb04b9450c> , <https://astrea.linkeddata.es/shapes#2757c1197ac9dbd30d8eef8c66cb7dfe> , <https://astrea.linkeddata.es/shapes#c063e01ab50b15e7fb842b88c3f266c1> , <https://astrea.linkeddata.es/shapes#23d0fc727546dee2eb47f5cc8205f898> , <https://astrea.linkeddata.es/shapes#f6889863559aca496f2cd9bb8874f90e> , <https://astrea.linkeddata.es/shapes#b6103dae4655f3616568aabe50f0ef4a> , <https://astrea.linkeddata.es/shapes#6144de9ef013cacf3acb315022eeed0b> , <https://astrea.linkeddata.es/shapes#d86d39fe22d383728eb67f8caebf5274> , <https://astrea.linkeddata.es/shapes#5d0e27a10f755e8b845321ffc3e82361> , <https://astrea.linkeddata.es/shapes#b069f8f44d9c9bccf41891be4d471c62> , <https://astrea.linkeddata.es/shapes#d67ba234d890e79fcf8fb35d64593214> , <https://astrea.linkeddata.es/shapes#f28ab6b42d8efeea0937c3e79d0696ad> , <https://astrea.linkeddata.es/shapes#9e7ceddc6ef9465a1c2f80295d068b1b> , <https://astrea.linkeddata.es/shapes#77b11d0b8a1032842b26d617ec5d0a81> , <https://astrea.linkeddata.es/shapes#08315460ce9eab0eb2a933f278ee9abc> , <https://astrea.linkeddata.es/shapes#cc937d00bc2d35f838f4fde9ed44b15d> , <https://astrea.linkeddata.es/shapes#c8b1d319d743c4d8132445b7301df4a9> , <https://astrea.linkeddata.es/shapes#011b2ac6bfe1aa13357f3ab4af36408a> , <https://astrea.linkeddata.es/shapes#a3c9b8ac133b18170c8e197bd6fb9cc8> , <https://astrea.linkeddata.es/shapes#bee5150991adc8d6d47d28b219cfc839> , <https://astrea.linkeddata.es/shapes#a25d2c40a2b65a3d3bbfa446af913b52> , <https://astrea.linkeddata.es/shapes#f14fcdd4a148fc3fc802744b1fa15561> , <https://astrea.linkeddata.es/shapes#3e19b852e78ab3e39003f8ed6b5852ec> , <https://astrea.linkeddata.es/shapes#f6ad96a9ca401295e0d39ecbdf9b9514> , <https://astrea.linkeddata.es/shapes#0f667f40cfbb5d12568dfd5a4e49e90a> , <https://astrea.linkeddata.es/shapes#8200432ee4bc53810d8a26ab9f9cd265> , <https://astrea.linkeddata.es/shapes#5c69a1533b4f0068dd3fb388195a6649> , <https://astrea.linkeddata.es/shapes#7983d4d9e5d8bdc642472f2ffa0e720e> , <https://astrea.linkeddata.es/shapes#eafdf3594e784d85493b04c0a5ed43c9> , <https://astrea.linkeddata.es/shapes#ceaef8925cb459425cd725a6833bc745> , <https://astrea.linkeddata.es/shapes#3c716643c8e59a3efb596742e73ff785> , <https://astrea.linkeddata.es/shapes#850af44e14a3aaada6d3e3fbf76ac856> , <https://astrea.linkeddata.es/shapes#c984d5001423af702254cf5c40e1587f> , <https://astrea.linkeddata.es/shapes#524974ab35bbb43000ceaeb3d2c07daa> , <https://astrea.linkeddata.es/shapes#5a9206803db160bd9e016cc72e257fbc> , <https://astrea.linkeddata.es/shapes#3460f0cff98b0562532f4e4a49ca3d28> , <https://astrea.linkeddata.es/shapes#880bd27facd6ed453d3ba0a7b69536cd> , <https://astrea.linkeddata.es/shapes#5388661b40491ae7473166a2ca4d10fb> , <https://astrea.linkeddata.es/shapes#e5f1dc327bc5559a1390f9ab55c9ca93> , <https://astrea.linkeddata.es/shapes#e3a9a0d99e2afd100b0024eb05e6b9ac> , <https://astrea.linkeddata.es/shapes#d563e02be76fca0e53c44c88c7bedb61> , <https://astrea.linkeddata.es/shapes#0361ece0c2168e57c60fd319f44f74d5> , <https://astrea.linkeddata.es/shapes#fa06250f2cd5b9daf282e1d4030e232a> , <https://astrea.linkeddata.es/shapes#8b4cd9923e60bd386049469b792ca99e> , <https://astrea.linkeddata.es/shapes#7eb785169828c96f0fdc927f9dc4eae3> , <https://astrea.linkeddata.es/shapes#991c14915ef6f5b68baae081597482d9> , <https://astrea.linkeddata.es/shapes#c0f025b8d0da10451d86a1229dfa3c43> , <https://astrea.linkeddata.es/shapes#e6ecbc968f3bcb8f2c817a4741646c87> , <https://astrea.linkeddata.es/shapes#40d60db9c5a3424a3048aec2af9fad57> , <https://astrea.linkeddata.es/shapes#9861359aff3873171bd4305352af1be0> , <https://astrea.linkeddata.es/shapes#a8b314f922152ce34fce9ae3f696331a> , <https://astrea.linkeddata.es/shapes#6c99ba62285b2e28d4512faf2b312cd6> , <https://astrea.linkeddata.es/shapes#c0334318c318098759642cfe948a22f9> , <https://astrea.linkeddata.es/shapes#190496f7239b49842c055492859259da> , <https://astrea.linkeddata.es/shapes#aecdbd6750c0a67c38d74d2e95924234> , <https://astrea.linkeddata.es/shapes#8de8f2a682a712675176af93898c599f> , <https://astrea.linkeddata.es/shapes#7aea9d319a69134eb66783045b1327dd> , <https://astrea.linkeddata.es/shapes#ccb0d7dd0b8ce1a7f30ce513cfe2a7a8> , <https://astrea.linkeddata.es/shapes#cacf34abe4033bded650a3134e40b70b> , <https://astrea.linkeddata.es/shapes#6b71af696faa60fe5c54bb7dd6143b84> , <https://astrea.linkeddata.es/shapes#67dfb772ff6931d40e4cbb528fbc623e> , <https://astrea.linkeddata.es/shapes#c0a0c508eb9e0c82d0b60b2175280c8e> , <https://astrea.linkeddata.es/shapes#097deeb702e902ffddf059f846141dc9> , <https://astrea.linkeddata.es/shapes#83b7f4dec2af670a2e4509ae2f6aa415> , <https://astrea.linkeddata.es/shapes#d8b72a4eaaa24d6edb810ff2a4a3379a> , <https://astrea.linkeddata.es/shapes#bfd8aebace1373d99c799f8994e333e2> , <https://astrea.linkeddata.es/shapes#77935736813b47ca4752f9ee932d45c9> , <https://astrea.linkeddata.es/shapes#ecd26171ff279bc4d318f15f67de2c85> , <https://astrea.linkeddata.es/shapes#3744c5279be97424de63be9e9df3775e> , <https://astrea.linkeddata.es/shapes#a566e3fade171e67ef1669267fe461c6> , <https://astrea.linkeddata.es/shapes#d372136e32c69fd359a4d68262eaa596> , <https://astrea.linkeddata.es/shapes#c3a570c78b03bfd2f5484a73a55b2df1> , <https://astrea.linkeddata.es/shapes#3a0b3fb12c86c9c416d71be1933e7e39> , <https://astrea.linkeddata.es/shapes#db6eef5d2f45e64f265ccf99e624069c> , <https://astrea.linkeddata.es/shapes#5c6094a40d65de93305aa5fd5d91543a> , <https://astrea.linkeddata.es/shapes#9247658bee972ec989143cbf95ea1f58> , <https://astrea.linkeddata.es/shapes#2c55471ce9bda34994de8619e6955788> , <https://astrea.linkeddata.es/shapes#ceb5ae6ff9554d8c4d170cd7ce6d0578> , <https://astrea.linkeddata.es/shapes#d2aad5e8829a305faaac0242b2f7b06a> , <https://astrea.linkeddata.es/shapes#c30fe404139c9667ec643816e02c190a> , <https://astrea.linkeddata.es/shapes#32994ab42775fb42cf74521b0cb07eea> , <https://astrea.linkeddata.es/shapes#e8d6438c425d2a410e2697b58ea65257> , <https://astrea.linkeddata.es/shapes#0be21d9197ee7a9cecf0a72daafb6e25> , <https://astrea.linkeddata.es/shapes#2743274785e1409bc2aabab78de1773b> , <https://astrea.linkeddata.es/shapes#06128ba8774ee84f8fb69cfdd96a2e45> , <https://astrea.linkeddata.es/shapes#a23a6554a5f6356b0ba40b5cb42ed870> , <https://astrea.linkeddata.es/shapes#c92495ddf79aa36d7d0f95bf0113e153> , <https://astrea.linkeddata.es/shapes#f2faa1210be665ba5c58fde4ab15c1fb> , <https://astrea.linkeddata.es/shapes#42b9947765e5b92e4053633ca876fa11> , <https://astrea.linkeddata.es/shapes#6b43c2151e26487b406ca3f6896a68d9> , <https://astrea.linkeddata.es/shapes#651d61fbfe1b92dbbde4fda24bf33576> , <https://astrea.linkeddata.es/shapes#8d2608cc3fc93d2ef88e2cd6f2a638e1> , <https://astrea.linkeddata.es/shapes#e19a16d1c0b26ad48604c0987879fd5a> , <https://astrea.linkeddata.es/shapes#567f2d172760ef4b5657998b328085fa> , <https://astrea.linkeddata.es/shapes#f7d615207d07093e2704ac237b0ace67> , <https://astrea.linkeddata.es/shapes#1b5ba0c9b02ce33547aed797062e80f0> , <https://astrea.linkeddata.es/shapes#eb8ec7f0fd9990a760d23b22fad01269> , <https://astrea.linkeddata.es/shapes#7841d37e696bd19c593b50278f982129> , <https://astrea.linkeddata.es/shapes#29788d241a3dc0343a44f545b5660c73> , <https://astrea.linkeddata.es/shapes#2f7883856ee0ccd4253336b84d2fb3be> , <https://astrea.linkeddata.es/shapes#4460398d5f27af1af3354591e4dba0c9> , <https://astrea.linkeddata.es/shapes#c58e2e1f98ad39c2070cbf49609f9949> , <https://astrea.linkeddata.es/shapes#6ce18466e5a6a2833c8f89b7c3662905> , <https://astrea.linkeddata.es/shapes#4fa66ebb1fe1b6490e9ed2a796237ebc> , <https://astrea.linkeddata.es/shapes#329d7febd62b9a96b39aeb21d2b541a2> , <https://astrea.linkeddata.es/shapes#61fcedebb55abfa2e0288a46efcd8f2c> , <https://astrea.linkeddata.es/shapes#d8196f5ffb1bdaa2319a84c460592565> , <https://astrea.linkeddata.es/shapes#fd822ea5b6913df903d2bd1b37b7c75e> , <https://astrea.linkeddata.es/shapes#9bd83ecb5cbc9a25ffeb021bd38ebc22> , <https://astrea.linkeddata.es/shapes#f7716ee0d58344803c5d80d3a8a76561> , <https://astrea.linkeddata.es/shapes#d5e3ff936d6f464d1369b98bf512d8a3> , <https://astrea.linkeddata.es/shapes#908aa36dc6d0a18bc1a1d3b9acb6b459> , <https://astrea.linkeddata.es/shapes#7f7d7e54fe3ef2364234f4d053375274> , <https://astrea.linkeddata.es/shapes#dfadf926de1efc1b0b7ea4af10405bad> , <https://astrea.linkeddata.es/shapes#492abb3c4097513c40386959f6e3f742> , <https://astrea.linkeddata.es/shapes#a7f10ef5dcbadc8b0463ea5125373617> , <https://astrea.linkeddata.es/shapes#d9035724537578f011f79c9591329d4d> , <https://astrea.linkeddata.es/shapes#6d6d6aec07cf7b7ea4d3ecc7616181dc> , <https://astrea.linkeddata.es/shapes#0b861d74f2132e00ab5c289364a24bb7> , <https://astrea.linkeddata.es/shapes#07a32432ca3c096b7864c8819ced51f7> , <https://astrea.linkeddata.es/shapes#205fe48ea404fce5a7ad2a37c739bdc6> , <https://astrea.linkeddata.es/shapes#53139c8c85610438de206f9a405f2b68> , <https://astrea.linkeddata.es/shapes#080c994f008182ae0438f0e8c4ef7c26> , <https://astrea.linkeddata.es/shapes#96ff7a3826570967afaea9b598114411> , <https://astrea.linkeddata.es/shapes#7c3b07102f9472a66bb2e0808141df2c> , <https://astrea.linkeddata.es/shapes#d5558b78a839cb5687a4e9221313b122> , <https://astrea.linkeddata.es/shapes#c7faeb0010e38546fad464e128f721a0> , <https://astrea.linkeddata.es/shapes#01901444b4ac58d231d31fbb4b743c17> , <https://astrea.linkeddata.es/shapes#436295c2e8e94f40c587ff2378fd93a5> , <https://astrea.linkeddata.es/shapes#dc8174164d5d3ff833b80ff3e90d72a1> , <https://astrea.linkeddata.es/shapes#706881cf96adc043823f0cb5e4f36fc3> , <https://astrea.linkeddata.es/shapes#27da5013d831bde24ea746fa069fa121> , <https://astrea.linkeddata.es/shapes#e2c5427c4a1e2bc6ae7cc1f96e7e0973> , <https://astrea.linkeddata.es/shapes#f5030a1fa616219fd2eaac6ed62ffb41> , <https://astrea.linkeddata.es/shapes#f81a2cc30138e6caf127d9b2339e331c> , <https://astrea.linkeddata.es/shapes#f642a665f66b605d1efedefcae622855> , <https://astrea.linkeddata.es/shapes#ceec34d0ec53fae55249297aa9167848> , <https://astrea.linkeddata.es/shapes#54c83c814f1076442142bace79c6dd6d> , <https://astrea.linkeddata.es/shapes#8f09cb741664a6d2c55b270a4fd5ea92> , <https://astrea.linkeddata.es/shapes#83e3531109c53134eafe9ac92064473a> , <https://astrea.linkeddata.es/shapes#a318ae543a919912eea61903d245d275> , <https://astrea.linkeddata.es/shapes#a942f31359066ceebac78bdc298ea9b7> , <https://astrea.linkeddata.es/shapes#f015a802bba1bddc7a573356c641b408> , <https://astrea.linkeddata.es/shapes#200c95dba2f6ff59bac2bec75570300d> , <https://astrea.linkeddata.es/shapes#66c250596f6448369b6e6d0ef11db387> , <https://astrea.linkeddata.es/shapes#395ca096e75bb81745589e24321afab9> , <https://astrea.linkeddata.es/shapes#11f6a811840f943d0de0aec14226e357> , <https://astrea.linkeddata.es/shapes#26ffe24b6a1408fbcb3c81bbdc671894> , <https://astrea.linkeddata.es/shapes#4151814324c68c36b41d9992cff7f87b> , <https://astrea.linkeddata.es/shapes#e8b43648ad53a7b205a6d38ec06e3782> , <https://astrea.linkeddata.es/shapes#b38c4d483edb1b38382544c3ec1852b0> , <https://astrea.linkeddata.es/shapes#6c812cc405db0991689ce30187ba5a93> , <https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e> , <https://astrea.linkeddata.es/shapes#80c6fdb569ee79efb0e684b3b752426c> , <https://astrea.linkeddata.es/shapes#01db84c2d7d828af3882eaf24cdb46e5> , <https://astrea.linkeddata.es/shapes#58c28328687652ce85afa7cb5091c1de> , <https://astrea.linkeddata.es/shapes#5a594a430c95848910cd32ac7fc0f787> , <https://astrea.linkeddata.es/shapes#34d2ac00dbef9c5644870b6e6c95e5cf> , <https://astrea.linkeddata.es/shapes#cfe058656addfc9ca58f1cfd6f90a722> , <https://astrea.linkeddata.es/shapes#f04b3e59c9a72602f12489eab968f39e> , <https://astrea.linkeddata.es/shapes#c485b34f82c4e1ab2fdb1c2de2f0dc4e> , <https://astrea.linkeddata.es/shapes#cdeaa5482fc12826f6fadaa38e578ac3> , <https://astrea.linkeddata.es/shapes#1eed017e229e170e7768d65b9df0336b> , <https://astrea.linkeddata.es/shapes#3f7aafab524ada5b40e0b9d4027061f0> , <https://astrea.linkeddata.es/shapes#53929aa573e9eb4488b67cd3ef9b1fc5> , <https://astrea.linkeddata.es/shapes#f62905e3e58deee3cf533996dc62cd87> , <https://astrea.linkeddata.es/shapes#6204ce101c7ecccd8db7ad9bc27fbd35> , <https://astrea.linkeddata.es/shapes#b2390642316edffe3a05899cbee215e4> , <https://astrea.linkeddata.es/shapes#64f3b3c2cfb30fef82a66463f0901e14> , <https://astrea.linkeddata.es/shapes#b8eb23ad24658d73d51171e39f1825e5> , <https://astrea.linkeddata.es/shapes#041cb10c10b35ee59f0da2ceae49ac9b> , <https://astrea.linkeddata.es/shapes#8d004bc101024edaebef02e86096456f> , <https://astrea.linkeddata.es/shapes#23108969aa9ec7e6b59df032f73e5f51> , <https://astrea.linkeddata.es/shapes#3e360bef1ec0f48aeb0e31786ebf68ce> , <https://astrea.linkeddata.es/shapes#9fe32cafded245a8256a5f08be2c9bf9> , <https://astrea.linkeddata.es/shapes#25e491de904a9275f7f8ec78108c3398> , <https://astrea.linkeddata.es/shapes#48183fa0bce15c7a45e3386471543af3> , <https://astrea.linkeddata.es/shapes#1e4a8210bb918841b2d615aafb4e71be> , <https://astrea.linkeddata.es/shapes#f9275da69bbea83dad2e66b14569aa3f> , <https://astrea.linkeddata.es/shapes#b3de319bfc3d4b2a93da02199c544c5e> , <https://astrea.linkeddata.es/shapes#7e9bc7ce74668740de1e179e1493efd2> , <https://astrea.linkeddata.es/shapes#64eb11f949e7f56f2e9b0df01c7a302f> , <https://astrea.linkeddata.es/shapes#1d98abc80a52fd92425da1664e793b19> , <https://astrea.linkeddata.es/shapes#d4f104a1b41c84635bf162da8b3937a1> , <https://astrea.linkeddata.es/shapes#d26a0bb3a823b205d9b8038667e3acf0> , <https://astrea.linkeddata.es/shapes#ddd9f4a1b8ff63d398feec114fd72650> , <https://astrea.linkeddata.es/shapes#3a254d6a5c28bae7be97548f236ee070> , <https://astrea.linkeddata.es/shapes#8039c5b998ce5507fef3f197592cfe07> , <https://astrea.linkeddata.es/shapes#af7a70c0aa5b757bb0aed7d96a0c510e> , <https://astrea.linkeddata.es/shapes#9363567b9c1254d4d622e83672028674> , <https://astrea.linkeddata.es/shapes#b4e70dcfead83bcef212061ecba45a8d> , <https://astrea.linkeddata.es/shapes#73fd173c755864bfc401306216c96952> , <https://astrea.linkeddata.es/shapes#f6eb1aa4d9250e47e565f1657ed2b353> , <https://astrea.linkeddata.es/shapes#75902e2d33957f8bc593f05e449174dd> , <https://astrea.linkeddata.es/shapes#2382aee7b1bd9b23c460e3d69ac0d38e> , <https://astrea.linkeddata.es/shapes#2e113007a6c9a5d532a12584cdab6888> , <https://astrea.linkeddata.es/shapes#303b48b60c77dbcda0a2b54e7634b691> , <https://astrea.linkeddata.es/shapes#c479f3cf3848e2c316b04ed1f30c6c56> , <https://astrea.linkeddata.es/shapes#10287dbb2acc1b37ef96247868bcd999> , <https://astrea.linkeddata.es/shapes#b15e9c4be0bf18ed0e4b72ae5b94f8c8> , <https://astrea.linkeddata.es/shapes#b3623e99caa7391c2bcfcbe0e96aa138> , <https://astrea.linkeddata.es/shapes#ace3698610e0eec2d4455cfcc1409f0f> , <https://astrea.linkeddata.es/shapes#12859bd8523c020fd9878d0f6f2ae288> , <https://astrea.linkeddata.es/shapes#99610b5ae5a799f64e54c3b8b3711d4a> , <https://astrea.linkeddata.es/shapes#c45232c305e5ad0269b040f1339d36fe> , <https://astrea.linkeddata.es/shapes#a6bfd60f3eb2ba5d5f0147b78df380fd> , <https://astrea.linkeddata.es/shapes#6b1947b0f8c81432d2511025ce69686e> , <https://astrea.linkeddata.es/shapes#00530b256e73dfa5f753a7de0d9fcb42> , <https://astrea.linkeddata.es/shapes#dec581b36608a2210a9342e2818c94c2> , <https://astrea.linkeddata.es/shapes#da2012d31b1a8ecdb2924fc6e1175702> , <https://astrea.linkeddata.es/shapes#a7a4ee24940b0e4df9ba9cc43273fd83> , <https://astrea.linkeddata.es/shapes#dfcd70e6f039142ad784080272348230> , <https://astrea.linkeddata.es/shapes#85295c9875c1e34b9bbeb4a87def6fbb> , <https://astrea.linkeddata.es/shapes#3ccd80e569f367c26f2dcabc51ecb1d1> , <https://astrea.linkeddata.es/shapes#d3fc58a4f80d19ffba9ea88e5fe7fa1d> , <https://astrea.linkeddata.es/shapes#284d593a9dc0260ce3a64519baa306e1> , <https://astrea.linkeddata.es/shapes#4613c81ce0cc675e356d1f275ab9f45a> , <https://astrea.linkeddata.es/shapes#eb0ba4744111027768b6721f9e1053d2> , <https://astrea.linkeddata.es/shapes#5e2db57a23531609ce5b53f00c8f0e86> , <https://astrea.linkeddata.es/shapes#cd12e2441aa1102b06a0353ea436d4f2> , <https://astrea.linkeddata.es/shapes#523e6b48b16743f3b1da8c267c623e96> , <https://astrea.linkeddata.es/shapes#9357a255eb73d2b4213dd78f307b728c> , <https://astrea.linkeddata.es/shapes#d8c2e5b709db5e47b6c25f010bcb5c26> , <https://astrea.linkeddata.es/shapes#29a44de379ccf4ca1919076e0296a818> , <https://astrea.linkeddata.es/shapes#068a9c725c84817333a82eea752b0544> , <https://astrea.linkeddata.es/shapes#d1aefb0361fd1541623c27fa907177a7> , <https://astrea.linkeddata.es/shapes#8504025f191319c3df33db7ff0800c1d> , <https://astrea.linkeddata.es/shapes#55fd95edcf113278c6cc1d345b338d27> , <https://astrea.linkeddata.es/shapes#ba485e29a4f7bda23bd7efcfa56e5cac> , <https://astrea.linkeddata.es/shapes#ac20a83e734b058c5d8df9ff2e4d7b4f> , <https://astrea.linkeddata.es/shapes#575fba19c3d01370075e04647f571640> , <https://astrea.linkeddata.es/shapes#b3219f59ef2acd932ae18a81cae721e5> , <https://astrea.linkeddata.es/shapes#279254a347c131077c74007a1d0050e8> , <https://astrea.linkeddata.es/shapes#29864c29721b86c963e02d0acb977995> , <https://astrea.linkeddata.es/shapes#46a143a889fe2d8dda2393806db47a18> , <https://astrea.linkeddata.es/shapes#d3ca334753f70199ae916bcb82466661> , <https://astrea.linkeddata.es/shapes#5634d0ef510398926533dd7bf64bc3a5> , <https://astrea.linkeddata.es/shapes#e64e1459ce53990afead798738998f70> , <https://astrea.linkeddata.es/shapes#f365024db2d01ab215996549bf069a84> , <https://astrea.linkeddata.es/shapes#aaf5d107b9736e09c954e0efd950ff56> , <https://astrea.linkeddata.es/shapes#a12132f2424a6b1be18b2f1e6e49d458> , <https://astrea.linkeddata.es/shapes#23957a4e3a4fe733848a71deb29ad6ad> , <https://astrea.linkeddata.es/shapes#ee0a201218cdb10ce7439d4276e29877> , <https://astrea.linkeddata.es/shapes#730a3a1523a4df42a704b60911bb6b70> , <https://astrea.linkeddata.es/shapes#ad5694b618e885011da9b43063c2d18f> , <https://astrea.linkeddata.es/shapes#f0caef9550f5aaa5218365956d74f996> , <https://astrea.linkeddata.es/shapes#b7c1ae5f2aa3968f5821f64c87421c7a> , <https://astrea.linkeddata.es/shapes#688d5dbab397525bdb77a5a383c243c4> , <https://astrea.linkeddata.es/shapes#bd9ad3db0ff9e6aaa258d4de1280fe68> , <https://astrea.linkeddata.es/shapes#7f75090d6783bed7b0ce1c6e8a352aba> , <https://astrea.linkeddata.es/shapes#f31d09b50ca6c635a37c96926dfbbf71> , <https://astrea.linkeddata.es/shapes#740eb2e6313c4e2e24c19696a81bbc21> , <https://astrea.linkeddata.es/shapes#d978f9a24a8449ae74343bf2e410339f> , <https://astrea.linkeddata.es/shapes#ebf9da5fffd6c592b79705641472059d> , <https://astrea.linkeddata.es/shapes#7f171bf0825b5c6c17c3f70f504e9d83> , <https://astrea.linkeddata.es/shapes#c1aa2eae709701102739dd80c0725e3d> , <https://astrea.linkeddata.es/shapes#b520e24b9e140d23bf81fcfdeee0412b> , <https://astrea.linkeddata.es/shapes#a5ebbbae63ca1afc9c257dde33e84c23> , <https://astrea.linkeddata.es/shapes#897c073c8bf5d1321366e77dda2d63ac> , <https://astrea.linkeddata.es/shapes#673ff3f119b93c0e30402a734acb732c> , <https://astrea.linkeddata.es/shapes#61b81b39bbee5162de3ceb5e14e4d869> , <https://astrea.linkeddata.es/shapes#efcee39ed82f602094d0158f55d7aeea> , <https://astrea.linkeddata.es/shapes#8be248a4f26f58630503a15b28bf1f1c> , <https://astrea.linkeddata.es/shapes#62965837c37adb31cd0492806dec73c8> , <https://astrea.linkeddata.es/shapes#3ac995195e6e39e2468d7747dda3be55> , <https://astrea.linkeddata.es/shapes#8cc7f48f1e519cc26cba4fe226730b77> , <https://astrea.linkeddata.es/shapes#9646113648f837ac461f1cd5155f1cb3> , <https://astrea.linkeddata.es/shapes#1050f6ed40b985d04bc8b72359e4c56d> , <https://astrea.linkeddata.es/shapes#9dafe5387def8b1c61bd4159d23736d7> , <https://astrea.linkeddata.es/shapes#efa12476805bc0648193261115d62655> , <https://astrea.linkeddata.es/shapes#da1e507c63eb3499c1fb215bc866af8f> , <https://astrea.linkeddata.es/shapes#0387446d7b21a35e0ac74e54f4dfb93b> , <https://astrea.linkeddata.es/shapes#09a26a4ca171d484368afabb03e8aebb> , <https://astrea.linkeddata.es/shapes#4aec17c2127a2d7ca539c6e5284c7f50> , <https://astrea.linkeddata.es/shapes#48da083b5ac1a7cf746487e34fd7161d> , <https://astrea.linkeddata.es/shapes#ffe4fe4764f518ae5ddcaa455fb30a4c> , <https://astrea.linkeddata.es/shapes#491ed2a1bf7cc952de28e115d0123e28> , <https://astrea.linkeddata.es/shapes#ad13309da032908f13a6f05df095f3e2> , <https://astrea.linkeddata.es/shapes#fea2c88db25ec7fae776a3efd5015a3d> , <https://astrea.linkeddata.es/shapes#67ed907d728cc5aaa913f608c26fe040> , <https://astrea.linkeddata.es/shapes#b8a95277911efb292860bde113480b72> , <https://astrea.linkeddata.es/shapes#fdaa8c6ec863698bc5d2dfdd9bc5decb> , <https://astrea.linkeddata.es/shapes#c97fbab527fcdc3ee7a818d27143b49a> , <https://astrea.linkeddata.es/shapes#84074f976bd346c9cbbea5ee78718ffd> , <https://astrea.linkeddata.es/shapes#03721a676ab3a6a972a71d67a664313c> , <https://astrea.linkeddata.es/shapes#6a2d2f80399df64eaf397fb12325fe0b> , <https://astrea.linkeddata.es/shapes#8ac182502cf1c19b2d4ffb798e5c2f54> , <https://astrea.linkeddata.es/shapes#0a696027b5e2f9e6f1da7d6152655359> , <https://astrea.linkeddata.es/shapes#634aee843857f931de523f226a76f5b2> , <https://astrea.linkeddata.es/shapes#e279f1676282fdfd5ca805cd7bd48a15> , <https://astrea.linkeddata.es/shapes#7d4dd57e48f352271eeafa12d50c96ca> , <https://astrea.linkeddata.es/shapes#f8ce7890f9932a6c89fcd66501753203> , <https://astrea.linkeddata.es/shapes#564c4f38e42665fd1f1febce682c48f7> , <https://astrea.linkeddata.es/shapes#45c43e59d155a20b950e8c8fee3f02e3> , <https://astrea.linkeddata.es/shapes#cfbce2755f0f0aec805df6bfa08fc534> , <https://astrea.linkeddata.es/shapes#dac5bad53db56f59ab3394cf02171e8a> , <https://astrea.linkeddata.es/shapes#2ca0638b71e6586686ac36134aea5636> , <https://astrea.linkeddata.es/shapes#4dad90bba219d2ab3ae7f31abd5a5600> , <https://astrea.linkeddata.es/shapes#5a085a4b7b830096055a9f76167d624d> , <https://astrea.linkeddata.es/shapes#f9da1a4bed6072e2299470c25ec80b2b> , <https://astrea.linkeddata.es/shapes#a7d93cb6fe1f44ff888145521cbe1e67> , <https://astrea.linkeddata.es/shapes#b10bee469ee7ebb4878862f7c7e4e922> , <https://astrea.linkeddata.es/shapes#828ef25c346a5431a6293ebdd8ab38de> , <https://astrea.linkeddata.es/shapes#a91948151a4ba6555784fefef52ca3ff> , <https://astrea.linkeddata.es/shapes#ff7b1de7b99f4a27d689fb697e26528a> , <https://astrea.linkeddata.es/shapes#cc62e0ef8cddc7fb6165c040cfd504d8> , <https://astrea.linkeddata.es/shapes#7e4cf7f6d43477e384cf5c760cb285e1> , <https://astrea.linkeddata.es/shapes#8483672a1aef08471ac75b903536ab1a> , <https://astrea.linkeddata.es/shapes#ee3f281e42db016600a24381e7abbc21> , <https://astrea.linkeddata.es/shapes#c39a2a9b18527ab6be9b1bfdbcdbc135> , <https://astrea.linkeddata.es/shapes#124bba316ea131d4d2d91d53114b0e57> , <https://astrea.linkeddata.es/shapes#f8f8bd7a4f42b9f0513acde197f0f8b0> , <https://astrea.linkeddata.es/shapes#fcc4233d0181562cf6691e1620c48856> , <https://astrea.linkeddata.es/shapes#f8900edcb7c06af07b893151d050aded> , <https://astrea.linkeddata.es/shapes#35d0dd006b28a552f70a3cdecd91358d> , <https://astrea.linkeddata.es/shapes#f340cbbbf0ce43bb23d8d31e764e4405> , <https://astrea.linkeddata.es/shapes#13cbb3f28a3d8acf79b37e8a1d71e1e3> , <https://astrea.linkeddata.es/shapes#6e83ffdb414cefcea2873a2d8f6a661d> , <https://astrea.linkeddata.es/shapes#0882fd0ebcfeb4b87c805e1e4a7edccb> , <https://astrea.linkeddata.es/shapes#6d792142cd0bfda960872aeb14a66e06> , <https://astrea.linkeddata.es/shapes#b518ca36ae4800054bab12f49209f10a> , <https://astrea.linkeddata.es/shapes#b431e8650cde82c89c860253a263d065> , <https://astrea.linkeddata.es/shapes#0028ef164fb1d782cc6f86fec42fbdd1> , <https://astrea.linkeddata.es/shapes#41cb53f0e52ac386fce3c1d16ed5edb5> , <https://astrea.linkeddata.es/shapes#adcf52a14b54c78582ae37409b9dda18> , <https://astrea.linkeddata.es/shapes#652f1bcd16b5b38518d48b7be75cfe31> , <https://astrea.linkeddata.es/shapes#7a8155ee254f48113a666cbd86440390> , <https://astrea.linkeddata.es/shapes#0d08e17eec2aa32d3c0c6ddc57e32b9c> , <https://astrea.linkeddata.es/shapes#66ca798bc897058bde52d0579db23ade> , <https://astrea.linkeddata.es/shapes#623c5f8374c677a5f5c14c56b10555c7> , <https://astrea.linkeddata.es/shapes#243eac81ed505354f53b2db6ee7a2840> , <https://astrea.linkeddata.es/shapes#5afcfe471959c3217c9e12c88f777ef2> , <https://astrea.linkeddata.es/shapes#d42a4a15a4c0845b5f604326b67738a2> , <https://astrea.linkeddata.es/shapes#e9574569605f6f2d925b87ce2e3b2a5d> , <https://astrea.linkeddata.es/shapes#bb2d80424a51cdb695f1ae5c3c20199d> , <https://astrea.linkeddata.es/shapes#ed2b7748720ac8139bd16a41fbf0165b> , <https://astrea.linkeddata.es/shapes#d24b0b3797403ceddb91e8ac82248b18> , <https://astrea.linkeddata.es/shapes#85428480047d130f427a1338572e66bb> , <https://astrea.linkeddata.es/shapes#d7cc49d1771e4de939cf00164adc13f6> , <https://astrea.linkeddata.es/shapes#d9faaf56986c00a494d4b1c414908b29> , <https://astrea.linkeddata.es/shapes#fc7f230a666905814a3e897f7cb98352> , <https://astrea.linkeddata.es/shapes#351a85cc7bf3a227a1d43f5dbdd8c2b1> , <https://astrea.linkeddata.es/shapes#602a904135fe7a1f4dd0a11264735058> , <https://astrea.linkeddata.es/shapes#c0f25f243c0a137c9e2af2f0942ecb1f> , <https://astrea.linkeddata.es/shapes#c9702b50b0580220b1dd3c6dc23da32b> , <https://astrea.linkeddata.es/shapes#3d136da7dab4dcd8472a630ae2f0433f> , <https://astrea.linkeddata.es/shapes#a68dcc5eb33b70de4b52557f7e1cbdad> , <https://astrea.linkeddata.es/shapes#5775ab60cd06db3c2f972f81aeba13c8> , <https://astrea.linkeddata.es/shapes#6b8caa8bdc362744375c8380709af835> , <https://astrea.linkeddata.es/shapes#a6d6dba55ddce3542552ca452502629a> , <https://astrea.linkeddata.es/shapes#2466d91df622f6604547708b51aba836> , <https://astrea.linkeddata.es/shapes#507def21f43543f1cb380ad2681b7e74> , <https://astrea.linkeddata.es/shapes#f206e4770d1f2c81693014255738db43> , <https://astrea.linkeddata.es/shapes#8b00d9411683ef79eba2a89603789219> , <https://astrea.linkeddata.es/shapes#ff110c3a875431238dc39ff63e3c591a> , <https://astrea.linkeddata.es/shapes#a8ee7167f89ec0ebd03a9996cafea29c> , <https://astrea.linkeddata.es/shapes#5d9216b9047e521d9148bf329ab34705> , <https://astrea.linkeddata.es/shapes#639e2ce818d038e60b7894bceff3e746> , <https://astrea.linkeddata.es/shapes#944d271aa538320e84809c93307e7b1d> , <https://astrea.linkeddata.es/shapes#37dc10ddfaaeacb047851eb660aabf30> , <https://astrea.linkeddata.es/shapes#dd8fb1c0512c7c8417f82eba3bdada28> , <https://astrea.linkeddata.es/shapes#e8a4ff372746084b64c61c149b067597> , <https://astrea.linkeddata.es/shapes#7215159ffa62729cbc6c57e4f36a7d0c> , <https://astrea.linkeddata.es/shapes#caba1d6abfcdf5b1e3085188f4db2a98> , <https://astrea.linkeddata.es/shapes#d86fd3729831c14980a3d62547556abb> , <https://astrea.linkeddata.es/shapes#756652bcb5411e3d20eaf7b093becb56> , <https://astrea.linkeddata.es/shapes#42c90ba236c04613a85fbdc5cc0d7693> , <https://astrea.linkeddata.es/shapes#0a6b79f2d1ab86ecbac7cb4db69a92cf> , <https://astrea.linkeddata.es/shapes#f0a55904368d14f52d7c4182e4823455> , <https://astrea.linkeddata.es/shapes#3434d73e2b098bc5023bc045202f2232> , <https://astrea.linkeddata.es/shapes#78b9e4ff6b5bbe0cb8a7b8a313d7f381> , <https://astrea.linkeddata.es/shapes#e5d39bc4499a33d095fae9d53037c0d7> , <https://astrea.linkeddata.es/shapes#03ced3871aa22f995c69212efb9719e3> , <https://astrea.linkeddata.es/shapes#1944ec26dba5fdffae05ad6b72e6a609> , <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> , <https://astrea.linkeddata.es/shapes#7182631c315b670fc97fd9cb43eebaac> , <https://astrea.linkeddata.es/shapes#62bf09c94c39fde7908aa3761f54abd8> , <https://astrea.linkeddata.es/shapes#f7696af947fd4e63e73813160e34c62b> , <https://astrea.linkeddata.es/shapes#f06894598cacb03370b852ae27148386> , <https://astrea.linkeddata.es/shapes#5f0ac685b871ee18d7f66624fb1c91fc> , <https://astrea.linkeddata.es/shapes#59f030fd37ed9ccfb96fc5f5682f0dea> , <https://astrea.linkeddata.es/shapes#1f0fe019dd5ebea4db24053f1706c102> , <https://astrea.linkeddata.es/shapes#3662b40c6dd8313d2d267690ca91d1b8> , <https://astrea.linkeddata.es/shapes#e585c9dc0929617d4366127a99fa7098> , <https://astrea.linkeddata.es/shapes#fdab869f9225b8b6dc56e4e67310652b> , <https://astrea.linkeddata.es/shapes#30f8cf00c50164acab621d53c105494e> , <https://astrea.linkeddata.es/shapes#26d021da31312e4e4325dbfb4b79dadf> , <https://astrea.linkeddata.es/shapes#adbb2ff75484500931ed5c4fe1982d33> , <https://astrea.linkeddata.es/shapes#4b70a53ff56cafff653bd703cdd824e7> , <https://astrea.linkeddata.es/shapes#84ec89d5d60657a848282a85bc8295b7> , <https://astrea.linkeddata.es/shapes#594498501505c6dbb0f52ad72a5dcecd> , <https://astrea.linkeddata.es/shapes#31024798859924e7bfbd962a725c504b> , <https://astrea.linkeddata.es/shapes#9975d716ab1c36f14e01b7b6d55bfdf7> , <https://astrea.linkeddata.es/shapes#3a2c5686e5e7cfcf24f1abe64844ccd0> , <https://astrea.linkeddata.es/shapes#5454ec16934a5335aaf92db0ac165122> , <https://astrea.linkeddata.es/shapes#402f9d16531a1ba8afe6a65af0dd2528> , <https://astrea.linkeddata.es/shapes#b5ad38dbdf89e1ea8e95ecc33a92e89a> , <https://astrea.linkeddata.es/shapes#d5b3a5a0278efba584cdddaa826b086a> , <https://astrea.linkeddata.es/shapes#729aa33264d9b325d66ad2f624ffb4ab> , <https://astrea.linkeddata.es/shapes#5ac6f2d41a8c90b814d951ced3b69505> , <https://astrea.linkeddata.es/shapes#c869532d0dd03ced15e3ee5799b62a91> , <https://astrea.linkeddata.es/shapes#52c60b1f6e87f3556f38115444b02e4a> , <https://astrea.linkeddata.es/shapes#4138a353bb8ac62ac048ef650d3fd353> , <https://astrea.linkeddata.es/shapes#4374b515e882ef0b3c421c97f5844e80> , <https://astrea.linkeddata.es/shapes#37c510c41a7e3d10c8a8d5249e3559f1> , <https://astrea.linkeddata.es/shapes#a647b4722e3c6c89402d4c7c5afc118c> , <https://astrea.linkeddata.es/shapes#55826ece255f258325b5fce523dbf5b7> , <https://astrea.linkeddata.es/shapes#77e7736d36868d88494baadecb77430e> , <https://astrea.linkeddata.es/shapes#87e94b44098568af6e2846f1b308d652> , <https://astrea.linkeddata.es/shapes#3706e931c3bf3726975eda5d8507ca68> , <https://astrea.linkeddata.es/shapes#3792c5cb0956533fff07b18598c9dfb1> , <https://astrea.linkeddata.es/shapes#f113f3473b0101b765eee361beca5587> , <https://astrea.linkeddata.es/shapes#27e50a33b8e8ee45f9e97f498d619016> , <https://astrea.linkeddata.es/shapes#27707f7bef040eab3fe801880acfae52> , <https://astrea.linkeddata.es/shapes#5b8520b4ac04429f0c141192e08aef02> , <https://astrea.linkeddata.es/shapes#d9c871f746d3e0e3ac21879690b69dad> , <https://astrea.linkeddata.es/shapes#26eeb2dfae6ab2bbdd4b079ad7412c10> , <https://astrea.linkeddata.es/shapes#dfcd5fc30011d551739f9877c244fb84> , <https://astrea.linkeddata.es/shapes#91788f4d63c3b1e589f9bf059f8790e1> , <https://astrea.linkeddata.es/shapes#41b8940cc356ee951e9af1daa10334ce> , <https://astrea.linkeddata.es/shapes#22baaf3b60d9704f4131aea40cdbd858> , <https://astrea.linkeddata.es/shapes#c0f9477108ed45527eb347355f1f14ee> ;
+<https://w3id.org/def/astrea#generatedShapesFrom>
+<https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#4b70a53ff56cafff653bd703cdd824e7>
+a               sh:NodeShape ;
+sh:description  "Please determine whether the AI system is overseen by a Human-on-the-Loop."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HOQ1.3 .
+
+<https://astrea.linkeddata.es/shapes#1617a2480e903b0a8ce33cf0ac0ebe68>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IdentifyingPotentiallyInDirectlyAffectedSubjects .
+
+<https://astrea.linkeddata.es/shapes#37c510c41a7e3d10c8a8d5249e3559f1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> ;
+sh:targetClass  prov:Influence .
+
+<https://astrea.linkeddata.es/shapes#138b07a518703b7d759bdd1e709b6d17>
+a               sh:NodeShape ;
+sh:description  "Did you assess the dependency of a critical AI system’s decisions on its stable and reliable behaviour?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ3 .
+
+<https://astrea.linkeddata.es/shapes#f7716ee0d58344803c5d80d3a8a76561>
+a               sh:NodeShape ;
+sh:description  "Reliability, Fall-back plans and Reproducibility"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPR .
+
+<https://astrea.linkeddata.es/shapes#80c6fdb569ee79efb0e684b3b752426c>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      :isAwareOfInterctionWithAISystem ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#9861359aff3873171bd4305352af1be0>
+a               sh:NodeShape ;
+sh:description  "Are end-users or subjects informed that they are interacting with an AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ2.1 .
+
+<https://astrea.linkeddata.es/shapes#31024798859924e7bfbd962a725c504b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TradeUnion .
+
+<https://astrea.linkeddata.es/shapes#78b9e4ff6b5bbe0cb8a7b8a313d7f381>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IndirectlyAffectedStakeholder .
+
+<https://astrea.linkeddata.es/shapes#23d0fc727546dee2eb47f5cc8205f898>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasQuotedFrom" , "An entity is derived from an original entity by copying, or 'quoting', some or all of it."@en ;
+sh:class          prov:Entity ;
+sh:description    "An entity is derived from an original entity by copying, or 'quoting', some or all of it."@en ;
+sh:name           "wasQuotedFrom" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasQuotedFrom .
+
+<https://astrea.linkeddata.es/shapes#75902e2d33957f8bc593f05e449174dd>
+a               sh:NodeShape ;
+sh:description  "Stakeholder Participation"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :SP .
+
+<https://astrea.linkeddata.es/shapes#ceaef8925cb459425cd725a6833bc745>
+a               sh:NodeShape ;
+sh:description  "Did you establish any detection and response mechanisms for undesirable adverse effects of the AI system for the end-user or subject?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HOQ3 .
+
+<https://astrea.linkeddata.es/shapes#c6e1cd22c1c2e89372a5d3a8995944ff>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemCharacteristic .
+
+<https://astrea.linkeddata.es/shapes#102c3a1288aca6a52aa00c460f4112d8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ReliabilityRequirement .
+
+<https://astrea.linkeddata.es/shapes#b8a95277911efb292860bde113480b72>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfUserManipulation .
+
+<https://astrea.linkeddata.es/shapes#f0caef9550f5aaa5218365956d74f996>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Worker .
+
+<https://astrea.linkeddata.es/shapes#e8d6438c425d2a410e2697b58ea65257>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToMitigateRiskOfUserManipulation .
+
+<https://astrea.linkeddata.es/shapes#d372136e32c69fd359a4d68262eaa596>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnHumanBehaviour .
+
+<https://astrea.linkeddata.es/shapes#3706e931c3bf3726975eda5d8507ca68>
+a               sh:NodeShape ;
+sh:description  "Technical Robustness and Safety"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TRS .
+
+<https://astrea.linkeddata.es/shapes#a23a6554a5f6356b0ba40b5cb42ed870>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DataProtectionMechanism .
+
+<https://astrea.linkeddata.es/shapes#602a904135fe7a1f4dd0a11264735058>
+a               sh:NodeShape ;
+sh:description  "Is your AI system being trained, or was it developed, by using or processing personal data (including special categories of personal data)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ1 .
+
+<https://astrea.linkeddata.es/shapes#3d136da7dab4dcd8472a630ae2f0433f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :NonRepresentativeness .
+
+<https://astrea.linkeddata.es/shapes#62bf09c94c39fde7908aa3761f54abd8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DesignFault .
+
+<https://astrea.linkeddata.es/shapes#fa06250f2cd5b9daf282e1d4030e232a>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :riskIsMitigatedByMeasure .
+
+<https://astrea.linkeddata.es/shapes#f642a665f66b605d1efedefcae622855>
+a               sh:NodeShape ;
+sh:description  "Process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MechanismForThirdPartyReports .
+
+<https://astrea.linkeddata.es/shapes#9fe32cafded245a8256a5f08be2c9bf9>
+a               sh:NodeShape ;
+sh:description  "Did you consider the privacy and data protection implications of the AI system's non-personal training-data or other processed non-personal data?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ3 .
+
+<https://astrea.linkeddata.es/shapes#4dad90bba219d2ab3ae7f31abd5a5600>
+a               sh:NodeShape ;
+sh:description  "Have the humans (human-in-the-loop, human-on-the-loop, human-in-command) been given specific training on how to exercise oversight?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HOQ2 .
+
+<https://astrea.linkeddata.es/shapes#8fdd69090c6bab64959bfa8a104dcf09>
+a               sh:NodeShape ;
+sh:description  "Depending on the use case, did you establish mechanisms that allow flagging issues related to privacy concerning the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :PrQ2 .
+
+<https://astrea.linkeddata.es/shapes#01db84c2d7d828af3882eaf24cdb46e5>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :PurposeOfTool .
+
+<https://astrea.linkeddata.es/shapes#ba485e29a4f7bda23bd7efcfa56e5cac>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#55826ece255f258325b5fce523dbf5b7> ;
+sh:targetClass  :AISystemQualityMetric .
+
+<https://astrea.linkeddata.es/shapes#d3fc58a4f80d19ffba9ea88e5fe7fa1d>
+a            sh:PropertyShape ;
+sh:class     :DataQualityMeasure ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :usesQualityMeasure .
+
+<https://astrea.linkeddata.es/shapes#27e50a33b8e8ee45f9e97f498d619016>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ProvideTrainingForReSkillingAndUpSkilling .
+
+<https://astrea.linkeddata.es/shapes#6204ce101c7ecccd8db7ad9bc27fbd35>
+a            sh:PropertyShape ;
+sh:class     :AISystemRisk ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemHasRisk .
+
+<https://astrea.linkeddata.es/shapes#d42a4a15a4c0845b5f604326b67738a2>
+a               sh:NodeShape ;
+sh:description  "Any output made by the AI system; e.g., decision or recommendation  made by the AI system." ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#cc937d00bc2d35f838f4fde9ed44b15d> ;
+sh:targetClass  :AISystemOutcome .
+
+<https://astrea.linkeddata.es/shapes#6ce18466e5a6a2833c8f89b7c3662905>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMechanismsToFlagPoorPerformance .
+
+<https://astrea.linkeddata.es/shapes#3afb09d4aa26cfa0f09dc1b4e68ac3a3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskLevel .
+
+<https://astrea.linkeddata.es/shapes#d26a0bb3a823b205d9b8038667e3acf0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ALTAIQuestion .
+
+<https://astrea.linkeddata.es/shapes#0be21d9197ee7a9cecf0a72daafb6e25>
+a               sh:NodeShape ;
+sh:description  "Could the AI system generate confusion for some or all end-users or subjects on whether they are interacting with a human or AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ2 .
+
+<https://astrea.linkeddata.es/shapes#a3c9b8ac133b18170c8e197bd6fb9cc8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToMitigateRiskOfHumanAttachment .
+
+<https://astrea.linkeddata.es/shapes#48183fa0bce15c7a45e3386471543af3>
+a               sh:NodeShape ;
+sh:description  "Resilience to Attack and Security"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RAS .
+
+<https://astrea.linkeddata.es/shapes#f6ad96a9ca401295e0d39ecbdf9b9514>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RightToWithdrawConsent .
+
+<https://astrea.linkeddata.es/shapes#21ea03694ad98783d76a7adefc4abec9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AdoptingPbDDMechanisms> .
+
+<https://astrea.linkeddata.es/shapes#3792c5cb0956533fff07b18598c9dfb1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AvoidanceOfUnfairBias .
+
+<https://astrea.linkeddata.es/shapes#10961341bf39e9bf05c20d990ae85094>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskManagement .
+
+<https://astrea.linkeddata.es/shapes#53139c8c85610438de206f9a405f2b68>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#c97fbab527fcdc3ee7a818d27143b49a> ;
+sh:targetClass  :RiskMitigationMeasure .
+
+<https://astrea.linkeddata.es/shapes#124bb9d46322f57e10fd87eab69f6db5>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToMinimizeImpactOnDemocracy .
+
+<https://astrea.linkeddata.es/shapes#f31d09b50ca6c635a37c96926dfbbf71>
+a               sh:NodeShape ;
+sh:description  "Diversity, Non-discrimination and Fairness"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DNDF .
+
+<https://astrea.linkeddata.es/shapes#6d792142cd0bfda960872aeb14a66e06>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingProceduresToAvoidOverReliance .
+
+<https://astrea.linkeddata.es/shapes#0f667f40cfbb5d12568dfd5a4e49e90a>
+a               sh:NodeShape ;
+sh:description  "Material used to train users on how to use the AI system" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TrainingMaterial .
+
+<https://astrea.linkeddata.es/shapes#5388661b40491ae7473166a2ca4d10fb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MonitoringGoals .
+
+<https://astrea.linkeddata.es/report/0620946147>
+a       <https://w3id.org/def/astrea#ReportEntry> ;
+<https://w3id.org/def/astrea#message>
+"Shapes generated with no errors" ;
+<https://w3id.org/def/astrea#statusCode>
+"200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#b75f296dfcbba66af799486b782e07b2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ExplainingAISystemsDecision .
+
+<https://astrea.linkeddata.es/shapes#d4f104a1b41c84635bf162da8b3937a1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AIEthicsReviewBoard .
+
+<https://astrea.linkeddata.es/shapes#aaf5d107b9736e09c954e0efd950ff56>
+a               sh:NodeShape ;
+sh:description  "Did you consider the privacy and data protection implications of data collected, generated or processed over the course of the AI system's life cycle?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ2.7 .
+
+<https://astrea.linkeddata.es/shapes#6b1079e088f225c02008fc3647961680>
+a               sh:NodeShape ;
+sh:description  "Human Agency and Autonomy"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAA .
+
+<https://astrea.linkeddata.es/shapes#cd12e2441aa1102b06a0353ea436d4f2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ErrorOrigin .
+
+<https://astrea.linkeddata.es/shapes#e279f1676282fdfd5ca805cd7bd48a15>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#7f75090d6783bed7b0ce1c6e8a352aba> ;
+sh:targetClass  :Thread .
+
+<https://astrea.linkeddata.es/shapes#9975d716ab1c36f14e01b7b6d55bfdf7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemAccuracyLevel .
+
+<https://astrea.linkeddata.es/shapes#8504025f191319c3df33db7ff0800c1d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TechnicalRobustnessAndSafety .
+
+<https://astrea.linkeddata.es/shapes#1d98abc80a52fd92425da1664e793b19>
+a               sh:NodeShape ;
+sh:description  "Did you put in place verification and validation methods and documentation (e.g. logging) to evaluate and ensure different aspects of the AI system’s reliability and reproducibility?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPRQ2 .
+
+<https://astrea.linkeddata.es/shapes#62965837c37adb31cd0492806dec73c8>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AssessesDataQuality .
+
+<https://astrea.linkeddata.es/shapes#e6873a224125507add27929317c62b50>
+a               sh:NodeShape ;
+sh:description  "Did you research and use publicly available technical tools, that are state-of-the-art, to improve your understanding of the data, model and performance?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ2.2 .
+
+<https://astrea.linkeddata.es/shapes#fdab869f9225b8b6dc56e4e67310652b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImpactOnPrivacy> .
+
+<https://astrea.linkeddata.es/shapes#4fbe8d41a48458a9a326c1ad6a49cfe9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AssessingTeamInvolvementWithUsers .
+
+<https://astrea.linkeddata.es/shapes#ee3f281e42db016600a24381e7abbc21>
+a               sh:NodeShape ;
+sh:description  "Did you assess the societal impact of the AI system’s use beyond the (end-)user and subject, such as potentially indirectly affected stakeholders or society at large?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ISDQ1.1 .
+
+<https://astrea.linkeddata.es/shapes#a3f5ec7cd969a22bf0f9f501696916dd>
+a               sh:NodeShape ;
+sh:description  "Data minimisation, in particular personal data (including special categories of data)"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DGQ2.5 .
+
+<https://astrea.linkeddata.es/shapes#ceb5ae6ff9554d8c4d170cd7ce6d0578>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :CommunicatingExpectedLevelOfAccuracy .
+
+<https://astrea.linkeddata.es/shapes#c063e01ab50b15e7fb842b88c3f266c1>
+a               sh:NodeShape ;
+sh:description  "assess the societal impact of the AI system’s use beyond the (end-)user and subject, such as potentially indirectly affected stakeholders or society at large."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AssessingTheSocietalImpactOfAISystemOnSociety .
+
+<https://astrea.linkeddata.es/shapes#097deeb702e902ffddf059f846141dc9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :CommunicatingIssuesRelatedToBias .
+
+<https://astrea.linkeddata.es/shapes#c0f9477108ed45527eb347355f1f14ee>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Auditability .
+
+<https://astrea.linkeddata.es/shapes#2e7ffa1e8bce24b160c5ca7488e450a4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MonitoringAndDocumentingAccuracy .
+
+<https://astrea.linkeddata.es/shapes#ceec34d0ec53fae55249297aa9167848>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      :IsSelfLearning ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#da2012d31b1a8ecdb2924fc6e1175702>
+a            sh:PropertyShape ;
+sh:class     :AISystemPrivacyIssue ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemHasPrivacyIssue .
+
+<https://astrea.linkeddata.es/shapes#f5c15abebc603c140b3215a23293d635>
+a            sh:PropertyShape ;
+sh:class     :UsersPerceptionOfAISystem ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :hasPerception .
+
+<https://astrea.linkeddata.es/shapes#0b861d74f2132e00ab5c289364a24bb7>
+a               sh:NodeShape ;
+sh:description  "Did you organise risk training and, if so, does this also inform about the potential legal framework applicable to the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ2 .
+
+<https://astrea.linkeddata.es/shapes#d5558b78a839cb5687a4e9221313b122>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemTechnicalLimitation .
+
+<https://astrea.linkeddata.es/shapes#1d68d39b174c5f1d0a4450112581a8e8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemQualityAttribute .
+
+<https://astrea.linkeddata.es/shapes#f04b3e59c9a72602f12489eab968f39e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :InformingUsersOfSecurityPlans .
+
+<https://astrea.linkeddata.es/shapes#91bdb733f5c5f8b68ed72a7c77d5360b>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasAttributedTo" , "Attribution is the ascribing of an entity to an agent."@en ;
+sh:class          prov:Agent ;
+sh:description    "Attribution is the ascribing of an entity to an agent."@en ;
+sh:name           "wasAttributedTo" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasAttributedTo .
+
+<https://astrea.linkeddata.es/shapes#a942f31359066ceebac78bdc298ea9b7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemPrivacyIssue .
+
+<https://astrea.linkeddata.es/shapes#0db6f9b422edd3e2df980ff155ca9935>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Mechanism .
+
+<https://astrea.linkeddata.es/shapes#f5030a1fa616219fd2eaac6ed62ffb41>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#9b6da766517022b77426b441167aaf03> ;
+sh:targetClass  :TrainingDataset .
+
+<https://astrea.linkeddata.es/shapes#652f1bcd16b5b38518d48b7be75cfe31>
+a               sh:NodeShape ;
+sh:description  "Could the AI system generate confusion for some or all end-users or subjects on whether a decision, content, advice or outcome is the result of an algorithmic decision?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ1.1 .
+
+<https://astrea.linkeddata.es/shapes#d5e3ff936d6f464d1369b98bf512d8a3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :InformingUsersOfExistingAndPotentialRisks .
+
+<https://astrea.linkeddata.es/shapes#af7a70c0aa5b757bb0aed7d96a0c510e>
+a               sh:NodeShape ;
+sh:description  "For applications that can adversely affect individuals, have redress by design mechanisms been put in place?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ6 .
+
+<https://astrea.linkeddata.es/shapes#c0334318c318098759642cfe948a22f9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RightToBeForgotten .
+
+<https://astrea.linkeddata.es/shapes#3a0b3fb12c86c9c416d71be1933e7e39>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnSociety .
+
+<https://astrea.linkeddata.es/shapes#0387446d7b21a35e0ac74e54f4dfb93b>
+a            sh:PropertyShape ;
+sh:class     :ThirdPartyReport ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :thirdPartyReports .
+
+<https://astrea.linkeddata.es/shapes#6b8caa8bdc362744375c8380709af835>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#DataProtectionImpactAssessment> .
+
+<https://astrea.linkeddata.es/shapes#6d6d6aec07cf7b7ea4d3ecc7616181dc>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#d9faaf56986c00a494d4b1c414908b29> ;
+sh:targetClass  prov:Collection .
+
+<https://astrea.linkeddata.es/shapes#205fe48ea404fce5a7ad2a37c739bdc6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ProcedureToAvoidOverReliance .
+
+<https://astrea.linkeddata.es/shapes#5ac6f2d41a8c90b814d951ced3b69505>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GeneralSafety .
+
+<https://astrea.linkeddata.es/shapes#8d0995ee671377cd80a53f4b6be193a5>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Person" ;
+sh:name           "Person" ;
+sh:nodeKind       sh:IRI ;
+sh:property       <https://astrea.linkeddata.es/shapes#c479f3cf3848e2c316b04ed1f30c6c56> ;
+sh:targetClass    prov:Person .
+
+<https://astrea.linkeddata.es/shapes#594498501505c6dbb0f52ad72a5dcecd>
+a            sh:PropertyShape ;
+sh:class     :Standard ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :isCompliantWithStandard .
+
+<https://astrea.linkeddata.es/shapes#d67ba234d890e79fcf8fb35d64593214>
+a               sh:NodeShape ;
+sh:description  "Did you ensure that the AI system can be audited by independent third parties?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AudQ2 .
+
+<https://astrea.linkeddata.es/shapes#124bba316ea131d4d2d91d53114b0e57>
+a               sh:NodeShape ;
+sh:description  "assess whether the AI system's user interface is usable by those with special needs or disabilities or those at risk of exclusion"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AssessingUsability .
+
+<https://astrea.linkeddata.es/shapes#d768c50d5cd23805dc09edea6472cefc>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfHumanAttachment .
+
+<https://astrea.linkeddata.es/shapes#61fcedebb55abfa2e0288a46efcd8f2c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#DPODesignation> .
+
+<https://astrea.linkeddata.es/shapes#59f030fd37ed9ccfb96fc5f5682f0dea>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Skill .
+
+<https://astrea.linkeddata.es/shapes#b600d881d5f1e3daa472bb037c7123d5>
+a               sh:NodeShape ;
+sh:description  "Where possible, did you establish mechanisms to evaluate the environmental impact of the AI system’s development, deployment and/or use (for example, the amount of energy used and carbon emissions)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EWQ2 .
+
+<https://astrea.linkeddata.es/shapes#7f75090d6783bed7b0ce1c6e8a352aba>
+a            sh:PropertyShape ;
+sh:class     :Consequence ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :threatHasConsequence .
+
+<https://astrea.linkeddata.es/shapes#6581b2763c3914a455d95fe600c79b9c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToEnsureIntegrity .
+
+<https://astrea.linkeddata.es/shapes#4fa66ebb1fe1b6490e9ed2a796237ebc>
+a               sh:NodeShape ;
+sh:description  "Logging practices in place to record the decision(s) or recommendation(s) of the AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#ba062b35c9dd3ea25b70912510804612> ;
+sh:targetClass  :LoggingMechanism .
+
+<https://astrea.linkeddata.es/shapes#b3623e99caa7391c2bcfcbe0e96aa138>
+a               sh:NodeShape ;
+sh:description  "Did you identify the possible threats to the AI system (design faults, technical faults, environmental threats) and the possible consequences?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ2 .
+
+<https://astrea.linkeddata.es/shapes#b38c4d483edb1b38382544c3ec1852b0>
+a               sh:NodeShape ;
+sh:description  "What length is the expected timeframe within which you provide security updates for the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RASQ6.1 .
+
+<https://astrea.linkeddata.es/shapes#9d288da615e393c05063c6af5edb8e85>
+a               sh:NodeShape ;
+rdfs:label      "setting Mechanism For ThirdParty Report"@en ;
+sh:description  "Establishing a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system."@en ;
+sh:name         "setting Mechanism For ThirdParty Report"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :settingMechanismForThirdPartyReport .
+
+<https://astrea.linkeddata.es/shapes#db6eef5d2f45e64f265ccf99e624069c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfMaliciousUse .
+
+<https://astrea.linkeddata.es/shapes#0882fd0ebcfeb4b87c805e1e4a7edccb>
+a               sh:NodeShape ;
+sh:description  "Did you consider other definitions of fairness before choosing this one?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ5.1 .
+
+<https://astrea.linkeddata.es/shapes#c8b1d319d743c4d8132445b7301df4a9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToMinimizeImpactOnDemocracy .
+
+<https://astrea.linkeddata.es/shapes#2e113007a6c9a5d532a12584cdab6888>
+a               sh:NodeShape ;
+sh:description  "Third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) report on potential vulnerabilities, risks or biases in the AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ThirdPartyReport .
+
+<https://astrea.linkeddata.es/shapes#c30fe404139c9667ec643816e02c190a>
+a            sh:PropertyShape ;
+sh:class     :AISystemCharacteristic ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemHasCharacteristic .
+
+<https://astrea.linkeddata.es/shapes#27da5013d831bde24ea746fa069fa121>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MechanismToFlagPoorPerformance .
+
+<https://astrea.linkeddata.es/shapes#6a2d2f80399df64eaf397fb12325fe0b>
+a            sh:PropertyShape ;
+sh:class     :PurposeOfTool ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :toolIsUsedfor .
+
+<https://astrea.linkeddata.es/shapes#2382aee7b1bd9b23c460e3d69ac0d38e>
+a               sh:NodeShape ;
+sh:description  "How exposed is the AI system to cyber-attacks?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RASQ3 .
+
+<https://astrea.linkeddata.es/shapes#d18a97a852a607a0308fb5f8582bafcd>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "generated" ;
+sh:class          prov:Entity ;
+sh:name           "generated" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:generated .
+
+<https://astrea.linkeddata.es/shapes#c45232c305e5ad0269b040f1339d36fe>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#535289fd7f23b83526d639c0ac3d9ff5> ;
+sh:targetClass  :Error .
+
+<https://astrea.linkeddata.es/shapes#b2390642316edffe3a05899cbee215e4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ConsultingWithImpactedCommunitiesAboutDefinitionOfFairness .
+
+<https://astrea.linkeddata.es/shapes#cfbce2755f0f0aec805df6bfa08fc534>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Procedure .
+
+<https://astrea.linkeddata.es/shapes#9247658bee972ec989143cbf95ea1f58>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImplementingRightToBeForgotten> .
+
+<https://astrea.linkeddata.es/shapes#b6103dae4655f3616568aabe50f0ef4a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AdoptingDataGovernanceMeasures> .
+
+<https://astrea.linkeddata.es/shapes#c76710dd3ba0eb4f1eca2d87f7ba4555>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemRisk .
+
+<https://astrea.linkeddata.es/shapes#23108969aa9ec7e6b59df032f73e5f51>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUD .
+
+<https://astrea.linkeddata.es/shapes#bfd8aebace1373d99c799f8994e333e2>
+a               sh:NodeShape ;
+sh:description  "Measures used to assess the quality of training dataset." ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DataQualityMeasure .
+
+<https://astrea.linkeddata.es/shapes#b4e70dcfead83bcef212061ecba45a8d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Integrity .
+
+<https://astrea.linkeddata.es/shapes#d563e02be76fca0e53c44c88c7bedb61>
+a               sh:NodeShape ;
+sh:description  "Did you explain the decision(s) of the AI system to the users?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ExpQ1 .
+
+<https://astrea.linkeddata.es/shapes#5f0ac685b871ee18d7f66624fb1c91fc>
+a               sh:NodeShape ;
+sh:description  "Could a low level of accuracy of the AI system result in critical, adversarial or damaging consequences?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AcQ1 .
+
+<https://astrea.linkeddata.es/shapes#3a254d6a5c28bae7be97548f236ee070>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :InfluenceHumanDecisionMaking .
+
+<https://astrea.linkeddata.es/shapes#e5f1dc327bc5559a1390f9ab55c9ca93>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :UserOfAssistiveTechnologies .
+
+<https://astrea.linkeddata.es/shapes#06128ba8774ee84f8fb69cfdd96a2e45>
+a               sh:NodeShape ;
+sh:description  "Please determine whether the AI system is overseen by a Human-in-the-Loop."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HOQ1.2 .
+
+<https://astrea.linkeddata.es/shapes#96ff7a3826570967afaea9b598114411>
+a               sh:NodeShape ;
+sh:description  "Are there potential negative impacts of the AI system on the environment?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EWQ1 .
+
+<https://astrea.linkeddata.es/shapes#58c28328687652ce85afa7cb5091c1de>
+a               sh:NodeShape ;
+sh:description  "Did you take the impact of the AI system on the potential end-users and/or subjects into account?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUDQ4 .
+
+<https://astrea.linkeddata.es/shapes#adbb2ff75484500931ed5c4fe1982d33>
+a               sh:NodeShape ;
+sh:description  "Human Oversight"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HO .
+
+<https://astrea.linkeddata.es/shapes#8f09cb741664a6d2c55b270a4fd5ea92>
+a               sh:NodeShape ;
+sh:description  "Explainability"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Exp .
+
+<https://astrea.linkeddata.es/shapes#3662b40c6dd8313d2d267690ca91d1b8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :SocietalAndEnvironmentalWellBeing .
+
+<https://astrea.linkeddata.es/shapes#cfe058656addfc9ca58f1cfd6f90a722>
+a               sh:NodeShape ;
+sh:description  "Did you establish mechanisms to inform users about the purpose, criteria and limitations of the decision(s) generated by the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ComQ2 .
+
+<https://astrea.linkeddata.es/shapes#c97fbab527fcdc3ee7a818d27143b49a>
+a            sh:PropertyShape ;
+sh:class     :Risk ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :measureMitigatesRisk .
+
+<https://astrea.linkeddata.es/shapes#ba062b35c9dd3ea25b70912510804612>
+a            sh:PropertyShape ;
+sh:class     :AISystemOutcome ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :loggsAISystemOutcome .
+
+<https://astrea.linkeddata.es/shapes#ff110c3a875431238dc39ff63e3c591a>
+a               sh:NodeShape ;
+sh:description  "Did you put adequate logging practices in place to record the decision(s) or recommendation(s) of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TrcQ1.5 .
+
+<https://astrea.linkeddata.es/shapes#623c5f8374c677a5f5c14c56b10555c7>
+a               sh:NodeShape ;
+sh:description  "Did you put in place any procedure to avoid that the AI system inadvertently affects human autonomy?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ4.1 .
+
+<https://astrea.linkeddata.es/shapes#29a44de379ccf4ca1919076e0296a818>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMechanismToIncludeParticpationOfStakeholders .
+
+<https://astrea.linkeddata.es/shapes#8caba0d9a70b27f1d9ba14820a65293b>
+a               sh:NodeShape ;
+sh:description  "Did you adopt measures to ensure that the impacts of the AI system on human work are well understood?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IWSQ3 .
+
+<https://astrea.linkeddata.es/shapes#6b1947b0f8c81432d2511025ce69686e>
+a               sh:NodeShape ;
+sh:description  "Did you take measures that ensure that the AI system does not negatively impact democracy?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ISDQ1.3 .
+
+<https://astrea.linkeddata.es/shapes#740eb2e6313c4e2e24c19696a81bbc21>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MeasureToMitigateRiskOfAddiction .
+
+<https://astrea.linkeddata.es/shapes#23957a4e3a4fe733848a71deb29ad6ad>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Reliability .
+
+<https://astrea.linkeddata.es/shapes#d8c2e5b709db5e47b6c25f010bcb5c26>
+a               sh:NodeShape ;
+sh:description  "Did you pave the way for the introduction of the AI system in your organisation by informing and consulting with impacted workers and their representatives (trade unions, (European) work councils) in advance?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IWSQ2 .
+
+<https://astrea.linkeddata.es/shapes#35d0dd006b28a552f70a3cdecd91358d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AIDesigner .
+
+<https://astrea.linkeddata.es/shapes#ace3698610e0eec2d4455cfcc1409f0f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfOutage .
+
+<https://astrea.linkeddata.es/shapes#00530b256e73dfa5f753a7de0d9fcb42>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Requirement .
+
+<https://astrea.linkeddata.es/shapes#a6cbd24c5b09274ca341fad956e5471b>
+a               sh:NodeShape ;
+sh:description  "Did you consider a mechanism to include the participation of the widest range of possible stakeholders in the AI system’s design and development?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :SPQ1 .
+
+<https://astrea.linkeddata.es/shapes#9363567b9c1254d4d622e83672028674>
+a            sh:PropertyShape ;
+sh:class     :AISystemLifecyclePhase ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :lifecycleHasPhase .
+
+<https://astrea.linkeddata.es/shapes#f6eb1aa4d9250e47e565f1657ed2b353>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToEnsureUnderstandingOfImpactOnHumanWork .
+
+<https://astrea.linkeddata.es/shapes#efcee39ed82f602094d0158f55d7aeea>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :CreateHumanAttachment .
+
+<https://astrea.linkeddata.es/shapes#b3d347d5f4d264fe2065e58a871c1ed7>
+a               sh:NodeShape ;
+sh:description  "Did you put in place a well-defined process to monitor if the AI system is meeting the intended goals?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPRQ1.1 .
+
+<https://astrea.linkeddata.es/shapes#bee5150991adc8d6d47d28b219cfc839>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToMitigateRiskOfAddiction .
+
+<https://astrea.linkeddata.es/shapes#c39a2a9b18527ab6be9b1bfdbcdbc135>
+a               sh:NodeShape ;
+sh:description  "Can you trace back which data was used by the AI system to make a certain decision(s) or recommendation(s)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TrcQ1.2 .
+
+<https://astrea.linkeddata.es/shapes#cbdd83028fff6b8bbd067d6abd095476>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasGeneratedBy" ;
+sh:class          prov:Activity ;
+sh:name           "wasGeneratedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasGeneratedBy .
+
+<https://astrea.linkeddata.es/shapes#9dab34ed430c7c5a6f03fadb7a59aae4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TechnicalFault .
+
+<https://astrea.linkeddata.es/shapes#8483672a1aef08471ac75b903536ab1a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnSocietyAtLargeOrDemocracy .
+
+<https://astrea.linkeddata.es/shapes#8be248a4f26f58630503a15b28bf1f1c>
+a               sh:NodeShape ;
+sh:description  "Transparency"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Trs .
+
+<https://astrea.linkeddata.es/shapes#08315460ce9eab0eb2a933f278ee9abc>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AssessingPotentialAttacks .
+
+<https://astrea.linkeddata.es/shapes#ebf9da5fffd6c592b79705641472059d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MakePrediction .
+
+<https://astrea.linkeddata.es/shapes#a5ebbbae63ca1afc9c257dde33e84c23>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ProcedureToAvoidEffectsOnHumanAutonomy .
+
+<https://astrea.linkeddata.es/shapes#1944ec26dba5fdffae05ad6b72e6a609>
+a               sh:NodeShape ;
+sh:description  "Did you define risks, risk metrics and risk levels of the AI system in each specific use case?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ1 .
+
+<https://astrea.linkeddata.es/shapes#45c43e59d155a20b950e8c8fee3f02e3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnHumanWork .
+
+<https://astrea.linkeddata.es/shapes#5b8520b4ac04429f0c141192e08aef02>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Accuracy .
+
+<https://astrea.linkeddata.es/shapes#33e27df8ad2ed86ad516239ad11a55a4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :InterfereDecisionMakingProcess .
+
+<https://astrea.linkeddata.es/shapes#9357a255eb73d2b4213dd78f307b728c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Advice .
+
+<https://astrea.linkeddata.es/shapes#f7696af947fd4e63e73813160e34c62b>
+a            sh:PropertyShape ;
+sh:class     :RiskMetric ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :riskIsMeasuredByRiskMetric .
+
+<https://astrea.linkeddata.es/shapes#5d9216b9047e521d9148bf329ab34705>
+a               sh:NodeShape ;
+sh:description  "Did you assess whether the team involved in building the AI system engaged with the possible target end-users and/or subjects?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUDQ4.1 .
+
+<https://astrea.linkeddata.es/shapes#5775ab60cd06db3c2f972f81aeba13c8>
+a               sh:NodeShape ;
+sh:description  "Did you put in place measures to continuously assess the quality of the output(s) of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TrcQ1.4 .
+
+<https://astrea.linkeddata.es/shapes#b10bee469ee7ebb4878862f7c7e4e922>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#0387446d7b21a35e0ac74e54f4dfb93b> , <https://astrea.linkeddata.es/shapes#0a6b79f2d1ab86ecbac7cb4db69a92cf> ;
+sh:targetClass  :ThirdParty .
+
+<https://astrea.linkeddata.es/shapes#33249e9fa0900e8aca3455cd974a99ed>
+a               sh:NodeShape ;
+sh:description  "Could the AI system have adversarial, critical or damaging effects (e.g. to human or societal safety) in case of risks or threats such as design or technical faults, defects, outages, attacks, misuse, inappropriate or malicious use?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RASQ1 .
+
+<https://astrea.linkeddata.es/shapes#7e4cf7f6d43477e384cf5c760cb285e1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImpactOnHuman> .
+
+<https://astrea.linkeddata.es/shapes#5a9206803db160bd9e016cc72e257fbc>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasInformedBy" , "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2."@en ;
+sh:class          prov:Activity ;
+sh:description    "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2."@en ;
+sh:name           "wasInformedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasInformedBy .
+
+<https://astrea.linkeddata.es/shapes#d2aad5e8829a305faaac0242b2f7b06a>
+a               sh:NodeShape ;
+sh:description  "Did you take measures to mitigate the risk of manipulation?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ6.3 .
+
+<https://astrea.linkeddata.es/shapes#42c90ba236c04613a85fbdc5cc0d7693>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Reproducibility .
+
+<https://astrea.linkeddata.es/shapes#77935736813b47ca4752f9ee932d45c9>
+a            sh:PropertyShape ;
+sh:class     :Conflict ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :discoversConflict .
+
+<https://astrea.linkeddata.es/shapes#1e4a8210bb918841b2d615aafb4e71be>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskTraining .
+
+<https://astrea.linkeddata.es/shapes#52c60b1f6e87f3556f38115444b02e4a>
+a               sh:NodeShape ;
+sh:description  "Did you put in place measures to continuously assess the quality of the input data to the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TrcQ1.1 .
+
+<https://astrea.linkeddata.es/shapes#1f0fe019dd5ebea4db24053f1706c102>
+a               sh:NodeShape ;
+sh:description  "Traceability"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Trc .
+
+<https://astrea.linkeddata.es/shapes#b620e216b7f9076c72dd16db6cb557a8>
+a               sh:NodeShape ;
+sh:description  "Which potential impact(s) do you identify?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EWQ1.1 .
+
+<https://astrea.linkeddata.es/shapes#f8ce7890f9932a6c89fcd66501753203>
+a            sh:PropertyShape ;
+sh:class     :RiskLevel ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :riskHasRiskLevel .
+
+<https://astrea.linkeddata.es/shapes#67ed907d728cc5aaa913f608c26fe040>
+a               sh:NodeShape ;
+sh:description  "Did you clearly document and operationalise processes for the testing and verification of the reliability and reproducibility of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPRQ2.1 .
+
+<https://astrea.linkeddata.es/shapes#0028ef164fb1d782cc6f86fec42fbdd1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Development .
+
+<https://astrea.linkeddata.es/shapes#55826ece255f258325b5fce523dbf5b7>
+a            sh:PropertyShape ;
+sh:class     :AISystemQualityAttribute ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :metricMeasuresAISystemQuality .
+
+<https://astrea.linkeddata.es/shapes#421a86df5ada55d7b654fd1b53aa0333>
+a               sh:NodeShape ;
+sh:description  "Did you put in place a proper procedure for handling the cases where the AI system yields results with a low confidence score?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPRQ4 .
+
+<https://astrea.linkeddata.es/shapes#f14fcdd4a148fc3fc802744b1fa15561>
+a               sh:NodeShape ;
+sh:description  "Please determine whether the AI system is a self-learning or autonomous system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HOQ1.1 .
+
+<https://astrea.linkeddata.es/shapes#e8a4ff372746084b64c61c149b067597>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AssessingThreads .
+
+<https://astrea.linkeddata.es/shapes#e9574569605f6f2d925b87ce2e3b2a5d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Attack .
+
+<https://astrea.linkeddata.es/shapes#f365024db2d01ab215996549bf069a84>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingProceduresToAvoidBias .
+
+<https://astrea.linkeddata.es/shapes#9dafe5387def8b1c61bd4159d23736d7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Accessibility .
+
+<https://astrea.linkeddata.es/shapes#cc937d00bc2d35f838f4fde9ed44b15d>
+a            sh:PropertyShape ;
+sh:class     :Explanation ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :hasExplanation .
+
+<https://astrea.linkeddata.es/shapes#908aa36dc6d0a18bc1a1d3b9acb6b459>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMeasuresToMitigateRiskOfDeSkilling .
+
+<https://astrea.linkeddata.es/shapes#463469b4bfd2f305dc8e596fde11c03c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TestingRequirement .
+
+<https://astrea.linkeddata.es/shapes#284d593a9dc0260ce3a64519baa306e1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DataPoisoning .
+
+<https://astrea.linkeddata.es/shapes#c1aa2eae709701102739dd80c0725e3d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :LackOfDiversity .
+
+<https://astrea.linkeddata.es/shapes#61b81b39bbee5162de3ceb5e14e4d869>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Diversity .
+
+<https://astrea.linkeddata.es/shapes#4460398d5f27af1af3354591e4dba0c9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RiskOfDeSkilling .
+
+<https://astrea.linkeddata.es/shapes#4374b515e882ef0b3c421c97f5844e80>
+a               sh:NodeShape ;
+sh:description  "mechanism that allows for the flagging of issues related to bias, discrimination or poor performance of the AI system"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :MechanismToFlagBais .
+
+<https://astrea.linkeddata.es/shapes#26eeb2dfae6ab2bbdd4b079ad7412c10>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RightToObject .
+
+<https://astrea.linkeddata.es/shapes#c7faeb0010e38546fad464e128f721a0>
+a               sh:NodeShape ;
+sh:description  "Did you ensure a mechanism that allows for the flagging of issues related to bias, discrimination or poor performance of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUBQ4 .
+
+<https://astrea.linkeddata.es/shapes#d5b3a5a0278efba584cdddaa826b086a>
+a               sh:NodeShape ;
+sh:description  "Did you ensure that information about, and the AI system's user interface of, the AI system is accessible and usable also to users of assistive technologies (such as screen readers)?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUDQ2.1 .
+
+<https://astrea.linkeddata.es/shapes#599d6e42be55c6bad7cf3821def76ae0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AISystemCapability .
+
+<https://astrea.linkeddata.es/shapes#e6ecbc968f3bcb8f2c817a4741646c87>
+a               sh:NodeShape ;
+sh:description  "Is the AI system designed to interact, guide or take decisions by human end-users that affect humans or society?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HAAQ1 .
+
+<https://astrea.linkeddata.es/shapes#5f3694b3187d7da47d2a604f356a74fc>
+a            sh:PropertyShape ;
+sh:class     :AISystemTechnicalLimitation ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :AISystemHasTechnicalLimitation .
+
+<https://astrea.linkeddata.es/shapes#f9da1a4bed6072e2299470c25ec80b2b>
+a               sh:NodeShape ;
+sh:description  "Did you involve or consult with end-users or subjects in need for assistive technology during the planning and development phase of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUDQ2.2 .
+
+<https://astrea.linkeddata.es/shapes#64eb11f949e7f56f2e9b0df01c7a302f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#4a3bccdde1138425bf96f714b0403d6c> ;
+sh:targetClass  :LegalFramework .
+
+<https://astrea.linkeddata.es/shapes#a566e3fade171e67ef1669267fe461c6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HumanOversight .
+
+<https://astrea.linkeddata.es/shapes#c0f025b8d0da10451d86a1229dfa3c43>
+a               sh:NodeShape ;
+sh:description  "Did you take any specific oversight and control measures to reflect the self-learning or autonomous nature of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HOQ5 .
+
+<https://astrea.linkeddata.es/shapes#b712ff32b22dd706097bccbb04b9450c>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      :IsPotentialRisk ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#d7cc49d1771e4de939cf00164adc13f6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImplementingDataProtectionMechanism> .
+
+<https://astrea.linkeddata.es/shapes#dac5bad53db56f59ab3394cf02171e8a>
+a               sh:NodeShape ;
+sh:description  "Did you inform end-users and subjects of existing or potential risks?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :GRSQ1.2 .
+
+<https://astrea.linkeddata.es/shapes#d797577eeedbbe38c6d0bc2da064e813>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."@en , "wasInfluencedBy" , "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ;
+sh:description    "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." , "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."@en ;
+sh:name           "wasInfluencedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:or             ( [ sh:class  prov:Activity ;
+sh:path   prov:wasInfluencedBy
+]
+[ sh:class  prov:Agent ;
+sh:path   prov:wasInfluencedBy
+]
+[ sh:class  prov:Entity ;
+sh:path   prov:wasInfluencedBy
+]
+) .
+
+<https://astrea.linkeddata.es/shapes#4340238ebade27aaefe9a60d767fc115>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Usability .
+
+<https://astrea.linkeddata.es/shapes#5a594a430c95848910cd32ac7fc0f787>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#c6c64d1ee26e85c72de979425977cbf0> ;
+sh:targetClass  :TAIPrinciple .
+
+<https://astrea.linkeddata.es/shapes#ff95cae48951c90a8e6e22cd8c162be3>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "SoftwareAgent" ;
+sh:name           "SoftwareAgent" ;
+sh:nodeKind       sh:IRI ;
+sh:targetClass    prov:SoftwareAgent .
+
+<https://astrea.linkeddata.es/shapes#c9702b50b0580220b1dd3c6dc23da32b>
+a               sh:NodeShape ;
+sh:description  "Did you provide appropriate training to those involved in such a process and does this also cover the legal framework applicable to the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ4.2 .
+
+<https://astrea.linkeddata.es/shapes#0d08e17eec2aa32d3c0c6ddc57e32b9c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :StakeholderParticipation .
+
+<https://astrea.linkeddata.es/shapes#ffe4fe4764f518ae5ddcaa455fb30a4c>
+a               sh:NodeShape ;
+sh:description  "Did you assess whether there could be groups who might be disproportionately affected by the outcomes of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AUDQ4.2 .
+
+<https://astrea.linkeddata.es/shapes#eafdf3594e784d85493b04c0a5ed43c9>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasDerivedFrom" , "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en ;
+sh:class          prov:Entity ;
+sh:description    "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en ;
+sh:name           "wasDerivedFrom" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasDerivedFrom .
+
+<https://astrea.linkeddata.es/shapes#a68dcc5eb33b70de4b52557f7e1cbdad>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Metric .
+
+<https://astrea.linkeddata.es/shapes#a8b314f922152ce34fce9ae3f696331a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EndUser .
+
+<https://astrea.linkeddata.es/shapes#ac20a83e734b058c5d8df9ff2e4d7b4f>
+a            sh:PropertyShape ;
+sh:class     :Risk ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :metricMeasuresRisk .
+
+<https://astrea.linkeddata.es/shapes#f02dc3ab1636cdadbac5a0c81d9767f6>
+a               sh:NodeShape ;
+sh:description  "Did you define measures to reduce the environmental impact of the AI system throughout its lifecycle?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EWQ2.1 .
+
+<https://astrea.linkeddata.es/shapes#a8ee7167f89ec0ebd03a9996cafea29c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ImpactOnHumanAutonomy .
+
+<https://astrea.linkeddata.es/shapes#34d2ac00dbef9c5644870b6e6c95e5cf>
+a               sh:NodeShape ;
+sh:description  "Impact on Work and Skills"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :IWS .
+
+<https://astrea.linkeddata.es/shapes#ad5694b618e885011da9b43063c2d18f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Accountability .
+
+<https://astrea.linkeddata.es/shapes#84ec89d5d60657a848282a85bc8295b7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Decision .
+
+<https://astrea.linkeddata.es/shapes#ccb0d7dd0b8ce1a7f30ce513cfe2a7a8>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      :IsExistingRisk ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#35c4917a9a062e7e947cb297f578dc66>
+a               sh:NodeShape ;
+sh:description  "Does this process foster revision of the risk management process?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ5.1 .
+
+<https://astrea.linkeddata.es/shapes#1b859c49292bdbcb89289d5037a568b8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMechanismsToEnsureFairness .
+
+<https://astrea.linkeddata.es/shapes#b5ad38dbdf89e1ea8e95ecc33a92e89a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :EstablishingMechanismsToFlagBais .
+
+<https://astrea.linkeddata.es/shapes#4138a353bb8ac62ac048ef650d3fd353>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :OverRelianceOnTheSystem .
+
+<https://astrea.linkeddata.es/shapes#492abb3c4097513c40386959f6e3f742>
+a               sh:NodeShape ;
+sh:description  "Did you take action to minimize potential societal harm of the AI system?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ISDQ1.2 .
+
+<https://astrea.linkeddata.es/shapes#dc8174164d5d3ff833b80ff3e90d72a1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ProceduresToAvoidBias .
+
+<https://astrea.linkeddata.es/shapes#d9035724537578f011f79c9591329d4d>
+a               sh:NodeShape ;
+sh:description  "Conflict between principles"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Conflict .
+
+<https://astrea.linkeddata.es/shapes#f7d615207d07093e2704ac237b0ace67>
+a               sh:NodeShape ;
+sh:description  "Did you test whether specific contexts or conditions need to be taken into account to ensure reproducibility?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RFPRQ1.2 .
+
+<https://astrea.linkeddata.es/shapes#f06894598cacb03370b852ae27148386>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImplementingRightToObject> .
+
+<https://astrea.linkeddata.es/shapes#7a8155ee254f48113a666cbd86440390>
+a               sh:NodeShape ;
+sh:description  "Does the involvement of these third parties go beyond the development phase?"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :RMQ1.1 .
+
+<https://astrea.linkeddata.es/shapes#eb4d25b57fcbc71b20657723a9c362ad>
+a               sh:NodeShape ;
+sh:description  "Standards are norms designed by industry and/or Governments that set product or services’ specifications. Standards are released by international organizations, such as ISO (International Organisation for Standardisation), IEEE (The Institute of Electrical and Electronics Engineers) Standard Association, and NIST (National Institute of Standards and Technology)." ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :Standard .
+
+<https://astrea.linkeddata.es/shapes#243eac81ed505354f53b2db6ee7a2840>
+a               sh:NodeShape ;
+sh:description  "Decision made when there is conflict between two different ethical principles"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :TradeOffDecision .
+
+<https://astrea.linkeddata.es/shapes#3c716643c8e59a3efb596742e73ff785>
+a               sh:NodeShape ;
+sh:description  "refers to the capability for human intervention in every decision cycle of the system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :HumanInTheLoop .
+
+<https://astrea.linkeddata.es/shapes#f015a802bba1bddc7a573356c641b408>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :ResilienceToAttackAndSecurity .
+
+<https://astrea.linkeddata.es/shapes#54597eb4a2d2cc88fcd5d3b6d7e0c550>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :DiversityNonDiscriminationFairness .
+
+<https://astrea.linkeddata.es/shapes#d8196f5ffb1bdaa2319a84c460592565>
+a            sh:PropertyShape ;
+sh:class     :TradeOffDecision ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      :resultsTradeOffDecision .
+
+<https://astrea.linkeddata.es/shapes#8d2608cc3fc93d2ef88e2cd6f2a638e1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#b7c1ae5f2aa3968f5821f64c87421c7a> ;
+sh:targetClass  :DataController .
+
+<https://astrea.linkeddata.es/shapes#329d7febd62b9a96b39aeb21d2b541a2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :AccuracyRequirement .
+
+<https://astrea.linkeddata.es/shapes#f2faa1210be665ba5c58fde4ab15c1fb>
+a               sh:NodeShape ;
+sh:description  "Understanding of the users from the AI system" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  :UsersPerceptionOfAISystem .
