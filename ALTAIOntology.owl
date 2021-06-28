@@ -4182,6 +4182,7 @@ and negative impact)</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#StakeholderParticipation">
         <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TAISubPrinciple"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#EnvironmentalWellBeing"/>
     </owl:NamedIndividual>
     
 
@@ -4212,6 +4213,744 @@ and negative impact)</rdfs:comment>
         <OTAIA:hasSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Communication"/>
         <OTAIA:hasSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Explainability"/>
         <OTAIA:hasSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Traceability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AvoidanceOfUnfairBias"/>
+        <rdfs:comment xml:lang="en">Did you establish a strategy or a set of procedures to avoid creating or reinforcing unfair bias in the AI system, both regarding the use of input data as well as for the algorithm design?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AvoidanceOfUnfairBias"/>
+        <rdfs:comment xml:lang="en">Did you consider diversity and representativeness of end-users and/or subjects in the data?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2"/>
+        <rdfs:comment xml:lang="en">Did you test for specific target groups or problematic use cases?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2"/>
+        <rdfs:comment xml:lang="en">Did you research and use publicly available technical tools, that are state-of-the-art, to improve your understanding of the data, model and performance?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2.3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2.3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2"/>
+        <rdfs:comment xml:lang="en">Did you assess and put in place processes to test and monitor for potential biases during the entire lifecycle of the AI system (e.g. biases due to possible limitations stemming from the composition of the used data sets (lack of diversity, non-representativeness)?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2.4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2.4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ2"/>
+        <rdfs:comment xml:lang="en">Where relevant, did you consider diversity and representativeness of end-users and or subjects in the data?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AvoidanceOfUnfairBias"/>
+        <rdfs:comment xml:lang="en">Did you put in place educational and awareness initiatives to help AI designers and AI developers be more aware of the possible bias they can inject in designing and developing the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ4">
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AvoidanceOfUnfairBias"/>
+        <rdfs:comment xml:lang="en">Did you ensure a mechanism that allows for the flagging of issues related to bias, discrimination or poor performance of the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ4.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ4.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ4"/>
+        <rdfs:comment xml:lang="en">Did you establish clear steps and ways of communicating on how and to whom such issues can be raised?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ4.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ4.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ4"/>
+        <rdfs:comment xml:lang="en">Did you identify the subjects that could potentially be (in)directly affected by the AI system, in addition to the (end-)users and/or subjects?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AvoidanceOfUnfairBias"/>
+        <rdfs:comment xml:lang="en">Is your definition of fairness commonly used and implemented in any phase of the process of setting up the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5"/>
+        <rdfs:comment xml:lang="en">Did you consider other definitions of fairness before choosing this one?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5"/>
+        <rdfs:comment xml:lang="en">Did you consult with the impacted communities about the correct definition of fairness, i.e. representatives of elderly persons or persons with disabilities?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5.3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5.3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5"/>
+        <rdfs:comment xml:lang="en">Did you ensure a quantitative analysis or metrics to measure and test the applied definition of fairness?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5.4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5.4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUBQ5"/>
+        <rdfs:comment xml:lang="en">Did you establish mechanisms to ensure fairness in your AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AccessibilityAndUniversalDesign"/>
+        <rdfs:comment xml:lang="en">Did you ensure that the AI system corresponds to the variety of preferences and abilities in society?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AccessibilityAndUniversalDesign"/>
+        <rdfs:comment xml:lang="en">Did you assess whether the AI system&apos;s user interface is usable by those with special needs or disabilities or those at risk of exclusion?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ2.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ2.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ2"/>
+        <rdfs:comment xml:lang="en">Did you ensure that information about, and the AI system&apos;s user interface of, the AI system is accessible and usable also to users of assistive technologies (such as screen readers)?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ2.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ2.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ2"/>
+        <rdfs:comment xml:lang="en">Did you involve or consult with end-users or subjects in need for assistive technology during the planning and development phase of the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AccessibilityAndUniversalDesign"/>
+        <rdfs:comment xml:lang="en">Did you ensure that Universal Design principles are taken into account during every step of the planning and development process, if applicable?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AccessibilityAndUniversalDesign"/>
+        <rdfs:comment xml:lang="en">Did you take the impact of the AI system on the potential end-users and/or subjects into account?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4"/>
+        <rdfs:comment xml:lang="en">Did you assess whether the team involved in building the AI system engaged with the possible target end-users and/or subjects?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4"/>
+        <rdfs:comment xml:lang="en">Did you assess whether there could be groups who might be disproportionately affected by the outcomes of the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4.3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4.3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ4"/>
+        <rdfs:comment xml:lang="en">Did you assess the risk of the possible unfairness of the system onto the end-user&apos;s or subject&apos;s communities?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AudQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AudQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Auditability"/>
+        <rdfs:comment xml:lang="en">Did you establish mechanisms that facilitate the AI system’s auditability (e.g. traceability of the development process, the sourcing of training data and the logging of the AI system’s processes, outcomes, positive and negative impact)?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AudQ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AudQ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Auditability"/>
+        <rdfs:comment xml:lang="en">Did you ensure that the AI system can be audited by independent third parties?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Communication"/>
+        <rdfs:comment xml:lang="en">In cases of interactive AI systems (e.g., chatbots, robo-lawyers), do you communicate to users that they are interacting with an AI system instead of a human?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Communication"/>
+        <rdfs:comment xml:lang="en">Did you establish mechanisms to inform users about the purpose, criteria and limitations of the decision(s) generated by the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2"/>
+        <rdfs:comment xml:lang="en">Did you communicate the benefits of the AI system to users?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2"/>
+        <rdfs:comment xml:lang="en">Did you communicate the technical limitations and potential risks of the AI system to users, such as its level of accuracy and/ or error rates?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2.3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2.3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ComQ2"/>
+        <rdfs:comment xml:lang="en">Did you provide appropriate training material and disclaimers to users on how to adequately use the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#DGQ2"/>
+        <rdfs:comment xml:lang="en">Did you designate Data Protection Officer (DPO) and include them at an early state in the development, procurement or use phase of the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#DGQ2"/>
+        <rdfs:comment xml:lang="en">did you establish oversight mechanisms for data processing (including limiting access to qualified personnel, mechanisms for logging data access and making modifications)?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#DGQ2"/>
+        <rdfs:comment xml:lang="en">Did you put in place measures to achieve privacy-by-design and default (e.g. encryption, pseudonymisation, aggregation, anonymisation)?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#DGQ2"/>
+        <rdfs:comment xml:lang="en">Did you consider Data minimisation, in particular personal data (including special categories of data)?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#DGQ2"/>
+        <rdfs:comment xml:lang="en">Did you implement the right to withdraw consent, the right to object and the right to be forgotten into the development of the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ2.7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#DGQ2"/>
+        <rdfs:comment xml:lang="en">Did you consider the privacy and data protection implications of data collected, generated or processed over the course of the AI system&apos;s life cycle?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#DataGovernance"/>
+        <rdfs:comment xml:lang="en">Did you consider the privacy and data protection implications of the AI system&apos;s non-personal training-data or other processed non-personal data?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#DGQ4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#DataGovernance"/>
+        <rdfs:comment xml:lang="en">Did you align the AI system with relevant standards (e.g. ISO, IEEE) or widely adopted protocols for (daily) data management and governance?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <rdfs:comment xml:lang="en">Are there potential negative impacts of the AI system on the environment?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ1.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ1.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ1"/>
+        <rdfs:comment xml:lang="en">Which potential impact(s) do you identify?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#EnvironmentalWellBeing"/>
+        <rdfs:comment xml:lang="en">Where possible, did you establish mechanisms to evaluate the environmental impact of the AI system’s development, deployment and/or use (for example, the amount of energy used and carbon emissions)?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ2.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ2.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#EWQ2"/>
+        <rdfs:comment xml:lang="en">Did you define measures to reduce the environmental impact of the AI system throughout its lifecycle?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ExpQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ExpQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Explainability"/>
+        <rdfs:comment xml:lang="en">Did you explain the decision(s) of the AI system to the users?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ExpQ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ExpQ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Explainability"/>
+        <rdfs:comment xml:lang="en">Do you continuously survey the users if they understand the decision(s) of the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ImpactOnSocietyAtLargeOrDemocracy"/>
+        <rdfs:comment xml:lang="en">Could the AI system have a negative impact on society at large or democracy?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1"/>
+        <rdfs:comment xml:lang="en">Did you assess the societal impact of the AI system’s use beyond the (end-)user and subject, such as potentially indirectly affected stakeholders or society at large?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1"/>
+        <rdfs:comment xml:lang="en">Did you take action to minimize potential societal harm of the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1.3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1.3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#ISDQ1"/>
+        <rdfs:comment xml:lang="en">Did you take measures that ensure that the AI system does not negatively impact democracy?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ImpactOnWorkAndSkills"/>
+        <rdfs:comment xml:lang="en">Does the AI system impact human work and work arrangements?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ImpactOnWorkAndSkills"/>
+        <rdfs:comment xml:lang="en">Did you pave the way for the introduction of the AI system in your organisation by informing and consulting with impacted workers and their representatives (trade unions, (European) work councils) in advance?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ImpactOnWorkAndSkills"/>
+        <rdfs:comment xml:lang="en">Did you adopt measures to ensure that the impacts of the AI system on human work are well understood?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ3.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ3.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ3"/>
+        <rdfs:comment xml:lang="en">Did you ensure that workers understand how the AI system operates, which capabilities it has and which it does not have?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ImpactOnWorkAndSkills"/>
+        <rdfs:comment xml:lang="en">Could the AI system create the risk of de-skilling of the workforce?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ4.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ4.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ4"/>
+        <rdfs:comment xml:lang="en">Did you take measures to counteract de-skilling risks?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ImpactOnWorkAndSkills"/>
+        <rdfs:comment xml:lang="en">Does the system promote or require new (digital) skills?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ5.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ5.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#IWSQ5"/>
+        <rdfs:comment xml:lang="en">Did you provide training opportunities and materials for re- and up-skilling?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#RiskManagement"/>
+        <rdfs:comment xml:lang="en">Did you foresee any kind of external guidance or third-party auditing processes to oversee ethical concerns and accountability measures?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ1.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ1.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ1"/>
+        <rdfs:comment xml:lang="en">Does the involvement of these third parties go beyond the development phase?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#RiskManagement"/>
+        <rdfs:comment xml:lang="en">Did you organise risk training and, if so, does this also inform about the potential legal framework applicable to the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#RiskManagement"/>
+        <rdfs:comment xml:lang="en">Did you consider establishing an AI ethics review board or a similar mechanism to discuss the overall accountability and ethics practices, including potential unclear grey areas?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#RiskManagement"/>
+        <rdfs:comment xml:lang="en">Did you establish a process to discuss and continuously monitor and assess the AI system&apos;s adherence to this Assessment List for Trustworthy AI (ALTAI)?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ4.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ4.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ4"/>
+        <rdfs:comment xml:lang="en">Does this process include identification and documentation of conflicts between the 6 aforementioned requirements or between different ethical principles and explanation of the &apos;trade-off&apos; decisions made?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ4.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ4.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ4"/>
+        <rdfs:comment xml:lang="en">Did you provide appropriate training to those involved in such a process and does this also cover the legal framework applicable to the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#RiskManagement"/>
+        <rdfs:comment xml:lang="en">Did you establish a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ5.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ5.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ5"/>
+        <rdfs:comment xml:lang="en">Does this process foster revision of the risk management process?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#RiskManagement"/>
+        <rdfs:comment xml:lang="en">For applications that can adversely affect individuals, have redress by design mechanisms been put in place?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#SPQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#SPQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#StakeholderParticipation"/>
+        <rdfs:comment xml:lang="en">Did you consider a mechanism to include the participation of the widest range of possible stakeholders in the AI system’s design and development?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:questionIsPartOfSubPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Traceability"/>
+        <rdfs:comment xml:lang="en">Did you put in place measures that address the traceability of the AI system during its entire lifecycle?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1"/>
+        <rdfs:comment xml:lang="en">Did you put in place measures to continuously assess the quality of the input data to the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1"/>
+        <rdfs:comment xml:lang="en">Can you trace back which data was used by the AI system to make a certain decision(s) or recommendation(s)?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1"/>
+        <rdfs:comment xml:lang="en">Can you trace back which AI model or rules led to the decision(s) or recommendation(s) of the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1"/>
+        <rdfs:comment xml:lang="en">Did you put in place measures to continuously assess the quality of the output(s) of the AI system?</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1.5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#ALTAIQuestion"/>
+        <OTAIA:isPartOfQuestion rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#TrcQ1"/>
+        <rdfs:comment xml:lang="en">Did you put adequate logging practices in place to record the decision(s) or recommendation(s) of the AI system?</rdfs:comment>
     </owl:NamedIndividual>
     
 
