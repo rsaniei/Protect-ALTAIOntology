@@ -1,0 +1,2026 @@
+@prefix OTAIA: <http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix otaia: <http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://astrea.linkeddata.es/shapes#fdaa8c6ec863698bc5d2dfdd9bc5decb>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasInvalidatedBy" ;
+sh:class          prov:Activity ;
+sh:name           "wasInvalidatedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasInvalidatedBy .
+
+<https://astrea.linkeddata.es/shapes#741c63c37da984251b28cd9971cf534a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfOutage .
+
+<https://astrea.linkeddata.es/shapes#95c057a72219dc1734bece92e047c5ba>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:isPartOfQuestion .
+
+<https://astrea.linkeddata.es/shapes#032be1738be9e8eea0f9b87ca1b3352f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImpactOnDemocracy .
+
+<https://astrea.linkeddata.es/shapes#4928edad12c5ffd4671f96bcca59073d>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      OTAIA:UsingContinualLearning ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#55bb402d10420c6bd1a36b91a99db685>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:not          <https://astrea.linkeddata.es/shapes#b7757da523adac7d2d4bd6a1305d8a3f> ;
+sh:targetClass  OTAIA:DirectlyAffectedStakeholder .
+
+<https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "hadRole" , "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en , "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ;
+sh:class          prov:Role ;
+sh:description    "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." , "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en ;
+sh:name           "hadRole" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:hadRole .
+
+<https://astrea.linkeddata.es/shapes#1ed46ecaea26e0ce51b89aefd2389cd9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#PhysicalMentalImpact> .
+
+<https://astrea.linkeddata.es/shapes#16ad66d05934acd4608c2b393b7b2ee3>
+a               sh:NodeShape ;
+sh:description  "A model or rule in the AI system" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#5e228851b4d22672ccc48cf842b9d3ce> ;
+sh:targetClass  OTAIA:AIModelRule .
+
+<https://astrea.linkeddata.es/shapes#a5b9f105ab3011901a48534aa363e533>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AdoptingDataMinimisationMechanism> .
+
+<https://astrea.linkeddata.es/shapes#488029bcbb9c7ab979b2c33e3a386e6d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#5292e3c2258b822ae498b52b2c7519d1> , <https://astrea.linkeddata.es/shapes#aa15ba2fc89fe5ac4dacf50125ce04f8> ;
+sh:targetClass  OTAIA:DataSubject .
+
+<https://astrea.linkeddata.es/shapes#57e00aac2c74c372b18e8d50ab5f6f69>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MechanismToIncludeParticpationOfStakeholders .
+
+<https://astrea.linkeddata.es/shapes#880bd27facd6ed453d3ba0a7b69536cd>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasAssociatedWith" , "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."@en ;
+sh:class          prov:Agent ;
+sh:description    "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."@en ;
+sh:name           "wasAssociatedWith" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasAssociatedWith .
+
+<https://astrea.linkeddata.es/shapes#6f8269b8a57a9170f5efb9daa0f96551>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:DecideOnBehalfOfHuman .
+
+<https://astrea.linkeddata.es/shapes#9da15b4aa1caf63698fad8a3fa93404e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:IdentifyingPotentiallyInDirectlyAffectedSubjects .
+
+<https://astrea.linkeddata.es/shapes#f1b3b35b1588e70b3a5045ee19718909>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToMitigateRiskOfUserManipulation .
+
+<https://astrea.linkeddata.es/shapes#dfcd5fc30011d551739f9877c244fb84>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Entity" ;
+sh:name           "Entity" ;
+sh:nodeKind       sh:IRI ;
+sh:not            <https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e> ;
+sh:property       <https://astrea.linkeddata.es/shapes#cbdd83028fff6b8bbd067d6abd095476> , <https://astrea.linkeddata.es/shapes#91bdb733f5c5f8b68ed72a7c77d5360b> , <https://astrea.linkeddata.es/shapes#23d0fc727546dee2eb47f5cc8205f898> , <https://astrea.linkeddata.es/shapes#fdaa8c6ec863698bc5d2dfdd9bc5decb> , <https://astrea.linkeddata.es/shapes#d8b72a4eaaa24d6edb810ff2a4a3379a> , <https://astrea.linkeddata.es/shapes#eafdf3594e784d85493b04c0a5ed43c9> ;
+sh:targetClass    prov:Entity .
+
+<https://astrea.linkeddata.es/shapes#92fa97081c2dea5d9edfc533ca205593>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemCapability ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemHasCapability .
+
+<https://astrea.linkeddata.es/shapes#944d271aa538320e84809c93307e7b1d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AdoptingDataProcessingOversightMechanism> .
+
+<https://astrea.linkeddata.es/shapes#ce70794e9b1bd385bb61af2801344bbb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Advice .
+
+<https://astrea.linkeddata.es/shapes#be40ffae6b1d878cbf8a510ec4317ce8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AssessingRisks .
+
+<https://astrea.linkeddata.es/shapes#48b746ac61c50bcf69a2e6e0ffd1b0b0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Requirement .
+
+<https://astrea.linkeddata.es/shapes#61f67be613315d608918c15c84774ee7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:DataPoisoning .
+
+<https://astrea.linkeddata.es/shapes#283f734c6e7f9fc998f04c95bc72d9b1>
+a               sh:NodeShape ;
+sh:description  "Logging practices in place to record the decision(s) or recommendation(s) of the AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#26caf9e4b8d9596b1f73e004700ec941> ;
+sh:targetClass  OTAIA:LoggingMechanism .
+
+<https://astrea.linkeddata.es/shapes#491471e5e49f3bdba56772a796251904>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Metric .
+
+<https://astrea.linkeddata.es/shapes#98886e18e921f33fa994d18cdc6422dc>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToEnsureSecurity .
+
+<https://astrea.linkeddata.es/shapes#1e19020e1a709a7e5cc7e77de8bdbf9b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Use .
+
+<https://astrea.linkeddata.es/shapes#0cb7f232463271035e5ff682374233fb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:DatasetQualityAttribute .
+
+<https://astrea.linkeddata.es/shapes#4ae393be5a4396e94b15b62e910810cd>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#1d866145cd3965dfd9a2312404a1db88> ;
+sh:targetClass  OTAIA:AISystemLifeCycle .
+
+<https://astrea.linkeddata.es/shapes#68f3fe40281793f0ed8b2d735e97f661>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AssessingThreads .
+
+<https://astrea.linkeddata.es/shapes#f011c1eefb1c2b70fcca1cb1d7c661f6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToMitigateRiskOfDeSkilling .
+
+<https://astrea.linkeddata.es/shapes#0c7a6782b7789e420087704ad89674ef>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Agent" ;
+sh:name           "Agent" ;
+sh:nodeKind       sh:IRI ;
+sh:not            <https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e> ;
+sh:property       <https://astrea.linkeddata.es/shapes#080c994f008182ae0438f0e8c4ef7c26> ;
+sh:targetClass    prov:Agent .
+
+<https://astrea.linkeddata.es/shapes#7048f1a55abb735dbc1d4f98592dad60>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Accessibility .
+
+<https://astrea.linkeddata.es/shapes#801889befe59ed2457e0cd5da5b956c4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:DataSubjectRight .
+
+<https://astrea.linkeddata.es/shapes#67fee9ddb6a1bf305cd32723ac9ae3b7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToEnsureRobustness .
+
+<https://astrea.linkeddata.es/shapes#3cb3eb2df220dedead450d1bf284459f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMechanismsToEnsureFairness .
+
+<https://astrea.linkeddata.es/shapes#26020d7a1aa69a16812b7bf9e4b515fa>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemLifeCycle ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemHasLifeCycle .
+
+<https://astrea.linkeddata.es/shapes#cf97f0122b743a476556792b17f4b20c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemBenefit .
+
+<https://astrea.linkeddata.es/shapes#4ff33067e0024a22f5f5fdbcd3b67778>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfPossibleUnfairness .
+
+<https://astrea.linkeddata.es/shapes#d7e12c8290dce3463c6c07b36ce3c6ec>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToEnsureDataQuality .
+
+<https://astrea.linkeddata.es/shapes#575fba19c3d01370075e04647f571640>
+a         sh:PropertyShape ;
+sh:class  prov:Entity .
+
+<https://astrea.linkeddata.es/shapes#73304ddc3c964a35e145c3f9e8d3b6de>
+a               sh:NodeShape ;
+sh:description  "An explanation of the decisions made by the AI System to the users." ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Explanation .
+
+<https://astrea.linkeddata.es/shapes#807c21540734140d5d52b410435f9bf5>
+a               sh:NodeShape ;
+sh:description  "assess whether there could be groups who might be disproportionately affected by the outcomes of the AI system"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AssessingPossibilityOfAffectingGroups .
+
+<https://astrea.linkeddata.es/shapes#ea71b22d709e18135b060cdcef0ed3ba>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:UpToDate .
+
+<https://astrea.linkeddata.es/shapes#2c82cf71a49e72f1f7b910abfc68bfa6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#843bd0d839c55d0c35fb7f8cda929a4f> ;
+sh:targetClass  OTAIA:Error .
+
+<https://astrea.linkeddata.es/shapes#fb6a8538d1ddd0bcf389c261b656d405>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:UserOfAssistiveTechnologies .
+
+<https://astrea.linkeddata.es/shapes#1728f259c072c0333d54d68f0cd99f44>
+a               sh:NodeShape ;
+sh:description  "Conflict between principles"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Conflict .
+
+<https://astrea.linkeddata.es/shapes#370da3b58e1732559c44cc3506a2c1f6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ConductingDPIA> .
+
+<https://astrea.linkeddata.es/shapes#5441257cd85befbbf8d905096f000c99>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ErrorOrigin .
+
+<https://astrea.linkeddata.es/shapes#6688870d9627bb541312c13f06afbe8a>
+a               sh:NodeShape ;
+sh:description  "Informing end-users or subjects that they are interacting with an AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:InformingUsersOfInteractingWithaSystem .
+
+<https://astrea.linkeddata.es/shapes#1050f6ed40b985d04bc8b72359e4c56d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#DiscoveringPrivacyIssues> .
+
+<https://astrea.linkeddata.es/shapes#ff20aa71de1b5e974f1787694a663dcf>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfHumanAttachment .
+
+<https://astrea.linkeddata.es/shapes#056e459b9ee7d12ee5c698c0dcce03eb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:CommunicatingExpectedLevelOfAccuracy .
+
+<https://astrea.linkeddata.es/shapes#7dba2b1cd3ed15dc910d68ec2d3368b4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Worker'sRepresentative> .
+
+<https://astrea.linkeddata.es/shapes#af9412fcaffa1f79465a20c6cdb1d901>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToEnsureSecurity .
+
+<https://astrea.linkeddata.es/shapes#52e76d66dc59af8f3e93f1d16c64319c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EndUser .
+
+<https://astrea.linkeddata.es/shapes#3c8990db1a01111efa01a48ce252cda7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#f5e39831a92c86991b1f168b4a0d9354> ;
+sh:targetClass  OTAIA:RiskMitigationMeasure .
+
+<https://astrea.linkeddata.es/shapes#1620d28cd4614ce74e43e50c99b730dc>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemRisk ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemHasRisk .
+
+<https://astrea.linkeddata.es/shapes#81cac80f2c4f474c1aa48ff12ef34f1b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImpactOnSociety .
+
+<https://astrea.linkeddata.es/shapes#0303b2a0e0722aeb38736baef06013b6>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      OTAIA:IsPubliclyAvailable ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#c2cdf9bb5dec24abbc407904740d0b78>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Worker .
+
+<https://astrea.linkeddata.es/shapes#3096deac965b92bcc62b1ad3b61cd3a8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AIEthicsReviewBoard .
+
+<https://astrea.linkeddata.es/shapes#e0b35c314b6eedeee2baaaa7c378f7f4>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      OTAIA:IsAutonomous ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#a7ab715878b6904d6ff7ae17b8341a43>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToMitigateRiskOfHumanAttachment .
+
+<https://astrea.linkeddata.es/shapes#351a85cc7bf3a227a1d43f5dbdd8c2b1>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "influenced" ;
+sh:name           "influenced" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:influenced .
+
+<https://astrea.linkeddata.es/shapes#ce2e96579b3f862ce786b1d32f7db3e0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:CreateHumanAttachment .
+
+<https://astrea.linkeddata.es/shapes#c2cc62ccd7a9055b9388ff4876c5e2c4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Consequence .
+
+<https://astrea.linkeddata.es/shapes#bc0515fd844213c4209a1b8273dae38e>
+a               sh:NodeShape ;
+sh:description  "Mechanisms that facilitate the AI system’s auditability  (e.g. traceability of the development process, the sourcing of training  data and the logging of the AI system’s processes, outcomes, positive  and negative impact)"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AuditibilityMechanism .
+
+<https://astrea.linkeddata.es/shapes#8ba63b7251ef66e39d3e81aadbd9e93b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:SecurityStandard .
+
+<https://astrea.linkeddata.es/shapes#c2cdda5542d36ed9e6fcb9dd89aa8a19>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Defect .
+
+<https://astrea.linkeddata.es/shapes#4abec8f4b54317b77007f11888b881c9>
+a               sh:NodeShape ;
+sh:description  "assess the societal impact of the AI system’s use beyond the (end-)user and subject, such as potentially indirectly affected stakeholders or society at large."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AssessingTheSocietalImpactOfAISystemOnSociety .
+
+<https://astrea.linkeddata.es/shapes#2cc4907f9b193f9a5b6bf3288b9f33a1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:CommunicatingAISystemLimitations .
+
+<https://astrea.linkeddata.es/shapes#fe243ad6a771508685f83d2e3c692926>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#15c2f9084c272f6da65bd1d6b1dfc129> , <https://astrea.linkeddata.es/shapes#0303b2a0e0722aeb38736baef06013b6> ;
+sh:targetClass  OTAIA:TechnicalTool .
+
+<https://astrea.linkeddata.es/shapes#a836605066bbbecce3e4f29c40e10d65>
+a               sh:NodeShape ;
+sh:description  "Measures used to assess the quality of training dataset." ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:DataQualityMeasure .
+
+<https://astrea.linkeddata.es/shapes#e2c14b885ffe9431c657c682b2a0fca2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#5bbe88c29c7e5a36caa5644b6dc98894> ;
+sh:targetClass  OTAIA:LegalFramework .
+
+<https://astrea.linkeddata.es/shapes#9af1530c15d4c9c2e8e9a0d72e9c6564>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Consequence ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:threatHasConsequence .
+
+<https://astrea.linkeddata.es/shapes#628c36d866adfdddf0fcf873855d595c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AIDeveloper .
+
+<https://astrea.linkeddata.es/shapes#5292e3c2258b822ae498b52b2c7519d1>
+a            sh:PropertyShape ;
+sh:class     OTAIA:UsersPerceptionOfAISystem ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:hasPerception .
+
+<https://astrea.linkeddata.es/shapes#d5f9fd6e99b65ef02d8d1c8fd9fbcaf3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToMinimizeImpactOnDemocracy .
+
+<https://astrea.linkeddata.es/shapes#165b3eae8d704793e6d71851c657cc96>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ProvideTrainingForReSkillingAndUpSkilling .
+
+<https://astrea.linkeddata.es/shapes#fe046c7725e6cec8d50201ebd8bf1be1>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasEndedBy" , "End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity."@en ;
+sh:class          prov:Entity ;
+sh:description    "End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity."@en ;
+sh:name           "wasEndedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasEndedBy .
+
+<https://astrea.linkeddata.es/shapes#821f0d56c6236c65da1f8d37fa1c1684>
+a            sh:PropertyShape ;
+sh:class     OTAIA:TAIPrinciple ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:hasConflictWithPrinciple .
+
+<https://astrea.linkeddata.es/shapes#42a7c2666ddd5ace28bf3a435a0a487d>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AssessesDataQuality .
+
+<https://astrea.linkeddata.es/shapes#d5c142bb8b11816512dc25e654a66d9b>
+a               sh:NodeShape ;
+sh:description  "refers to the capability for human intervention during the design cycle of the system and monitoring the system’s operation."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:HumanOnTheLoop .
+
+<https://astrea.linkeddata.es/shapes#faf53aac5068aa0cf4232ff9e51380d2>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Skill ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemRequiresSkill .
+
+<https://astrea.linkeddata.es/shapes#4ee88811490a8b15560da0518b0beee3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ProcedureToAvoidEffectsOnHumanAutonomy .
+
+<https://astrea.linkeddata.es/shapes#a6e1e8909790f355d0bccfd646d854e9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:NonRepresentativeness .
+
+<https://astrea.linkeddata.es/shapes#f056e0401e84a2de638aca01fc44b923>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#b187a1e923326b32b4d2751b3699202e> , <https://astrea.linkeddata.es/shapes#203fecc2947f83dc2f1a6f443535f93e> ;
+sh:targetClass  OTAIA:ThirdParty .
+
+<https://astrea.linkeddata.es/shapes#8e3da692c6e03fdeb5fae8a5bf455e99>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:InfluenceHumanDecisionMaking .
+
+<https://astrea.linkeddata.es/shapes#f82f8c06b126abf482aabc4a3cf1d532>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:CommunicatingAISystemBenefits .
+
+<https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e>
+a         sh:PropertyShape ;
+sh:class  prov:InstantaneousEvent .
+
+<https://astrea.linkeddata.es/shapes#906106b68a9ccbf1e71efbd3e6a66e8d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ProceduresToAvoidBias .
+
+<https://astrea.linkeddata.es/shapes#0939571ee7c5bb0ec3fee4af1d3b1cf8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#ace9fed028b7b4eb876bfeb6d9bae463> ;
+sh:targetClass  OTAIA:RiskMetric .
+
+<https://astrea.linkeddata.es/shapes#be49c06f4acb2219943f123ada861056>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToMitigateRiskOfUserManipulation .
+
+<https://astrea.linkeddata.es/shapes#8039c5b998ce5507fef3f197592cfe07>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> ;
+sh:targetClass  prov:Association .
+
+<https://astrea.linkeddata.es/shapes#1da3aa644577e83977f93bc18d631403>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemBenefit ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemHasBenefit .
+
+<https://astrea.linkeddata.es/shapes#ea9151e5b1296debe51165d512679cce>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:InterfereDecisionMakingProcess .
+
+<https://astrea.linkeddata.es/shapes#739d802372bf85cf8e6ce618d6e9eae8>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Skill .
+
+<https://astrea.linkeddata.es/shapes#39cbbea66b387af9ef87c8a2503e8994>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#9877f18dd4831388e14c98cea186f622> ;
+sh:targetClass  OTAIA:InputDataQualityAssessment .
+
+<https://astrea.linkeddata.es/shapes#d8b72a4eaaa24d6edb810ff2a4a3379a>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "hadPrimarySource" ;
+sh:class          prov:Entity ;
+sh:name           "hadPrimarySource" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:hadPrimarySource .
+
+<https://astrea.linkeddata.es/shapes#bd43ad8bf9196ce6e0960a9086a4a6d2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Fairness .
+
+<https://astrea.linkeddata.es/shapes#44d951204d71904b333e950e942bd9e0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:CommunicatingAISystemRisk .
+
+<https://astrea.linkeddata.es/shapes#9a8a66a5f4b456d93af829151d942d2a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:DesignFault .
+
+<https://astrea.linkeddata.es/shapes#ca5cff93bf39037deb92b160d6c3944c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EnsuringUsersAwarenessOfAISystem .
+
+<https://astrea.linkeddata.es/shapes#c1d62965040386e876bf90fd29156d0f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AssessingPotentialAttacks .
+
+<https://astrea.linkeddata.es/shapes#3793cf1b4a25bff3eb85a57698331f96>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingProceduresToAvoidOverReliance .
+
+<https://astrea.linkeddata.es/shapes#23894f640d4a892b95006bb51110d289>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#f4127ab243846fcabf05955756285fed> , <https://astrea.linkeddata.es/shapes#ee1f85b324be91e4534439b85315d5a6> ;
+sh:targetClass  OTAIA:MonitoringConflicts .
+
+<https://astrea.linkeddata.es/shapes#aceb457742e725abc742076fcab462e5>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImpactOnHumanAutonomy .
+
+<https://astrea.linkeddata.es/shapes#12a0f88c7686958188952c768e9088e9>
+a               sh:NodeShape ;
+sh:description  "Material used to train users on how to use the AI system" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TrainingMaterial .
+
+<https://astrea.linkeddata.es/shapes#d6f4a90562d02995ddfcc8ae675bb414>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RightToBeForgotten .
+
+<https://astrea.linkeddata.es/shapes#7121d5a6036802bfec0edb32b15519e7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImpactOnHumanBehaviour .
+
+<https://astrea.linkeddata.es/shapes#a25d2c40a2b65a3d3bbfa446af913b52>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Role" ;
+rdfs:seeAlso      prov:hadRole ;
+sh:name           "Role" ;
+sh:nodeKind       sh:IRI ;
+sh:targetClass    prov:Role .
+
+<https://astrea.linkeddata.es/shapes#880bbf0ddb25c2348b3eb53631104913>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RightToObject .
+
+<https://astrea.linkeddata.es/shapes#a4b2f7e3b5e54a63b44c7d0375df4fc7>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Error ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemHasError .
+
+<https://astrea.linkeddata.es/shapes#3dc7cd326ed5bd5ae689909b9c1b024d>
+a               sh:NodeShape ;
+sh:description  "Inform and consult with impacted workers and their representatives (trade unions, (European) work councils) in advance to introducing the system in the organisation."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:InformingAndConsultingWithImpactedWorkers .
+
+<https://astrea.linkeddata.es/shapes#c2b631866e6638c00d5c8582dd0732b3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:SurveyingUsersUnderstanding .
+
+<https://astrea.linkeddata.es/shapes#4f8673f01420c182b558756fce19cfc0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfMisuse .
+
+<https://astrea.linkeddata.es/shapes#b520e24b9e140d23bf81fcfdeee0412b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#DataProtectionOfficer> .
+
+<https://astrea.linkeddata.es/shapes#59efd56426b8c52f3f401a3f901bbef5>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      OTAIA:isInterActive ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#8a1a520e08b96eb165c282c001b2d821>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#e3a398a7c2845d48c0a25ff633d74616> ;
+sh:targetClass  OTAIA:DataController .
+
+<https://astrea.linkeddata.es/shapes#994152bceb03de726ef6e781cbb01a27>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MonitoringForPotentialBaises .
+
+<https://astrea.linkeddata.es/shapes#518c1a1505e165f7d35b9b7292ee2cdf>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMechanismToIncludeParticpationOfStakeholders .
+
+<https://astrea.linkeddata.es/shapes#37a718b0d8c7d8d0af7dcc0fd17cebad>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AddressingAISystemTraceability .
+
+<https://astrea.linkeddata.es/shapes#053919de895cb676d9d05c7ca841701d>
+a               sh:NodeShape ;
+sh:description  "Decision made when there is conflict between two different ethical principles"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TradeOffDecision .
+
+<https://astrea.linkeddata.es/shapes#8029ca4d02ece469ae05dde3b93b72cc>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ModelInversion .
+
+<https://astrea.linkeddata.es/shapes#c92495ddf79aa36d7d0f95bf0113e153>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AligningAISystemWithStandards> .
+
+<https://astrea.linkeddata.es/shapes#6841db2111768b0d228ce9bec9562c34>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#9877f18dd4831388e14c98cea186f622> ;
+sh:targetClass  OTAIA:OutputDataQualityAssessment .
+
+<https://astrea.linkeddata.es/shapes#7d3a70ac215ae4f39c06b921a69727c7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToEnsureUnderstandingOfImpactOnHumanWork .
+
+<https://astrea.linkeddata.es/shapes#c3e3bed3481e4c9e88ae1b086bb3bfeb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToReduceEnvironmentalImpact .
+
+<https://astrea.linkeddata.es/shapes#7879926a560348e7548569c562a8da5c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemCharacteristic .
+
+<https://astrea.linkeddata.es/shapes#5d0e27a10f755e8b845321ffc3e82361>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasStartedBy" , "Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity."@en ;
+sh:class          prov:Entity ;
+sh:description    "Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity."@en ;
+sh:name           "wasStartedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasStartedBy .
+
+<https://astrea.linkeddata.es/shapes#da7ace0b4e8c8cc1cf5ff587e8bbd37c>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemQualityAttribute ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:metricMeasuresAISystemQuality .
+
+<https://astrea.linkeddata.es/shapes#9a05272980c6083fef38625502182f10>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MakePrediction .
+
+<https://astrea.linkeddata.es/shapes#36cc0b3971813ce3d888b695d4e6e0f3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemQualityAttribute .
+
+<https://astrea.linkeddata.es/shapes#ac4fbb9bf1db8305319d06dda5a224c7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:CommunicatingIssuesRelatedToBias .
+
+<https://astrea.linkeddata.es/shapes#b187a1e923326b32b4d2751b3699202e>
+a            sh:PropertyShape ;
+sh:class     OTAIA:ThirdPartyReport ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:thirdPartyReports .
+
+<https://astrea.linkeddata.es/shapes#4f5a33d3120fe7632119f5d8a8eefe8d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#a0d08aac894e4cb8c4802b8c8de6a051> , <https://astrea.linkeddata.es/shapes#8330f91541bbff767c8b5aafcc00e766> , <https://astrea.linkeddata.es/shapes#9cf3ef52fdb7462a0d0ad27aea2a3168> , <https://astrea.linkeddata.es/shapes#6b013700ebf80cfc9a140d5148e4ee4b> , <https://astrea.linkeddata.es/shapes#8f8469ca0265007dedc546bfc1db2b4f> , <https://astrea.linkeddata.es/shapes#54a68f119234f1a86cc69357c1044343> ;
+sh:targetClass  OTAIA:Risk .
+
+<https://astrea.linkeddata.es/shapes#a6d6dba55ddce3542552ca452502629a>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Organization" ;
+sh:name           "Organization" ;
+sh:nodeKind       sh:IRI ;
+sh:targetClass    prov:Organization .
+
+<https://astrea.linkeddata.es/shapes#d409ef37160c4ddcc705dfe219064b76>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImpactOnSocietalSafety .
+
+<https://astrea.linkeddata.es/shapes#ace9fed028b7b4eb876bfeb6d9bae463>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Risk ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:metricMeasuresRisk .
+
+<https://astrea.linkeddata.es/shapes#53916f2e59793e9b242efad997c55572>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingAIEthicsBoard .
+
+<https://astrea.linkeddata.es/shapes#7c3b07102f9472a66bb2e0808141df2c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AISystemImpact> .
+
+<https://astrea.linkeddata.es/shapes#e08bb3349df6b7816b4859cefdb8ac13>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AssessingTeamInvolvementWithUsers .
+
+<https://astrea.linkeddata.es/shapes#0bc93fa08e1e83f42bd711536545e2de>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TechnicalFault .
+
+<https://astrea.linkeddata.es/shapes#e66c5dc11f19ff77f1a76465286d1bc0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Development .
+
+<https://astrea.linkeddata.es/shapes#dfcd70e6f039142ad784080272348230>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#1da3aa644577e83977f93bc18d631403> , <https://astrea.linkeddata.es/shapes#e0b35c314b6eedeee2baaaa7c378f7f4> , <https://astrea.linkeddata.es/shapes#e57f660f84d1b14314492dfbdd60f743> , <https://astrea.linkeddata.es/shapes#faf53aac5068aa0cf4232ff9e51380d2> , <https://astrea.linkeddata.es/shapes#26020d7a1aa69a16812b7bf9e4b515fa> , <https://astrea.linkeddata.es/shapes#1620d28cd4614ce74e43e50c99b730dc> , <https://astrea.linkeddata.es/shapes#a4b2f7e3b5e54a63b44c7d0375df4fc7> , <https://astrea.linkeddata.es/shapes#4928edad12c5ffd4671f96bcca59073d> , <https://astrea.linkeddata.es/shapes#92fa97081c2dea5d9edfc533ca205593> , <https://astrea.linkeddata.es/shapes#59efd56426b8c52f3f401a3f901bbef5> , <https://astrea.linkeddata.es/shapes#514d724b0a0d1568c51db4673b3cc134> , <https://astrea.linkeddata.es/shapes#b74ea9d6dcc56bdc09a088d0a8c5dcec> , <https://astrea.linkeddata.es/shapes#6f09e3b7a2252497d84cf4c1e9cee1d2> , <https://astrea.linkeddata.es/shapes#f72d695aaa4261cf2ab94673b50b2139> , <https://astrea.linkeddata.es/shapes#6ce7cd738624d41d8b3cffec1559681e> , <https://astrea.linkeddata.es/shapes#6ee1a321763503435eeeeb6e284318c4> , <https://astrea.linkeddata.es/shapes#c23c5cdde5b4fc232e3d3b26c26de3f4> ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AISystem> .
+
+<https://astrea.linkeddata.es/shapes#f113f3473b0101b765eee361beca5587>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImplementingRightToWithdrawConsent> .
+
+<https://astrea.linkeddata.es/shapes#8dd4889ca639ad1a6c8f03e210c3cbfb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImpactOnTheEnvironment .
+
+<https://astrea.linkeddata.es/shapes#c23c5cdde5b4fc232e3d3b26c26de3f4>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemCharacteristic ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemHasCharacteristic .
+
+<https://astrea.linkeddata.es/shapes#954e85b9fbdd2835653922e4bcd30707>
+a            sh:PropertyShape ;
+sh:class     OTAIA:TAISubPrinciple ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:hasSubPrinciple .
+
+<https://astrea.linkeddata.es/shapes#6e7e6ee6e3ced1aacf13f3e25b128026>
+a            sh:PropertyShape ;
+sh:class     OTAIA:TrainingMaterial ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:trainingHasMaterial .
+
+<https://astrea.linkeddata.es/shapes#50a5b215bd46ad942a260bcf0940b3e3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ProcedureToAvoidOverReliance .
+
+<https://astrea.linkeddata.es/shapes#369578a8ec823425e57b6a9bd7aabbf3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Representativeness .
+
+<https://astrea.linkeddata.es/shapes#d5b2789acf07429c74220b53683f56eb>
+a               sh:NodeShape ;
+rdfs:label      "Stakeholder Training"@en ;
+sh:description  "Providing appropriate training to those involved in the assessment of trustworthiness of the AI System."@en ;
+sh:name         "Stakeholder Training"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:StakeholderTraining .
+
+<https://astrea.linkeddata.es/shapes#01d40dac78055a453d22cc5e190f9fe1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Reliability .
+
+<https://astrea.linkeddata.es/shapes#e19a16d1c0b26ad48604c0987879fd5a>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "invalidated" ;
+sh:class          prov:Entity ;
+sh:name           "invalidated" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:invalidated .
+
+<https://astrea.linkeddata.es/shapes#e47e75e8fe26e8584d954b8d4754ca39>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ManipulateUserBehaviour .
+
+<https://astrea.linkeddata.es/shapes#09d5f994943f78b272a553b916bd3832>
+a               sh:NodeShape ;
+rdfs:label      "setting Mechanism For ThirdParty Report"@en ;
+sh:description  "Establishing a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system."@en ;
+sh:name         "setting Mechanism For ThirdParty Report"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:settingMechanismForThirdPartyReport .
+
+<https://astrea.linkeddata.es/shapes#564c4f38e42665fd1f1febce682c48f7>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "used" , "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."@en ;
+sh:class          prov:Entity ;
+sh:description    "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."@en ;
+sh:name           "used" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:used .
+
+<https://astrea.linkeddata.es/shapes#2d96df9980ea19579c6317fa2ca62067>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Pentesting .
+
+<https://astrea.linkeddata.es/shapes#f72d695aaa4261cf2ab94673b50b2139>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemTechnicalLimitation ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemHasTechnicalLimitation .
+
+<https://astrea.linkeddata.es/shapes#5c6c6a2f0b621a218b7d9d5f3adf733f>
+a               sh:NodeShape ;
+sh:description  "Training users on how to use the AI System" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#6e7e6ee6e3ced1aacf13f3e25b128026> ;
+sh:targetClass  OTAIA:UsersTraining .
+
+<https://astrea.linkeddata.es/shapes#fcc991709f6d87cab19513e1bf226a0b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToMitigateRiskOfAddiction .
+
+<https://astrea.linkeddata.es/shapes#a0d08aac894e4cb8c4802b8c8de6a051>
+a            sh:PropertyShape ;
+sh:class     OTAIA:RiskLevel ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:riskHasRiskLevel .
+
+<https://astrea.linkeddata.es/shapes#843bd0d839c55d0c35fb7f8cda929a4f>
+a            sh:PropertyShape ;
+sh:class     OTAIA:ErrorOrigin ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:errorHasOrigin .
+
+<https://astrea.linkeddata.es/shapes#d9faaf56986c00a494d4b1c414908b29>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "hadMember" ;
+sh:class          prov:Entity ;
+sh:name           "hadMember" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:hadMember .
+
+<https://astrea.linkeddata.es/shapes#26caf9e4b8d9596b1f73e004700ec941>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemOutcome ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:loggsAISystemOutcome .
+
+<https://astrea.linkeddata.es/shapes#bccdf621c44ae5524a1154e6eb84ce0e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TestingRequirement .
+
+<https://astrea.linkeddata.es/shapes#d4d91e09a4c5d5b46ce960545dd8d7b6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TestingForPotentialBiases .
+
+<https://astrea.linkeddata.es/shapes#1f985dc6057999606c1c40af2d1f376b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfUserManipulation .
+
+<https://astrea.linkeddata.es/shapes#41cb53f0e52ac386fce3c1d16ed5edb5>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#e96893f7e3ed35c91ee8a5430ec6cca2> ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#SupportingDataSubjectRights> .
+
+<https://astrea.linkeddata.es/shapes#8c70a00aeaf00421c7edb6653c58b043>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Security .
+
+<https://astrea.linkeddata.es/shapes#5bbe88c29c7e5a36caa5644b6dc98894>
+a            sh:PropertyShape ;
+sh:class     <http://www.w3.org/ns/prov-o#AISystem> ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:legalFrameworkAppliesToAISystem .
+
+<https://astrea.linkeddata.es/shapes#080c994f008182ae0438f0e8c4ef7c26>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "actedOnBehalfOf" , "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "@en ;
+sh:class          prov:Agent ;
+sh:description    "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "@en ;
+sh:name           "actedOnBehalfOf" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:actedOnBehalfOf .
+
+<https://astrea.linkeddata.es/shapes#caba1d6abfcdf5b1e3085188f4db2a98>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Activity" ;
+sh:name           "Activity" ;
+sh:nodeKind       sh:IRI ;
+sh:not            <https://astrea.linkeddata.es/shapes#575fba19c3d01370075e04647f571640> ;
+sh:property       <https://astrea.linkeddata.es/shapes#e19a16d1c0b26ad48604c0987879fd5a> , <https://astrea.linkeddata.es/shapes#5d0e27a10f755e8b845321ffc3e82361> , <https://astrea.linkeddata.es/shapes#5a9206803db160bd9e016cc72e257fbc> , <https://astrea.linkeddata.es/shapes#fe046c7725e6cec8d50201ebd8bf1be1> , <https://astrea.linkeddata.es/shapes#564c4f38e42665fd1f1febce682c48f7> , <https://astrea.linkeddata.es/shapes#d18a97a852a607a0308fb5f8582bafcd> , <https://astrea.linkeddata.es/shapes#880bd27facd6ed453d3ba0a7b69536cd> ;
+sh:targetClass    prov:Activity .
+
+<https://astrea.linkeddata.es/shapes#f1569d82a24734f2d5df36acdacf01bc>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> ;
+sh:targetClass  prov:InstantaneousEvent .
+
+<https://astrea.linkeddata.es/shapes#77963a9e5453b8750feb5140858f33c3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#da7ace0b4e8c8cc1cf5ff587e8bbd37c> ;
+sh:targetClass  OTAIA:AISystemQualityMetric .
+
+<https://astrea.linkeddata.es/shapes#9874bd040155776f07d391d137d9519c>
+a               sh:NodeShape ;
+sh:description  "A process to discuss and continuously monitor and assess the AI system's adherence to this Assessment List for Trustworthy AI (ALTAI)."@en , "Trustworthiness Assessment"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TrustworthinessAssessment .
+
+<https://astrea.linkeddata.es/shapes#d86d39fe22d383728eb67f8caebf5274>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasRevisionOf" , "A revision is a derivation that revises an entity into a revised version."@en ;
+sh:description    "A revision is a derivation that revises an entity into a revised version."@en ;
+sh:name           "wasRevisionOf" ;
+sh:nodeKind       sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#d6c37eab45bd585481089593d33c6354>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:LackOfDiversity .
+
+<https://astrea.linkeddata.es/shapes#a9e5e21950501c72249559977f546964>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImpactOnDataProtection .
+
+<https://astrea.linkeddata.es/shapes#64ef9659eb15244b469200f2d1fc5bea>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MechanismsToEnsureFairness .
+
+<https://astrea.linkeddata.es/shapes#1f12b411c324fed1eefe1da16238efc5>
+a               sh:NodeShape ;
+sh:description  "Provide the humans (human-in-the-loop, human-on-the-loop, human-in-command) training on how to exercise oversight."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ProvideTrainingOnExcercisingOversight .
+
+<https://astrea.linkeddata.es/shapes#5d1251e0404d176810a0d3a83cb425a1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:PurposeOfTool .
+
+<https://astrea.linkeddata.es/shapes#92277e0049dd94299c9b2c1fda7d3f8c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#caab9e421ea259cfdecc89acd7cd9367> ;
+sh:targetClass  OTAIA:ALTAIQuestion .
+
+<https://astrea.linkeddata.es/shapes#5dc23fa66aa648c3b27fdaa6d1ac50e6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToEnsureIntegrity .
+
+<https://astrea.linkeddata.es/shapes#9816a9a361dccb010ead76bf6a4a678f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemTechnicalLimitation .
+
+<https://astrea.linkeddata.es/shapes#f253cae3bb1ad49a74bdfae2d79a4e5f>
+a               sh:NodeShape ;
+sh:description  "Understanding of the users from the AI system" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:UsersPerceptionOfAISystem .
+
+<http://astrea.linkeddata.es/report>
+a       <https://w3id.org/def/astrea#ShapeReport> ;
+<https://w3id.org/def/astrea#contains>
+<https://astrea.linkeddata.es/shapes#1d866145cd3965dfd9a2312404a1db88> , <https://astrea.linkeddata.es/shapes#06bb95037c4cbfbfad66dd4d4ff0d6f1> , <https://astrea.linkeddata.es/shapes#57e00aac2c74c372b18e8d50ab5f6f69> , <https://astrea.linkeddata.es/shapes#1e19020e1a709a7e5cc7e77de8bdbf9b> , <https://astrea.linkeddata.es/shapes#821f0d56c6236c65da1f8d37fa1c1684> , <https://astrea.linkeddata.es/shapes#be49c06f4acb2219943f123ada861056> , <https://astrea.linkeddata.es/shapes#8d0995ee671377cd80a53f4b6be193a5> , <https://astrea.linkeddata.es/shapes#b74ea9d6dcc56bdc09a088d0a8c5dcec> , <https://astrea.linkeddata.es/shapes#73304ddc3c964a35e145c3f9e8d3b6de> , <https://astrea.linkeddata.es/shapes#f594dab4a30a4f286763d73cc86121a7> , <https://astrea.linkeddata.es/shapes#d797577eeedbbe38c6d0bc2da064e813> , <https://astrea.linkeddata.es/shapes#44fea1f188ac86dff1cabed10c2a8fb9> , <https://astrea.linkeddata.es/shapes#b81495450432c8ed7acafcd539cd4455> , <https://astrea.linkeddata.es/shapes#1da3aa644577e83977f93bc18d631403> , <https://astrea.linkeddata.es/shapes#d6c37eab45bd585481089593d33c6354> , <https://astrea.linkeddata.es/shapes#d5f9fd6e99b65ef02d8d1c8fd9fbcaf3> , <https://astrea.linkeddata.es/shapes#283f734c6e7f9fc998f04c95bc72d9b1> , <https://astrea.linkeddata.es/shapes#ecd2936490087eaa61cf20b3c6622cee> , <https://astrea.linkeddata.es/shapes#6f8269b8a57a9170f5efb9daa0f96551> , <https://astrea.linkeddata.es/shapes#7048f1a55abb735dbc1d4f98592dad60> , <https://astrea.linkeddata.es/shapes#9816a9a361dccb010ead76bf6a4a678f> , <https://astrea.linkeddata.es/shapes#af9412fcaffa1f79465a20c6cdb1d901> , <https://astrea.linkeddata.es/shapes#50a5b215bd46ad942a260bcf0940b3e3> , <https://astrea.linkeddata.es/shapes#cbdd83028fff6b8bbd067d6abd095476> , <https://astrea.linkeddata.es/shapes#fe046c7725e6cec8d50201ebd8bf1be1> , <https://astrea.linkeddata.es/shapes#2cc4907f9b193f9a5b6bf3288b9f33a1> , <https://astrea.linkeddata.es/shapes#70d1677b5cc00b3d9a0319bbc84ec5af> , <https://astrea.linkeddata.es/shapes#5bbb9475cdb3e92425ff29ebb3aefd73> , <https://astrea.linkeddata.es/shapes#5dc23fa66aa648c3b27fdaa6d1ac50e6> , <https://astrea.linkeddata.es/shapes#bf562ab43cd13a7d7ecebf1c85fa185b> , <https://astrea.linkeddata.es/shapes#1728f259c072c0333d54d68f0cd99f44> , <https://astrea.linkeddata.es/shapes#954e85b9fbdd2835653922e4bcd30707> , <https://astrea.linkeddata.es/shapes#f458340bdb73c90ee46de56591bf8102> , <https://astrea.linkeddata.es/shapes#f1569d82a24734f2d5df36acdacf01bc> , <https://astrea.linkeddata.es/shapes#032be1738be9e8eea0f9b87ca1b3352f> , <https://astrea.linkeddata.es/shapes#370da3b58e1732559c44cc3506a2c1f6> , <https://astrea.linkeddata.es/shapes#0c7a6782b7789e420087704ad89674ef> , <https://astrea.linkeddata.es/shapes#68f3fe40281793f0ed8b2d735e97f661> , <https://astrea.linkeddata.es/shapes#abec4a7487320c21a28f8c52b80a41d9> , <https://astrea.linkeddata.es/shapes#7dba2b1cd3ed15dc910d68ec2d3368b4> , <https://astrea.linkeddata.es/shapes#994152bceb03de726ef6e781cbb01a27> , <https://astrea.linkeddata.es/shapes#491471e5e49f3bdba56772a796251904> , <https://astrea.linkeddata.es/shapes#880bbf0ddb25c2348b3eb53631104913> , <https://astrea.linkeddata.es/shapes#d7e12c8290dce3463c6c07b36ce3c6ec> , <https://astrea.linkeddata.es/shapes#4abc4bd1ee1e806a38fb09f4511d73ef> , <https://astrea.linkeddata.es/shapes#0c9924efacc5ea13794476a5afe60f93> , <https://astrea.linkeddata.es/shapes#6ee1a321763503435eeeeb6e284318c4> , <https://astrea.linkeddata.es/shapes#5c6c6a2f0b621a218b7d9d5f3adf733f> , <https://astrea.linkeddata.es/shapes#91bdb733f5c5f8b68ed72a7c77d5360b> , <https://astrea.linkeddata.es/shapes#0303b2a0e0722aeb38736baef06013b6> , <https://astrea.linkeddata.es/shapes#015f2fcd4071ac5076153e5cfd5f311c> , <https://astrea.linkeddata.es/shapes#c70aaf8a27eb707f7b9588503f058505> , <https://astrea.linkeddata.es/shapes#d18a97a852a607a0308fb5f8582bafcd> , <https://astrea.linkeddata.es/shapes#8f8469ca0265007dedc546bfc1db2b4f> , <https://astrea.linkeddata.es/shapes#b7757da523adac7d2d4bd6a1305d8a3f> , <https://astrea.linkeddata.es/shapes#8000be54aa6fc383113cd91bfe352273> , <https://astrea.linkeddata.es/shapes#f0a705966456db2d92e6a849ecdcbd2d> , <https://astrea.linkeddata.es/shapes#8a1a520e08b96eb165c282c001b2d821> , <https://astrea.linkeddata.es/shapes#2254e05937893cfd48a2bec1642ae92e> , <https://astrea.linkeddata.es/shapes#9bd0e4730a367efe00f35ae45216a8d6> , <https://astrea.linkeddata.es/shapes#09d5f994943f78b272a553b916bd3832> , <https://astrea.linkeddata.es/shapes#8c70a00aeaf00421c7edb6653c58b043> , <https://astrea.linkeddata.es/shapes#e66c5dc11f19ff77f1a76465286d1bc0> , <https://astrea.linkeddata.es/shapes#862514acb291560aa1e7079dd492ae42> , <https://astrea.linkeddata.es/shapes#f011c1eefb1c2b70fcca1cb1d7c661f6> , <https://astrea.linkeddata.es/shapes#5d6fb2a500e2509cbe0e1e955cde836d> , <https://astrea.linkeddata.es/shapes#5e228851b4d22672ccc48cf842b9d3ce> , <https://astrea.linkeddata.es/shapes#ff95cae48951c90a8e6e22cd8c162be3> , <https://astrea.linkeddata.es/shapes#21ea03694ad98783d76a7adefc4abec9> , <https://astrea.linkeddata.es/shapes#1f12b411c324fed1eefe1da16238efc5> , <https://astrea.linkeddata.es/shapes#a5b9f105ab3011901a48534aa363e533> , <https://astrea.linkeddata.es/shapes#1ed46ecaea26e0ce51b89aefd2389cd9> , <https://astrea.linkeddata.es/shapes#d409ef37160c4ddcc705dfe219064b76> , <https://astrea.linkeddata.es/shapes#23d0fc727546dee2eb47f5cc8205f898> , <https://astrea.linkeddata.es/shapes#52399ccfc77903cc3acd574a13cc1366> , <https://astrea.linkeddata.es/shapes#b6103dae4655f3616568aabe50f0ef4a> , <https://astrea.linkeddata.es/shapes#da7ace0b4e8c8cc1cf5ff587e8bbd37c> , <https://astrea.linkeddata.es/shapes#e640bf1acb2bd1aca81d4219d753b900> , <https://astrea.linkeddata.es/shapes#a7ab715878b6904d6ff7ae17b8341a43> , <https://astrea.linkeddata.es/shapes#f82f8c06b126abf482aabc4a3cf1d532> , <https://astrea.linkeddata.es/shapes#d86d39fe22d383728eb67f8caebf5274> , <https://astrea.linkeddata.es/shapes#92ec7f5e9f6df544fca1f67e3dac6ffb> , <https://astrea.linkeddata.es/shapes#5d0e27a10f755e8b845321ffc3e82361> , <https://astrea.linkeddata.es/shapes#2263b322672cf59d7fd715af79bee8eb> , <https://astrea.linkeddata.es/shapes#92277e0049dd94299c9b2c1fda7d3f8c> , <https://astrea.linkeddata.es/shapes#61f67be613315d608918c15c84774ee7> , <https://astrea.linkeddata.es/shapes#cf97f0122b743a476556792b17f4b20c> , <https://astrea.linkeddata.es/shapes#a25d2c40a2b65a3d3bbfa446af913b52> , <https://astrea.linkeddata.es/shapes#ea9151e5b1296debe51165d512679cce> , <https://astrea.linkeddata.es/shapes#518c1a1505e165f7d35b9b7292ee2cdf> , <https://astrea.linkeddata.es/shapes#62dc4987ebb69d5e54cb6b6c9344706e> , <https://astrea.linkeddata.es/shapes#5bbe88c29c7e5a36caa5644b6dc98894> , <https://astrea.linkeddata.es/shapes#a0d08aac894e4cb8c4802b8c8de6a051> , <https://astrea.linkeddata.es/shapes#26ef97da46a42d2c764919e8ba6e6cd7> , <https://astrea.linkeddata.es/shapes#a836605066bbbecce3e4f29c40e10d65> , <https://astrea.linkeddata.es/shapes#203fecc2947f83dc2f1a6f443535f93e> , <https://astrea.linkeddata.es/shapes#eafdf3594e784d85493b04c0a5ed43c9> , <https://astrea.linkeddata.es/shapes#5a9206803db160bd9e016cc72e257fbc> , <https://astrea.linkeddata.es/shapes#a0100030be11c488a91bd75349c4669f> , <https://astrea.linkeddata.es/shapes#880bd27facd6ed453d3ba0a7b69536cd> , <https://astrea.linkeddata.es/shapes#26020d7a1aa69a16812b7bf9e4b515fa> , <https://astrea.linkeddata.es/shapes#34d00a941cc038acd80859c641481fa3> , <https://astrea.linkeddata.es/shapes#64849b30d0b70257ec2b75fb42368029> , <https://astrea.linkeddata.es/shapes#6e7e6ee6e3ced1aacf13f3e25b128026> , <https://astrea.linkeddata.es/shapes#5292e3c2258b822ae498b52b2c7519d1> , <https://astrea.linkeddata.es/shapes#6f09e3b7a2252497d84cf4c1e9cee1d2> , <https://astrea.linkeddata.es/shapes#7da8dbb9856e4f1632509d63f1ba18f0> , <https://astrea.linkeddata.es/shapes#8e3da692c6e03fdeb5fae8a5bf455e99> , <https://astrea.linkeddata.es/shapes#44d951204d71904b333e950e942bd9e0> , <https://astrea.linkeddata.es/shapes#67fee9ddb6a1bf305cd32723ac9ae3b7> , <https://astrea.linkeddata.es/shapes#c1715cf35996965e91edc3e2e4de16b5> , <https://astrea.linkeddata.es/shapes#23894f640d4a892b95006bb51110d289> , <https://astrea.linkeddata.es/shapes#5d64ae066246b83edbe492b99a7c519c> , <https://astrea.linkeddata.es/shapes#6f655dddf34a0bf4f9a595a344225dea> , <https://astrea.linkeddata.es/shapes#f24a90eb3c672a09d055361613ed434f> , <https://astrea.linkeddata.es/shapes#d8b72a4eaaa24d6edb810ff2a4a3379a> , <https://astrea.linkeddata.es/shapes#1620d28cd4614ce74e43e50c99b730dc> , <https://astrea.linkeddata.es/shapes#9a05272980c6083fef38625502182f10> , <https://astrea.linkeddata.es/shapes#54a68f119234f1a86cc69357c1044343> , <https://astrea.linkeddata.es/shapes#801889befe59ed2457e0cd5da5b956c4> , <https://astrea.linkeddata.es/shapes#c1d62965040386e876bf90fd29156d0f> , <https://astrea.linkeddata.es/shapes#fecbd015f93c86cb1eff45960d4c8a4b> , <https://astrea.linkeddata.es/shapes#9247658bee972ec989143cbf95ea1f58> , <https://astrea.linkeddata.es/shapes#b7c5463d94ce2e2951d645f5a4de5e3c> , <https://astrea.linkeddata.es/shapes#2d96df9980ea19579c6317fa2ca62067> , <https://astrea.linkeddata.es/shapes#bd43ad8bf9196ce6e0960a9086a4a6d2> , <https://astrea.linkeddata.es/shapes#28ab617c1714fa3b0ca98915a79c4d32> , <https://astrea.linkeddata.es/shapes#be40ffae6b1d878cbf8a510ec4317ce8> , <https://astrea.linkeddata.es/shapes#a463ffe98f218083ffa15b141f2f7634> , <https://astrea.linkeddata.es/shapes#59efd56426b8c52f3f401a3f901bbef5> , <https://astrea.linkeddata.es/shapes#52e76d66dc59af8f3e93f1d16c64319c> , <https://astrea.linkeddata.es/shapes#c92495ddf79aa36d7d0f95bf0113e153> , <https://astrea.linkeddata.es/shapes#3096deac965b92bcc62b1ad3b61cd3a8> , <https://astrea.linkeddata.es/shapes#7879926a560348e7548569c562a8da5c> , <https://astrea.linkeddata.es/shapes#e19a16d1c0b26ad48604c0987879fd5a> , <https://astrea.linkeddata.es/shapes#ce2e96579b3f862ce786b1d32f7db3e0> , <https://astrea.linkeddata.es/shapes#0939571ee7c5bb0ec3fee4af1d3b1cf8> , <https://astrea.linkeddata.es/shapes#42fcdd143dd217385fe7568943373275> , <https://astrea.linkeddata.es/shapes#fb6a8538d1ddd0bcf389c261b656d405> , <https://astrea.linkeddata.es/shapes#3c8990db1a01111efa01a48ce252cda7> , <https://astrea.linkeddata.es/shapes#67f382937a220fa8268ff17b15ce0c45> , <https://astrea.linkeddata.es/shapes#259f98f7b8d750bfe8a3066e2d7cc65b> , <https://astrea.linkeddata.es/shapes#4abec8f4b54317b77007f11888b881c9> , <https://astrea.linkeddata.es/shapes#61fcedebb55abfa2e0288a46efcd8f2c> , <https://astrea.linkeddata.es/shapes#ea71b22d709e18135b060cdcef0ed3ba> , <https://astrea.linkeddata.es/shapes#53916f2e59793e9b242efad997c55572> , <https://astrea.linkeddata.es/shapes#15a6631be14e7e583e0bc27630355144> , <https://astrea.linkeddata.es/shapes#357f97fa5126f58ef6cf3778e1e4ad69> , <https://astrea.linkeddata.es/shapes#f546ccd83dfea47bc8bfed1243c7a2b9> , <https://astrea.linkeddata.es/shapes#c23c5cdde5b4fc232e3d3b26c26de3f4> , <https://astrea.linkeddata.es/shapes#d9328fb200ad02828c62c0bcbcf3bde9> , <https://astrea.linkeddata.es/shapes#3382797a5ac9314e17994e43dd21174d> , <https://astrea.linkeddata.es/shapes#7b804e7ae4583a79c2608eb92a8f287a> , <https://astrea.linkeddata.es/shapes#ee1f85b324be91e4534439b85315d5a6> , <https://astrea.linkeddata.es/shapes#52583ff259e0486a652e2a847e168ca5> , <https://astrea.linkeddata.es/shapes#9874bd040155776f07d391d137d9519c> , <https://astrea.linkeddata.es/shapes#6d6d6aec07cf7b7ea4d3ecc7616181dc> , <https://astrea.linkeddata.es/shapes#c8a1d746b3c62e5de6a7c29f6b8aaad5> , <https://astrea.linkeddata.es/shapes#630eeb7cb3ece334b6a3d7820c85b8c4> , <https://astrea.linkeddata.es/shapes#080c994f008182ae0438f0e8c4ef7c26> , <https://astrea.linkeddata.es/shapes#7c3b07102f9472a66bb2e0808141df2c> , <https://astrea.linkeddata.es/shapes#9adcd6147c3c70cae384619b4f3912e0> , <https://astrea.linkeddata.es/shapes#c2cdda5542d36ed9e6fcb9dd89aa8a19> , <https://astrea.linkeddata.es/shapes#0f67b287e47d35d79d0f6554deb64dac> , <https://astrea.linkeddata.es/shapes#aa3a1ae08e738a1a65332832394f9bc1> , <https://astrea.linkeddata.es/shapes#26caf9e4b8d9596b1f73e004700ec941> , <https://astrea.linkeddata.es/shapes#111125c4c06a0f0aa14ada60d72fd146> , <https://astrea.linkeddata.es/shapes#68c967080ac4ae048af2e209448db50b> , <https://astrea.linkeddata.es/shapes#3cb3eb2df220dedead450d1bf284459f> , <https://astrea.linkeddata.es/shapes#3dd22ed274e3735f4d40422259334537> , <https://astrea.linkeddata.es/shapes#b064f0e19e3ba55735ded1324298dd30> , <https://astrea.linkeddata.es/shapes#6e417c5d29bdfe42ede41dad43591f1f> , <https://astrea.linkeddata.es/shapes#0905379339025c0dc3c202f299aa3f63> , <https://astrea.linkeddata.es/shapes#4f5a33d3120fe7632119f5d8a8eefe8d> , <https://astrea.linkeddata.es/shapes#f676d4b2ae8c3e2e26d19396e5c529c3> , <https://astrea.linkeddata.es/shapes#0cb7f232463271035e5ff682374233fb> , <https://astrea.linkeddata.es/shapes#81cac80f2c4f474c1aa48ff12ef34f1b> , <https://astrea.linkeddata.es/shapes#aceb457742e725abc742076fcab462e5> , <https://astrea.linkeddata.es/shapes#fcc991709f6d87cab19513e1bf226a0b> , <https://astrea.linkeddata.es/shapes#3eafd72e35957228ecdf6366bbfece51> , <https://astrea.linkeddata.es/shapes#488029bcbb9c7ab979b2c33e3a386e6d> , <https://astrea.linkeddata.es/shapes#a6e1e8909790f355d0bccfd646d854e9> , <https://astrea.linkeddata.es/shapes#a0856960054a4c6da33963f8b42702b3> , <https://astrea.linkeddata.es/shapes#3e3eb125f4c49b5c7078aec3641b370e> , <https://astrea.linkeddata.es/shapes#ee95bbff6444bbb32582e607688408bb> , <https://astrea.linkeddata.es/shapes#d5c142bb8b11816512dc25e654a66d9b> , <https://astrea.linkeddata.es/shapes#dd890bc25bb47e5907d89e43c498c983> , <https://astrea.linkeddata.es/shapes#fcb4824124c99718ac112d757afbf6c6> , <https://astrea.linkeddata.es/shapes#01d40dac78055a453d22cc5e190f9fe1> , <https://astrea.linkeddata.es/shapes#8ba63b7251ef66e39d3e81aadbd9e93b> , <https://astrea.linkeddata.es/shapes#8029ca4d02ece469ae05dde3b93b72cc> , <https://astrea.linkeddata.es/shapes#6841db2111768b0d228ce9bec9562c34> , <https://astrea.linkeddata.es/shapes#d99f5ef68bd47ddf9abadcc161d1349b> , <https://astrea.linkeddata.es/shapes#36cc0b3971813ce3d888b695d4e6e0f3> , <https://astrea.linkeddata.es/shapes#d9ff6719aed17e0963181f2cabe82fa7> , <https://astrea.linkeddata.es/shapes#9dfb2a5437cffadbfd13ea1775f3e11e> , <https://astrea.linkeddata.es/shapes#6688870d9627bb541312c13f06afbe8a> , <https://astrea.linkeddata.es/shapes#df03daf000ea65be2c1b36ce4319b0c9> , <https://astrea.linkeddata.es/shapes#8039c5b998ce5507fef3f197592cfe07> , <https://astrea.linkeddata.es/shapes#f253cae3bb1ad49a74bdfae2d79a4e5f> , <https://astrea.linkeddata.es/shapes#421348c1cbccff0162e7cfc86d033d24> , <https://astrea.linkeddata.es/shapes#945ab70cf4d92ed7d6182d0d9ae40731> , <https://astrea.linkeddata.es/shapes#28085faea5aa95fd5a89e6244f8e8351> , <https://astrea.linkeddata.es/shapes#741c63c37da984251b28cd9971cf534a> , <https://astrea.linkeddata.es/shapes#4ff33067e0024a22f5f5fdbcd3b67778> , <https://astrea.linkeddata.es/shapes#55bb402d10420c6bd1a36b91a99db685> , <https://astrea.linkeddata.es/shapes#485227e302a7392f4687b802f349eefb> , <https://astrea.linkeddata.es/shapes#aa15ba2fc89fe5ac4dacf50125ce04f8> , <https://astrea.linkeddata.es/shapes#085ee8eb4b269cafe681f3920dd95e9b> , <https://astrea.linkeddata.es/shapes#3793cf1b4a25bff3eb85a57698331f96> , <https://astrea.linkeddata.es/shapes#42a7c2666ddd5ace28bf3a435a0a487d> , <https://astrea.linkeddata.es/shapes#8dd4889ca639ad1a6c8f03e210c3cbfb> , <https://astrea.linkeddata.es/shapes#dfcd70e6f039142ad784080272348230> , <https://astrea.linkeddata.es/shapes#73c12b1fa159d9b199294caa1c9a4c85> , <https://astrea.linkeddata.es/shapes#b187a1e923326b32b4d2751b3699202e> , <https://astrea.linkeddata.es/shapes#ac4fbb9bf1db8305319d06dda5a224c7> , <https://astrea.linkeddata.es/shapes#e2c14b885ffe9431c657c682b2a0fca2> , <https://astrea.linkeddata.es/shapes#165b3eae8d704793e6d71851c657cc96> , <https://astrea.linkeddata.es/shapes#739d802372bf85cf8e6ce618d6e9eae8> , <https://astrea.linkeddata.es/shapes#3dc7cd326ed5bd5ae689909b9c1b024d> , <https://astrea.linkeddata.es/shapes#7d3a70ac215ae4f39c06b921a69727c7> , <https://astrea.linkeddata.es/shapes#a0cab25583dd964e54762229ae6ee754> , <https://astrea.linkeddata.es/shapes#807c21540734140d5d52b410435f9bf5> , <https://astrea.linkeddata.es/shapes#575fba19c3d01370075e04647f571640> , <https://astrea.linkeddata.es/shapes#0a1943defddee86b15ca95c4d4cdf27b> , <https://astrea.linkeddata.es/shapes#f5e39831a92c86991b1f168b4a0d9354> , <https://astrea.linkeddata.es/shapes#a4b2f7e3b5e54a63b44c7d0375df4fc7> , <https://astrea.linkeddata.es/shapes#4f8673f01420c182b558756fce19cfc0> , <https://astrea.linkeddata.es/shapes#f16c26be29d005d97926134f7dfb118a> , <https://astrea.linkeddata.es/shapes#4ae393be5a4396e94b15b62e910810cd> , <https://astrea.linkeddata.es/shapes#733ee56c51513fc19743d69af0223b9f> , <https://astrea.linkeddata.es/shapes#d701cd0b617f37c5f58be893f951be51> , <https://astrea.linkeddata.es/shapes#9da15b4aa1caf63698fad8a3fa93404e> , <https://astrea.linkeddata.es/shapes#736e5ebfb2485343f05c569c24f73cfb> , <https://astrea.linkeddata.es/shapes#e08bb3349df6b7816b4859cefdb8ac13> , <https://astrea.linkeddata.es/shapes#4928edad12c5ffd4671f96bcca59073d> , <https://astrea.linkeddata.es/shapes#9a8a66a5f4b456d93af829151d942d2a> , <https://astrea.linkeddata.es/shapes#0bc93fa08e1e83f42bd711536545e2de> , <https://astrea.linkeddata.es/shapes#83bfcc285e25d65944df85228a9c1701> , <https://astrea.linkeddata.es/shapes#f5b4e5cedb443d9b0b071e80c8d5a7ce> , <https://astrea.linkeddata.es/shapes#b520e24b9e140d23bf81fcfdeee0412b> , <https://astrea.linkeddata.es/shapes#d5b2789acf07429c74220b53683f56eb> , <https://astrea.linkeddata.es/shapes#caab9e421ea259cfdecc89acd7cd9367> , <https://astrea.linkeddata.es/shapes#f1b3b35b1588e70b3a5045ee19718909> , <https://astrea.linkeddata.es/shapes#59558609051d0ef3791c47876934f7e1> , <https://astrea.linkeddata.es/shapes#37150871f65aedd6fd448bbb264c64fa> , <https://astrea.linkeddata.es/shapes#6c76ef96abc7f3480b74e660dafe47ae> , <https://astrea.linkeddata.es/shapes#95c057a72219dc1734bece92e047c5ba> , <https://astrea.linkeddata.es/shapes#3c64e720759a62bb27ad209e580bec9e> , <https://astrea.linkeddata.es/shapes#5d1251e0404d176810a0d3a83cb425a1> , <https://astrea.linkeddata.es/shapes#1050f6ed40b985d04bc8b72359e4c56d> , <https://astrea.linkeddata.es/shapes#f4127ab243846fcabf05955756285fed> , <https://astrea.linkeddata.es/shapes#e0ed159d5ca8249b71cd71f37676b585> , <https://astrea.linkeddata.es/shapes#9af1530c15d4c9c2e8e9a0d72e9c6564> , <https://astrea.linkeddata.es/shapes#e0b35c314b6eedeee2baaaa7c378f7f4> , <https://astrea.linkeddata.es/shapes#8330f91541bbff767c8b5aafcc00e766> , <https://astrea.linkeddata.es/shapes#c3e3bed3481e4c9e88ae1b086bb3bfeb> , <https://astrea.linkeddata.es/shapes#66296b441221dd8511351f296a504453> , <https://astrea.linkeddata.es/shapes#8560bd214e0dad6fbe95a95ecded575b> , <https://astrea.linkeddata.es/shapes#f9e7a1e5c549fe2b23de1dc0f96220ce> , <https://astrea.linkeddata.es/shapes#fdaa8c6ec863698bc5d2dfdd9bc5decb> , <https://astrea.linkeddata.es/shapes#d4d91e09a4c5d5b46ce960545dd8d7b6> , <https://astrea.linkeddata.es/shapes#564c4f38e42665fd1f1febce682c48f7> , <https://astrea.linkeddata.es/shapes#f72d695aaa4261cf2ab94673b50b2139> , <https://astrea.linkeddata.es/shapes#5a1e256a9f9f292f571e42e9ab0d8969> , <https://astrea.linkeddata.es/shapes#5141a764480b50746c4aaabce6f087af> , <https://astrea.linkeddata.es/shapes#ce70794e9b1bd385bb61af2801344bbb> , <https://astrea.linkeddata.es/shapes#faf53aac5068aa0cf4232ff9e51380d2> , <https://astrea.linkeddata.es/shapes#8c676d4f175fc3d6065041ac81917f90> , <https://astrea.linkeddata.es/shapes#9877f18dd4831388e14c98cea186f622> , <https://astrea.linkeddata.es/shapes#906106b68a9ccbf1e71efbd3e6a66e8d> , <https://astrea.linkeddata.es/shapes#5360518a70cc552547bbc1e03db7e12d> , <https://astrea.linkeddata.es/shapes#628c36d866adfdddf0fcf873855d595c> , <https://astrea.linkeddata.es/shapes#78ebe47308edf9f147252e511c90eabb> , <https://astrea.linkeddata.es/shapes#fe243ad6a771508685f83d2e3c692926> , <https://astrea.linkeddata.es/shapes#053919de895cb676d9d05c7ca841701d> , <https://astrea.linkeddata.es/shapes#7e4cf7f6d43477e384cf5c760cb285e1> , <https://astrea.linkeddata.es/shapes#3033b9a0d7be7958840779b9d31e0575> , <https://astrea.linkeddata.es/shapes#e96893f7e3ed35c91ee8a5430ec6cca2> , <https://astrea.linkeddata.es/shapes#92fa97081c2dea5d9edfc533ca205593> , <https://astrea.linkeddata.es/shapes#e57f660f84d1b14314492dfbdd60f743> , <https://astrea.linkeddata.es/shapes#550369cb055982a3003928fbaf97cce6> , <https://astrea.linkeddata.es/shapes#748de5bee512cc33303eea8d699bb096> , <https://astrea.linkeddata.es/shapes#2a3d4fe7be58ef5fd0274d57b9e34a9a> , <https://astrea.linkeddata.es/shapes#ae5ac0d1a01cec167629fe2293d549c2> , <https://astrea.linkeddata.es/shapes#c2cdf9bb5dec24abbc407904740d0b78> , <https://astrea.linkeddata.es/shapes#39cbbea66b387af9ef87c8a2503e8994> , <https://astrea.linkeddata.es/shapes#41cb53f0e52ac386fce3c1d16ed5edb5> , <https://astrea.linkeddata.es/shapes#514d724b0a0d1568c51db4673b3cc134> , <https://astrea.linkeddata.es/shapes#0a938a4ed4e611911c8f4007ca02db7a> , <https://astrea.linkeddata.es/shapes#5a43396ec9c86725f2a507ec3573894d> , <https://astrea.linkeddata.es/shapes#275730eb2d47937ff6f05540044f6d86> , <https://astrea.linkeddata.es/shapes#e3a398a7c2845d48c0a25ff633d74616> , <https://astrea.linkeddata.es/shapes#d26388c92311492ffe74f397ecf6eb6c> , <https://astrea.linkeddata.es/shapes#d7cc49d1771e4de939cf00164adc13f6> , <https://astrea.linkeddata.es/shapes#d9faaf56986c00a494d4b1c414908b29> , <https://astrea.linkeddata.es/shapes#351a85cc7bf3a227a1d43f5dbdd8c2b1> , <https://astrea.linkeddata.es/shapes#7121d5a6036802bfec0edb32b15519e7> , <https://astrea.linkeddata.es/shapes#6b013700ebf80cfc9a140d5148e4ee4b> , <https://astrea.linkeddata.es/shapes#2c82cf71a49e72f1f7b910abfc68bfa6> , <https://astrea.linkeddata.es/shapes#6b8caa8bdc362744375c8380709af835> , <https://astrea.linkeddata.es/shapes#a6d6dba55ddce3542552ca452502629a> , <https://astrea.linkeddata.es/shapes#98886e18e921f33fa994d18cdc6422dc> , <https://astrea.linkeddata.es/shapes#ee25dea45b489f5e691500725748f32c> , <https://astrea.linkeddata.es/shapes#37a718b0d8c7d8d0af7dcc0fd17cebad> , <https://astrea.linkeddata.es/shapes#944d271aa538320e84809c93307e7b1d> , <https://astrea.linkeddata.es/shapes#77963a9e5453b8750feb5140858f33c3> , <https://astrea.linkeddata.es/shapes#b01f95c83aacad6d621b9bde3be6f4e9> , <https://astrea.linkeddata.es/shapes#e1653bcb390a314238ea454e3e4c82ab> , <https://astrea.linkeddata.es/shapes#caba1d6abfcdf5b1e3085188f4db2a98> , <https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca> , <https://astrea.linkeddata.es/shapes#1f985dc6057999606c1c40af2d1f376b> , <https://astrea.linkeddata.es/shapes#64ef9659eb15244b469200f2d1fc5bea> , <https://astrea.linkeddata.es/shapes#9cf3ef52fdb7462a0d0ad27aea2a3168> , <https://astrea.linkeddata.es/shapes#017bad9b1fdb0e0ec3a46f392d02ac0d> , <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> , <https://astrea.linkeddata.es/shapes#a9e5e21950501c72249559977f546964> , <https://astrea.linkeddata.es/shapes#bccdf621c44ae5524a1154e6eb84ce0e> , <https://astrea.linkeddata.es/shapes#dc7ff75c5f8d1ddd8d2723ab60e17a34> , <https://astrea.linkeddata.es/shapes#f06894598cacb03370b852ae27148386> , <https://astrea.linkeddata.es/shapes#369578a8ec823425e57b6a9bd7aabbf3> , <https://astrea.linkeddata.es/shapes#6ce7cd738624d41d8b3cffec1559681e> , <https://astrea.linkeddata.es/shapes#fdab869f9225b8b6dc56e4e67310652b> , <https://astrea.linkeddata.es/shapes#cd0dce1f5f2e849b9f0f99609e283007> , <https://astrea.linkeddata.es/shapes#f5d4d0db2db30d6dbbb35dba1c4c2fa7> , <https://astrea.linkeddata.es/shapes#48b746ac61c50bcf69a2e6e0ffd1b0b0> , <https://astrea.linkeddata.es/shapes#15c2f9084c272f6da65bd1d6b1dfc129> , <https://astrea.linkeddata.es/shapes#f056e0401e84a2de638aca01fc44b923> , <https://astrea.linkeddata.es/shapes#0f0076abfffe24c5dd19fef1615df54f> , <https://astrea.linkeddata.es/shapes#bc0515fd844213c4209a1b8273dae38e> , <https://astrea.linkeddata.es/shapes#ca5cff93bf39037deb92b160d6c3944c> , <https://astrea.linkeddata.es/shapes#6e74d98ac7481381f6f8dcebc47973cc> , <https://astrea.linkeddata.es/shapes#5441257cd85befbbf8d905096f000c99> , <https://astrea.linkeddata.es/shapes#c2cc62ccd7a9055b9388ff4876c5e2c4> , <https://astrea.linkeddata.es/shapes#ff20aa71de1b5e974f1787694a663dcf> , <https://astrea.linkeddata.es/shapes#feff4d80c71cbb7a6c62cd1dd7e0a5a7> , <https://astrea.linkeddata.es/shapes#37c510c41a7e3d10c8a8d5249e3559f1> , <https://astrea.linkeddata.es/shapes#4ee88811490a8b15560da0518b0beee3> , <https://astrea.linkeddata.es/shapes#e47e75e8fe26e8584d954b8d4754ca39> , <https://astrea.linkeddata.es/shapes#c2b631866e6638c00d5c8582dd0732b3> , <https://astrea.linkeddata.es/shapes#d6f4a90562d02995ddfcc8ae675bb414> , <https://astrea.linkeddata.es/shapes#16ad66d05934acd4608c2b393b7b2ee3> , <https://astrea.linkeddata.es/shapes#f113f3473b0101b765eee361beca5587> , <https://astrea.linkeddata.es/shapes#f8c9b3d1f966b965550df46112a4eb78> , <https://astrea.linkeddata.es/shapes#056e459b9ee7d12ee5c698c0dcce03eb> , <https://astrea.linkeddata.es/shapes#dfcd5fc30011d551739f9877c244fb84> , <https://astrea.linkeddata.es/shapes#843bd0d839c55d0c35fb7f8cda929a4f> , <https://astrea.linkeddata.es/shapes#ace9fed028b7b4eb876bfeb6d9bae463> , <https://astrea.linkeddata.es/shapes#350e6cd690d7b074bbdd641224921db6> , <https://astrea.linkeddata.es/shapes#12a0f88c7686958188952c768e9088e9> ;
+<https://w3id.org/def/astrea#generatedShapesFrom>
+<https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#736e5ebfb2485343f05c569c24f73cfb>
+a               sh:NodeShape ;
+sh:description  "mechanism that allows for the flagging of issues related to bias, discrimination or poor performance of the AI system"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MechanismToFlagBais .
+
+<https://astrea.linkeddata.es/shapes#feff4d80c71cbb7a6c62cd1dd7e0a5a7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MonitoringAndDocumentingAccuracy .
+
+<https://astrea.linkeddata.es/shapes#37c510c41a7e3d10c8a8d5249e3559f1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#50ee12d03373a78308e5484bd860ad98> ;
+sh:targetClass  prov:Influence .
+
+<https://astrea.linkeddata.es/shapes#78ebe47308edf9f147252e511c90eabb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Planning .
+
+<https://astrea.linkeddata.es/shapes#6e74d98ac7481381f6f8dcebc47973cc>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMechanismsToFlagBais .
+
+<https://astrea.linkeddata.es/shapes#6b013700ebf80cfc9a140d5148e4ee4b>
+a            sh:PropertyShape ;
+sh:class     OTAIA:RiskMitigationMeasure ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:riskIsMitigatedByMeasure .
+
+<https://astrea.linkeddata.es/shapes#28ab617c1714fa3b0ca98915a79c4d32>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:IdentifyingThreads .
+
+<https://astrea.linkeddata.es/shapes#f0a705966456db2d92e6a849ecdcbd2d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:FollowingUniversalDesignPrinciples .
+
+<https://astrea.linkeddata.es/shapes#f5b4e5cedb443d9b0b071e80c8d5a7ce>
+a               sh:NodeShape ;
+sh:description  "assess the dependency of a critical AI system’s decisions on its stable and reliable behaviour."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AssessingDependencyOfAISystem'sDecisionsOnSystemBehaviour> .
+
+<https://astrea.linkeddata.es/shapes#6c76ef96abc7f3480b74e660dafe47ae>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemRisk .
+
+<https://astrea.linkeddata.es/shapes#9cf3ef52fdb7462a0d0ad27aea2a3168>
+a            sh:PropertyShape ;
+sh:class     OTAIA:RiskMetric ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:riskIsMeasuredByRiskMetric .
+
+<https://astrea.linkeddata.es/shapes#23d0fc727546dee2eb47f5cc8205f898>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasQuotedFrom" , "An entity is derived from an original entity by copying, or 'quoting', some or all of it."@en ;
+sh:class          prov:Entity ;
+sh:description    "An entity is derived from an original entity by copying, or 'quoting', some or all of it."@en ;
+sh:name           "wasQuotedFrom" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasQuotedFrom .
+
+<https://astrea.linkeddata.es/shapes#b7757da523adac7d2d4bd6a1305d8a3f>
+a         sh:PropertyShape ;
+sh:class  OTAIA:IndirectlyAffectedStakeholder .
+
+<https://astrea.linkeddata.es/shapes#357f97fa5126f58ef6cf3778e1e4ad69>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:CauseOfBias .
+
+<https://astrea.linkeddata.es/shapes#ae5ac0d1a01cec167629fe2293d549c2>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingAuditibilityMechanisms .
+
+<https://astrea.linkeddata.es/shapes#3033b9a0d7be7958840779b9d31e0575>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:PlanningFaultTolerance .
+
+<https://astrea.linkeddata.es/shapes#8330f91541bbff767c8b5aafcc00e766>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Consequence ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:riskHasConsequence .
+
+<https://astrea.linkeddata.es/shapes#017bad9b1fdb0e0ec3a46f392d02ac0d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskTraining .
+
+<https://astrea.linkeddata.es/shapes#59558609051d0ef3791c47876934f7e1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:InformingUsersOfExistingAndPotentialRisks .
+
+<https://astrea.linkeddata.es/shapes#ee95bbff6444bbb32582e607688408bb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfCyberAttack .
+
+<https://astrea.linkeddata.es/shapes#52399ccfc77903cc3acd574a13cc1366>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:DataProtectionMechanism .
+
+<https://astrea.linkeddata.es/shapes#dd890bc25bb47e5907d89e43c498c983>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemCapability .
+
+<https://astrea.linkeddata.es/shapes#52583ff259e0486a652e2a847e168ca5>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RedTeaming .
+
+<https://astrea.linkeddata.es/shapes#e640bf1acb2bd1aca81d4219d753b900>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MechanismToRespondToAdverseEffects .
+
+<https://astrea.linkeddata.es/shapes#5d6fb2a500e2509cbe0e1e955cde836d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:DataQualityAssessment .
+
+<https://astrea.linkeddata.es/shapes#f24a90eb3c672a09d055361613ed434f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemErrorRate .
+
+<https://astrea.linkeddata.es/shapes#275730eb2d47937ff6f05540044f6d86>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#821f0d56c6236c65da1f8d37fa1c1684> , <https://astrea.linkeddata.es/shapes#954e85b9fbdd2835653922e4bcd30707> ;
+sh:targetClass  OTAIA:TAIPrinciple .
+
+<https://astrea.linkeddata.es/shapes#f5e39831a92c86991b1f168b4a0d9354>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Risk ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:measureMitigatesRisk .
+
+<https://astrea.linkeddata.es/shapes#21ea03694ad98783d76a7adefc4abec9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AdoptingPbDDMechanisms> .
+
+<https://astrea.linkeddata.es/shapes#0a938a4ed4e611911c8f4007ca02db7a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Content .
+
+<https://astrea.linkeddata.es/shapes#aa15ba2fc89fe5ac4dacf50125ce04f8>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      OTAIA:isAwareOfInterctionWithAISystem ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#66296b441221dd8511351f296a504453>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ModelEvasion .
+
+<https://astrea.linkeddata.es/shapes#630eeb7cb3ece334b6a3d7820c85b8c4>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Mechanism .
+
+<https://astrea.linkeddata.es/shapes#e0ed159d5ca8249b71cd71f37676b585>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfAttack .
+
+<https://astrea.linkeddata.es/shapes#ee25dea45b489f5e691500725748f32c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Decision .
+
+<https://astrea.linkeddata.es/report/0620946147>
+a       <https://w3id.org/def/astrea#ReportEntry> ;
+<https://w3id.org/def/astrea#message>
+"Shapes generated with no errors" ;
+<https://w3id.org/def/astrea#statusCode>
+"200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#37150871f65aedd6fd448bbb264c64fa>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MechanismToEvaluateEnvironmentalImpact .
+
+<https://astrea.linkeddata.es/shapes#b81495450432c8ed7acafcd539cd4455>
+a               sh:NodeShape ;
+sh:description  "refers to the capability for human intervention in every decision cycle of the system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:HumanInTheLoop .
+
+<https://astrea.linkeddata.es/shapes#fecbd015f93c86cb1eff45960d4c8a4b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToMitigateRiskOfAddiction .
+
+<https://astrea.linkeddata.es/shapes#0a1943defddee86b15ca95c4d4cdf27b>
+a               sh:NodeShape ;
+sh:description  "Informing end-users or other subjects that a decision, content, advice or outcome is the result of an algorithmic decision."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:InformingUsersOfGettingAlgorithmicResult .
+
+<https://astrea.linkeddata.es/shapes#fdab869f9225b8b6dc56e4e67310652b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImpactOnPrivacy> .
+
+<https://astrea.linkeddata.es/shapes#862514acb291560aa1e7079dd492ae42>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#9af1530c15d4c9c2e8e9a0d72e9c6564> ;
+sh:targetClass  OTAIA:Threat .
+
+<https://astrea.linkeddata.es/shapes#aa3a1ae08e738a1a65332832394f9bc1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AccuracyQuality .
+
+<https://astrea.linkeddata.es/shapes#a463ffe98f218083ffa15b141f2f7634>
+a               sh:NodeShape ;
+sh:description  "test for specific target groups or problematic use cases"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TestingReresentativenessForSpecificTargetGroups .
+
+<https://astrea.linkeddata.es/shapes#5bbb9475cdb3e92425ff29ebb3aefd73>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemAccuracyLevel .
+
+<https://astrea.linkeddata.es/shapes#15a6631be14e7e583e0bc27630355144>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Diversity .
+
+<https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#421348c1cbccff0162e7cfc86d033d24>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Explanation ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:hasExplanation .
+
+<https://astrea.linkeddata.es/shapes#e96893f7e3ed35c91ee8a5430ec6cca2>
+a            sh:PropertyShape ;
+sh:class     OTAIA:DataSubjectRight ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:associatesWithDataSubjectRight .
+
+<https://astrea.linkeddata.es/shapes#514d724b0a0d1568c51db4673b3cc134>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemPrivacyIssue ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemHasPrivacyIssue .
+
+<https://astrea.linkeddata.es/shapes#5a1e256a9f9f292f571e42e9ab0d8969>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:InformingUsersOfSecurityPlans .
+
+<https://astrea.linkeddata.es/shapes#f16c26be29d005d97926134f7dfb118a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfInappropriateUse .
+
+<https://astrea.linkeddata.es/shapes#0c9924efacc5ea13794476a5afe60f93>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:SimulateSocialInteraction .
+
+<https://astrea.linkeddata.es/shapes#91bdb733f5c5f8b68ed72a7c77d5360b>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasAttributedTo" , "Attribution is the ascribing of an entity to an agent."@en ;
+sh:class          prov:Agent ;
+sh:description    "Attribution is the ascribing of an entity to an agent."@en ;
+sh:name           "wasAttributedTo" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasAttributedTo .
+
+<https://astrea.linkeddata.es/shapes#085ee8eb4b269cafe681f3920dd95e9b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMechanismsToRespondToAdverseEffects .
+
+<https://astrea.linkeddata.es/shapes#f8c9b3d1f966b965550df46112a4eb78>
+a               sh:NodeShape ;
+sh:description  "measures to ensure that the impacts of the AI system on human work are well understood."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToEnsureUnderstandingOfImpactOnHumanWork .
+
+<https://astrea.linkeddata.es/shapes#f4127ab243846fcabf05955756285fed>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Conflict ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:discoversConflict .
+
+<https://astrea.linkeddata.es/shapes#c8a1d746b3c62e5de6a7c29f6b8aaad5>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:IndirectlyAffectedStakeholder .
+
+<https://astrea.linkeddata.es/shapes#dc7ff75c5f8d1ddd8d2723ab60e17a34>
+a               sh:NodeShape ;
+sh:description  "Third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) report on potential vulnerabilities, risks or biases in the AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ThirdPartyReport .
+
+<https://astrea.linkeddata.es/shapes#350e6cd690d7b074bbdd641224921db6>
+a               sh:NodeShape ;
+sh:description  "stakeholder"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Stakeholder .
+
+<https://astrea.linkeddata.es/shapes#6e417c5d29bdfe42ede41dad43591f1f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToMitigateRiskOfDeSkilling .
+
+<https://astrea.linkeddata.es/shapes#e3a398a7c2845d48c0a25ff633d74616>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AIEthicsReviewBoard ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:hasAIEthicsBoard .
+
+<https://astrea.linkeddata.es/shapes#6b8caa8bdc362744375c8380709af835>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#DataProtectionImpactAssessment> .
+
+<https://astrea.linkeddata.es/shapes#6d6d6aec07cf7b7ea4d3ecc7616181dc>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#d9faaf56986c00a494d4b1c414908b29> ;
+sh:targetClass  prov:Collection .
+
+<https://astrea.linkeddata.es/shapes#92ec7f5e9f6df544fca1f67e3dac6ffb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#a0856960054a4c6da33963f8b42702b3> ;
+sh:targetClass  OTAIA:TAISubPrinciple .
+
+<https://astrea.linkeddata.es/shapes#8c676d4f175fc3d6065041ac81917f90>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MechanismToFlagPoorPerformance .
+
+<https://astrea.linkeddata.es/shapes#748de5bee512cc33303eea8d699bb096>
+a               sh:NodeShape ;
+sh:description  "refers to the confusion on whether they are interacting with a human or AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ConfusionOverInteractingWithaSystem .
+
+<https://astrea.linkeddata.es/shapes#f458340bdb73c90ee46de56591bf8102>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskLevel .
+
+<https://astrea.linkeddata.es/shapes#fcb4824124c99718ac112d757afbf6c6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToReduceEnvironmentalImpact .
+
+<https://astrea.linkeddata.es/shapes#8d0995ee671377cd80a53f4b6be193a5>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Person" ;
+sh:name           "Person" ;
+sh:nodeKind       sh:IRI ;
+sh:property       <https://astrea.linkeddata.es/shapes#a0100030be11c488a91bd75349c4669f> ;
+sh:targetClass    prov:Person .
+
+<https://astrea.linkeddata.es/shapes#44fea1f188ac86dff1cabed10c2a8fb9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImplementingLoggingMechanism .
+
+<https://astrea.linkeddata.es/shapes#5a43396ec9c86725f2a507ec3573894d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Integrity .
+
+<https://astrea.linkeddata.es/shapes#61fcedebb55abfa2e0288a46efcd8f2c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#DPODesignation> .
+
+<https://astrea.linkeddata.es/shapes#a0cab25583dd964e54762229ae6ee754>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MonitoringGoals .
+
+<https://astrea.linkeddata.es/shapes#b01f95c83aacad6d621b9bde3be6f4e9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfDeSkilling .
+
+<https://astrea.linkeddata.es/shapes#26ef97da46a42d2c764919e8ba6e6cd7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToEnsureIntegrity .
+
+<https://astrea.linkeddata.es/shapes#2263b322672cf59d7fd715af79bee8eb>
+a               sh:NodeShape ;
+sh:description  "assess whether the AI system's user interface is usable by those with special needs or disabilities or those at risk of exclusion"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AssessingUsability .
+
+<https://astrea.linkeddata.es/shapes#5360518a70cc552547bbc1e03db7e12d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:PromotingAIDesignersDevelopesAwarenessofBias .
+
+<https://astrea.linkeddata.es/shapes#a0856960054a4c6da33963f8b42702b3>
+a            sh:PropertyShape ;
+sh:class     OTAIA:TAIPrinciple ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:isPartOfPrinciple .
+
+<https://astrea.linkeddata.es/shapes#34d00a941cc038acd80859c641481fa3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:CousltingWithUserOfAssistiveTechnologies .
+
+<https://astrea.linkeddata.es/shapes#d18a97a852a607a0308fb5f8582bafcd>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "generated" ;
+sh:class          prov:Entity ;
+sh:name           "generated" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:generated .
+
+<https://astrea.linkeddata.es/shapes#e57f660f84d1b14314492dfbdd60f743>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      OTAIA:IsSelfLearning ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#b6103dae4655f3616568aabe50f0ef4a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#AdoptingDataGovernanceMeasures> .
+
+<https://astrea.linkeddata.es/shapes#9247658bee972ec989143cbf95ea1f58>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImplementingRightToBeForgotten> .
+
+<https://astrea.linkeddata.es/shapes#f676d4b2ae8c3e2e26d19396e5c529c3>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Robustness .
+
+<https://astrea.linkeddata.es/shapes#c1715cf35996965e91edc3e2e4de16b5>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingProceduresToAvoidBias .
+
+<https://astrea.linkeddata.es/shapes#70d1677b5cc00b3d9a0319bbc84ec5af>
+a            sh:PropertyShape ;
+sh:class     OTAIA:DatasetQualityAttribute ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:hasQualityAttribute .
+
+<https://astrea.linkeddata.es/shapes#5141a764480b50746c4aaabce6f087af>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImpactOnHumanWork .
+
+<https://astrea.linkeddata.es/shapes#73c12b1fa159d9b199294caa1c9a4c85>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RightToWithdrawConsent .
+
+<https://astrea.linkeddata.es/shapes#caab9e421ea259cfdecc89acd7cd9367>
+a            sh:PropertyShape ;
+sh:class     OTAIA:TAISubPrinciple ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:questionIsPartOfSubPrinciple .
+
+<https://astrea.linkeddata.es/shapes#203fecc2947f83dc2f1a6f443535f93e>
+a            sh:PropertyShape ;
+sh:class     OTAIA:MechanismForThirdPartyReports ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:hasReportMechanism .
+
+<https://astrea.linkeddata.es/shapes#3382797a5ac9314e17994e43dd21174d>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasureToMitigateRiskOfHumanAttachment .
+
+<https://astrea.linkeddata.es/shapes#6ce7cd738624d41d8b3cffec1559681e>
+a            sh:PropertyShape ;
+sh:class     OTAIA:UseCase ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:isUsedInUseCase .
+
+<https://astrea.linkeddata.es/shapes#8f8469ca0265007dedc546bfc1db2b4f>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      OTAIA:IsPotentialRisk ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#6ee1a321763503435eeeeb6e284318c4>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Attack ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemIsVulnerableToAttack .
+
+<https://astrea.linkeddata.es/shapes#8000be54aa6fc383113cd91bfe352273>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ImpactOnHumanPerception .
+
+<https://astrea.linkeddata.es/shapes#0f67b287e47d35d79d0f6554deb64dac>
+a               sh:NodeShape ;
+sh:description  "Mechanism to ensure privacy by design and default"@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:PbDDMechanism .
+
+<https://astrea.linkeddata.es/shapes#a0100030be11c488a91bd75349c4669f>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Skill ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:personHasSkill .
+
+<https://astrea.linkeddata.es/shapes#9dfb2a5437cffadbfd13ea1775f3e11e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ExplainingAISystemsDecision .
+
+<https://astrea.linkeddata.es/shapes#83bfcc285e25d65944df85228a9c1701>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ConsultingWithImpactedCommunitiesAboutDefinitionOfFairness .
+
+<https://astrea.linkeddata.es/shapes#0905379339025c0dc3c202f299aa3f63>
+a               sh:NodeShape ;
+sh:description  "A data item in a datastem" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#5e228851b4d22672ccc48cf842b9d3ce> ;
+sh:targetClass  OTAIA:Data .
+
+<https://astrea.linkeddata.es/shapes#015f2fcd4071ac5076153e5cfd5f311c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:SimulateAddictiveBehaviour .
+
+<https://astrea.linkeddata.es/shapes#485227e302a7392f4687b802f349eefb>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TraceabilityMeasure .
+
+<https://astrea.linkeddata.es/shapes#06bb95037c4cbfbfad66dd4d4ff0d6f1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfBias .
+
+<https://astrea.linkeddata.es/shapes#2254e05937893cfd48a2bec1642ae92e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMechanismsToEvaluateEnviromentalImpact .
+
+<https://astrea.linkeddata.es/shapes#259f98f7b8d750bfe8a3066e2d7cc65b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemLifecyclePhase .
+
+<https://astrea.linkeddata.es/shapes#cbdd83028fff6b8bbd067d6abd095476>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasGeneratedBy" ;
+sh:class          prov:Activity ;
+sh:name           "wasGeneratedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasGeneratedBy .
+
+<https://astrea.linkeddata.es/shapes#d9ff6719aed17e0963181f2cabe82fa7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:DataMinimisationMechanism .
+
+<https://astrea.linkeddata.es/shapes#f546ccd83dfea47bc8bfed1243c7a2b9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Measure .
+
+<https://astrea.linkeddata.es/shapes#54a68f119234f1a86cc69357c1044343>
+a            sh:PropertyShape ;
+sh:datatype  xsd:boolean ;
+sh:nodeKind  sh:Literal ;
+sh:path      OTAIA:IsExistingRisk ;
+sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#28085faea5aa95fd5a89e6244f8e8351>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfAddiction .
+
+<https://astrea.linkeddata.es/shapes#6f09e3b7a2252497d84cf4c1e9cee1d2>
+a            sh:PropertyShape ;
+sh:class     OTAIA:Standard ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:isCompliantWithStandard .
+
+<https://astrea.linkeddata.es/shapes#cd0dce1f5f2e849b9f0f99609e283007>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#945ab70cf4d92ed7d6182d0d9ae40731>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#70d1677b5cc00b3d9a0319bbc84ec5af> ;
+sh:targetClass  OTAIA:TrainingDataset .
+
+<https://astrea.linkeddata.es/shapes#abec4a7487320c21a28f8c52b80a41d9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Attack .
+
+<https://astrea.linkeddata.es/shapes#d99f5ef68bd47ddf9abadcc161d1349b>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:hasALTAIQuestion .
+
+<https://astrea.linkeddata.es/shapes#67f382937a220fa8268ff17b15ce0c45>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:WorkCouncil .
+
+<https://astrea.linkeddata.es/shapes#b74ea9d6dcc56bdc09a088d0a8c5dcec>
+a            sh:PropertyShape ;
+sh:class     OTAIA:TrainingDataset ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:AISystemHasTrainingDataset .
+
+<https://astrea.linkeddata.es/shapes#5d64ae066246b83edbe492b99a7c519c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Reproducibility .
+
+<https://astrea.linkeddata.es/shapes#7e4cf7f6d43477e384cf5c760cb285e1>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImpactOnHuman> .
+
+<https://astrea.linkeddata.es/shapes#5a9206803db160bd9e016cc72e257fbc>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasInformedBy" , "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2."@en ;
+sh:class          prov:Activity ;
+sh:description    "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2."@en ;
+sh:name           "wasInformedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasInformedBy .
+
+<https://astrea.linkeddata.es/shapes#d701cd0b617f37c5f58be893f951be51>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AligningAISystemWithStandards .
+
+<https://astrea.linkeddata.es/shapes#df03daf000ea65be2c1b36ce4319b0c9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Deployment .
+
+<https://astrea.linkeddata.es/shapes#f594dab4a30a4f286763d73cc86121a7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ReliabilityRequirement .
+
+<https://astrea.linkeddata.es/shapes#5e228851b4d22672ccc48cf842b9d3ce>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemOutcome ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:causesOutcome .
+
+<https://astrea.linkeddata.es/shapes#9adcd6147c3c70cae384619b4f3912e0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#f9e7a1e5c549fe2b23de1dc0f96220ce> ;
+sh:targetClass  OTAIA:Bias .
+
+<https://astrea.linkeddata.es/shapes#d9328fb200ad02828c62c0bcbcf3bde9>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Confusion .
+
+<https://astrea.linkeddata.es/shapes#64849b30d0b70257ec2b75fb42368029>
+a               sh:NodeShape ;
+sh:description  "refers to the confusion on whether a decision, content, advice or outcome is the result of an algorithmic decision."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:ConfusionOverAISystemOutcome .
+
+<https://astrea.linkeddata.es/shapes#3c64e720759a62bb27ad209e580bec9e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Usability .
+
+<https://astrea.linkeddata.es/shapes#f9e7a1e5c549fe2b23de1dc0f96220ce>
+a            sh:PropertyShape ;
+sh:class     OTAIA:CauseOfBias ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:biasIsCauseBy .
+
+<https://astrea.linkeddata.es/shapes#7da8dbb9856e4f1632509d63f1ba18f0>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:GiveRecommendation .
+
+<https://astrea.linkeddata.es/shapes#c70aaf8a27eb707f7b9588503f058505>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AccuracyRequirement .
+
+<https://astrea.linkeddata.es/shapes#d26388c92311492ffe74f397ecf6eb6c>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskOfMaliciousUse .
+
+<https://astrea.linkeddata.es/shapes#6f655dddf34a0bf4f9a595a344225dea>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMechanismsToFlagPoorPerformance .
+
+<https://astrea.linkeddata.es/shapes#3dd22ed274e3735f4d40422259334537>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Procedure .
+
+<https://astrea.linkeddata.es/shapes#733ee56c51513fc19743d69af0223b9f>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingProceduresToAvoidImpactsOnHumanAutonomy .
+
+<https://astrea.linkeddata.es/shapes#62dc4987ebb69d5e54cb6b6c9344706e>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TradeUnion .
+
+<https://astrea.linkeddata.es/shapes#42fcdd143dd217385fe7568943373275>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MeasuringRisks .
+
+<https://astrea.linkeddata.es/shapes#b7c5463d94ce2e2951d645f5a4de5e3c>
+a               sh:NodeShape ;
+sh:description  "Process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:MechanismForThirdPartyReports .
+
+<https://astrea.linkeddata.es/shapes#2a3d4fe7be58ef5fd0274d57b9e34a9a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToMinimizeImpactOnDemocracy .
+
+<https://astrea.linkeddata.es/shapes#f5d4d0db2db30d6dbbb35dba1c4c2fa7>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AISystemPrivacyIssue .
+
+<https://astrea.linkeddata.es/shapes#d7cc49d1771e4de939cf00164adc13f6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImplementingDataProtectionMechanism> .
+
+<https://astrea.linkeddata.es/shapes#d797577eeedbbe38c6d0bc2da064e813>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."@en , "wasInfluencedBy" , "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ;
+sh:description    "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." , "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."@en ;
+sh:name           "wasInfluencedBy" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:or             ( [ sh:class  prov:Activity ;
+sh:path   prov:wasInfluencedBy
+]
+[ sh:class  prov:Agent ;
+sh:path   prov:wasInfluencedBy
+]
+[ sh:class  prov:Entity ;
+sh:path   prov:wasInfluencedBy
+]
+) .
+
+<https://astrea.linkeddata.es/shapes#ff95cae48951c90a8e6e22cd8c162be3>
+a                 sh:NodeShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "SoftwareAgent" ;
+sh:name           "SoftwareAgent" ;
+sh:nodeKind       sh:IRI ;
+sh:targetClass    prov:SoftwareAgent .
+
+<https://astrea.linkeddata.es/shapes#111125c4c06a0f0aa14ada60d72fd146>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:TakingActionToMinimizeImpactOnSociety .
+
+<https://astrea.linkeddata.es/shapes#e1653bcb390a314238ea454e3e4c82ab>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:OverRelianceOnTheSystem .
+
+<https://astrea.linkeddata.es/shapes#15c2f9084c272f6da65bd1d6b1dfc129>
+a            sh:PropertyShape ;
+sh:class     OTAIA:PurposeOfTool ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:toolIsUsedfor .
+
+<https://astrea.linkeddata.es/shapes#eafdf3594e784d85493b04c0a5ed43c9>
+a                 sh:PropertyShape ;
+rdfs:isDefinedBy  <http://www.w3.org/ns/prov-o#> ;
+rdfs:label        "wasDerivedFrom" , "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en ;
+sh:class          prov:Entity ;
+sh:description    "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en ;
+sh:name           "wasDerivedFrom" ;
+sh:nodeKind       sh:BlankNodeOrIRI ;
+sh:path           prov:wasDerivedFrom .
+
+<https://astrea.linkeddata.es/shapes#0f0076abfffe24c5dd19fef1615df54f>
+a               sh:NodeShape ;
+sh:description  "Any output made by the AI system; e.g., decision or recommendation  made by the AI system." ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#421348c1cbccff0162e7cfc86d033d24> ;
+sh:targetClass  OTAIA:AISystemOutcome .
+
+<https://astrea.linkeddata.es/shapes#9bd0e4730a367efe00f35ae45216a8d6>
+a               sh:NodeShape ;
+sh:description  "A use case is a specific situation in which a product or service could potentially be used. For example, self-driving cars or care robots are use cases for AI."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:UseCase .
+
+<https://astrea.linkeddata.es/shapes#b064f0e19e3ba55735ded1324298dd30>
+a               sh:NodeShape ;
+sh:description  "refers to the capability to oversee the overall activity of the AI system  and the ability to decide when and how to use the system in any particular situation."@en ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:HumanInCommand .
+
+<https://astrea.linkeddata.es/shapes#bf562ab43cd13a7d7ecebf1c85fa185b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:OversightMechanism .
+
+<https://astrea.linkeddata.es/shapes#550369cb055982a3003928fbaf97cce6>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EnsuringWorkersAwarenessOfSystemCapabilities .
+
+<https://astrea.linkeddata.es/shapes#9877f18dd4831388e14c98cea186f622>
+a            sh:PropertyShape ;
+sh:class     OTAIA:DataQualityMeasure ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:usesQualityMeasure .
+
+<https://astrea.linkeddata.es/shapes#3eafd72e35957228ecdf6366bbfece51>
+a               sh:NodeShape ;
+sh:description  "Standards are norms designed by industry and/or Governments that set product or services’ specifications. Standards are released by international organizations, such as ISO (International Organisation for Standardisation), IEEE (The Institute of Electrical and Electronics Engineers) Standard Association, and NIST (National Institute of Standards and Technology)." ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Standard .
+
+<https://astrea.linkeddata.es/shapes#7b804e7ae4583a79c2608eb92a8f287a>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:RiskAssessment .
+
+<https://astrea.linkeddata.es/shapes#68c967080ac4ae048af2e209448db50b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:InteractionWithHuman .
+
+<https://astrea.linkeddata.es/shapes#ecd2936490087eaa61cf20b3c6622cee>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:EstablishingMeasuresToEnsureRobustness .
+
+<https://astrea.linkeddata.es/shapes#f06894598cacb03370b852ae27148386>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  <http://www.w3.org/ns/prov-o#ImplementingRightToObject> .
+
+<https://astrea.linkeddata.es/shapes#4abc4bd1ee1e806a38fb09f4511d73ef>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:AIDesigner .
+
+<https://astrea.linkeddata.es/shapes#ee1f85b324be91e4534439b85315d5a6>
+a            sh:PropertyShape ;
+sh:class     OTAIA:TradeOffDecision ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:resultsTradeOffDecision .
+
+<https://astrea.linkeddata.es/shapes#1d866145cd3965dfd9a2312404a1db88>
+a            sh:PropertyShape ;
+sh:class     OTAIA:AISystemLifecyclePhase ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      OTAIA:lifecycleHasPhase .
+
+<https://astrea.linkeddata.es/shapes#8560bd214e0dad6fbe95a95ecded575b>
+a               sh:NodeShape ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  OTAIA:Completeness .
