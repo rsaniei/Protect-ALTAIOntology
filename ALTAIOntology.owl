@@ -92,6 +92,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#isMentionedIn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#isMentionedIn"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#note -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
@@ -1753,6 +1759,7 @@ and negative impact)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#EstablishingAuditibilityMechanisms">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <isMentionedIn rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ1"/>
     </owl:Class>
     
 
