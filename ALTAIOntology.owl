@@ -433,6 +433,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#hasSubPrinciple">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#isPartOfPrinciple"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TAIPrinciple"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TAISubPrinciple"/>
     </owl:ObjectProperty>
@@ -451,6 +452,7 @@
     <!-- http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#isPartOfPrinciple -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#isPartOfPrinciple">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TAISubPrinciple"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TAIPrinciple"/>
     </owl:ObjectProperty>
@@ -1751,6 +1753,7 @@ and negative impact)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#EstablishingAIEthicsBoard">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <isMentionedIn rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ3"/>
     </owl:Class>
     
 
@@ -1759,7 +1762,7 @@ and negative impact)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#EstablishingAuditibilityMechanisms">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <isMentionedIn rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AUDQ1"/>
+        <isMentionedIn rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#AudQ1"/>
     </owl:Class>
     
 
@@ -2765,6 +2768,7 @@ and negative impact)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#RiskTraining">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <isMentionedIn rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ2"/>
     </owl:Class>
     
 
@@ -2977,6 +2981,7 @@ and negative impact)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TrustworthinessAssessment">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <isMentionedIn rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ4"/>
         <rdfs:comment xml:lang="en">A process to discuss and continuously monitor and assess the AI system&apos;s adherence to this Assessment List for Trustworthy AI (ALTAI).</rdfs:comment>
         <rdfs:comment xml:lang="en">Trustworthiness Assessment</rdfs:comment>
     </owl:Class>
@@ -3061,8 +3066,8 @@ and negative impact)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#settingMechanismForThirdPartyReport">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <isMentionedIn rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/otaia#RMQ5"/>
         <rdfs:comment xml:lang="en">Establishing a process for third parties (e.g. suppliers, end-users, subjects, distributors/vendors or workers) to report potential vulnerabilities, risks or biases in the AI system.</rdfs:comment>
-        <rdfs:label xml:lang="en">setting Mechanism For ThirdParty Report</rdfs:label>
     </owl:Class>
     
 
@@ -3440,6 +3445,7 @@ and negative impact)</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AccessibilityAndUniversalDesign">
         <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TAISubPrinciple"/>
+        <OTAIA:isPartOfPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#DiversityNon-DiscriminationAndFairness"/>
     </owl:NamedIndividual>
     
 
@@ -3466,6 +3472,7 @@ and negative impact)</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Auditability">
         <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TAISubPrinciple"/>
+        <OTAIA:isPartOfPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Accountability"/>
     </owl:NamedIndividual>
     
 
@@ -3474,6 +3481,7 @@ and negative impact)</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#AvoidanceOfUnfairBias">
         <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TAISubPrinciple"/>
+        <OTAIA:isPartOfPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Accountability"/>
     </owl:NamedIndividual>
     
 
@@ -4170,6 +4178,7 @@ and negative impact)</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#RiskManagement">
         <rdf:type rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#TAISubPrinciple"/>
+        <OTAIA:isPartOfPrinciple rdf:resource="http://www.semanticweb.org/ranasaniei/ontologies/2021/5/OTAIA#Accountability"/>
     </owl:NamedIndividual>
     
 
